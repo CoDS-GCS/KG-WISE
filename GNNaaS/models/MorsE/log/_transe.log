@@ -1,0 +1,1302 @@
+2023-12-13 13:32:21 | _transe | df_test_g_train len=38136
+2023-12-13 13:32:21 | _transe | df_test_g_train len=38136
+2023-12-13 13:32:21 | _transe | df_train_g_test len=7194
+2023-12-13 13:32:21 | _transe | df_train_g_test len=7194
+2023-12-13 13:32:21 | _transe | df_train_g_train len=41505
+2023-12-13 13:32:21 | _transe | df_train_g_train len=41505
+2023-12-13 13:32:21 | _transe | df_train_g_valid len=1691
+2023-12-13 13:32:21 | _transe | df_train_g_valid len=1691
+2023-12-13 13:32:21 | _transe | df_test_g_valid len=1343
+2023-12-13 13:32:21 | _transe | df_test_g_valid len=1343
+2023-12-13 13:32:21 | _transe | Sampling Time Sec=0.273834
+2023-12-13 13:32:21 | _transe | Sampling Time Sec=0.273834
+2023-12-13 13:32:21 | _transe | {"dataset_name": "wn18rr", "name": "_transe", "root_path": "/home/afandi/GitRepos/KGNET/Datasets/", "loadTrainedModel": 0, "modelID": "DBLP_Paper_Venue_FM_FTD_d1h1_2021.model", "step": "meta_train", "metatrain_state": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE.best", "state_dir": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE", "log_dir": "./log", "tb_log_dir": "./tb_log", "num_train_subgraph": 10000, "num_valid_subgraph": 200, "num_sample_for_estimate_size": 50, "rw_0": 10, "rw_1": 10, "rw_2": 5, "num_sample_cand": 5, "metatrain_num_neg": 64, "metatrain_num_epoch": 1, "metatrain_bs": 64, "metatrain_lr": 0.01, "metatrain_check_per_step": 5, "indtest_eval_bs": 512, "posttrain_num_neg": 64, "posttrain_bs": 512, "posttrain_lr": 0.001, "posttrain_num_epoch": 10, "posttrain_check_per_epoch": 1, "num_layers": 3, "num_bases": 4, "emb_dim": 32, "kge": "TransE", "gamma": 10, "adv_temp": 1, "gpu": "cpu", "seed": 1234, "ent_dim": 32, "rel_dim": 32, "data_path": "/home/afandi/GitRepos/KGNET/Datasets/wn18rr/wn18rr.pkl", "db_path": "/home/afandi/GitRepos/KGNET/Datasets/wn18rr_subgraph", "num_rel": 11}
+2023-12-13 13:32:21 | _transe | {"dataset_name": "wn18rr", "name": "_transe", "root_path": "/home/afandi/GitRepos/KGNET/Datasets/", "loadTrainedModel": 0, "modelID": "DBLP_Paper_Venue_FM_FTD_d1h1_2021.model", "step": "meta_train", "metatrain_state": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE.best", "state_dir": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE", "log_dir": "./log", "tb_log_dir": "./tb_log", "num_train_subgraph": 10000, "num_valid_subgraph": 200, "num_sample_for_estimate_size": 50, "rw_0": 10, "rw_1": 10, "rw_2": 5, "num_sample_cand": 5, "metatrain_num_neg": 64, "metatrain_num_epoch": 1, "metatrain_bs": 64, "metatrain_lr": 0.01, "metatrain_check_per_step": 5, "indtest_eval_bs": 512, "posttrain_num_neg": 64, "posttrain_bs": 512, "posttrain_lr": 0.001, "posttrain_num_epoch": 10, "posttrain_check_per_epoch": 1, "num_layers": 3, "num_bases": 4, "emb_dim": 32, "kge": "TransE", "gamma": 10, "adv_temp": 1, "gpu": "cpu", "seed": 1234, "ent_dim": 32, "rel_dim": 32, "data_path": "/home/afandi/GitRepos/KGNET/Datasets/wn18rr/wn18rr.pkl", "db_path": "/home/afandi/GitRepos/KGNET/Datasets/wn18rr_subgraph", "num_rel": 11}
+2023-12-13 13:32:21 | _transe | start meta-training
+2023-12-13 13:32:21 | _transe | start meta-training
+2023-12-13 13:32:21 | _transe | resource.struct_rusage(ru_utime=2.026948, ru_stime=0.210229, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=88186, ru_majflt=0, ru_nswap=0, ru_inblock=0, ru_oublock=2184, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=88, ru_nivcsw=61)
+2023-12-13 13:32:21 | _transe | resource.struct_rusage(ru_utime=2.026948, ru_stime=0.210229, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=88186, ru_majflt=0, ru_nswap=0, ru_inblock=0, ru_oublock=2184, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=88, ru_nivcsw=61)
+2023-12-13 13:32:40 | _transe | epoch:0 | step: 1 | loss: 1.6496
+2023-12-13 13:32:40 | _transe | epoch:0 | step: 1 | loss: 1.6496
+2023-12-13 13:32:40 | _transe | epoch:0 | step: 2 | loss: 1.7416
+2023-12-13 13:32:40 | _transe | epoch:0 | step: 2 | loss: 1.7416
+2023-12-13 13:32:41 | _transe | epoch:0 | step: 3 | loss: 1.4913
+2023-12-13 13:32:41 | _transe | epoch:0 | step: 3 | loss: 1.4913
+2023-12-13 13:32:42 | _transe | epoch:0 | step: 4 | loss: 1.2570
+2023-12-13 13:32:42 | _transe | epoch:0 | step: 4 | loss: 1.2570
+2023-12-13 13:32:42 | _transe | epoch:0 | step: 5 | loss: 1.1868
+2023-12-13 13:32:42 | _transe | epoch:0 | step: 5 | loss: 1.1868
+2023-12-13 13:32:44 | _transe | valid on valid subgraphs
+2023-12-13 13:32:44 | _transe | valid on valid subgraphs
+2023-12-13 13:32:44 | _transe |  mrr: 0.0878, hits@1: 0.0206, hits@5: 0.1031, hits@10: 0.2159
+2023-12-13 13:32:44 | _transe |  mrr: 0.0878, hits@1: 0.0206, hits@5: 0.1031, hits@10: 0.2159
+2023-12-13 13:32:44 | _transe | resource.struct_rusage(ru_utime=55.232209, ru_stime=5.890954, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=881964, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=2192, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=3449, ru_nivcsw=1115)
+2023-12-13 13:32:44 | _transe | resource.struct_rusage(ru_utime=55.232209, ru_stime=5.890954, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=881964, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=2192, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=3449, ru_nivcsw=1115)
+2023-12-13 13:32:44 | _transe | Train Time Sec=22.391413
+2023-12-13 13:32:44 | _transe | Train Time Sec=22.391413
+2023-12-13 13:32:44 | _transe | best model | mrr 0.0878
+2023-12-13 13:32:44 | _transe | best model | mrr 0.0878
+2023-12-13 13:32:44 | _transe | epoch:0 | step: 6 | loss: 1.0926
+2023-12-13 13:32:44 | _transe | epoch:0 | step: 6 | loss: 1.0926
+2023-12-13 13:32:45 | _transe | epoch:0 | step: 7 | loss: 1.0115
+2023-12-13 13:32:45 | _transe | epoch:0 | step: 7 | loss: 1.0115
+2023-12-13 13:32:45 | _transe | epoch:0 | step: 8 | loss: 0.9384
+2023-12-13 13:32:45 | _transe | epoch:0 | step: 8 | loss: 0.9384
+2023-12-13 13:32:46 | _transe | epoch:0 | step: 9 | loss: 0.8951
+2023-12-13 13:32:46 | _transe | epoch:0 | step: 9 | loss: 0.8951
+2023-12-13 13:32:47 | _transe | epoch:0 | step: 10 | loss: 0.8131
+2023-12-13 13:32:47 | _transe | epoch:0 | step: 10 | loss: 0.8131
+2023-12-13 13:32:48 | _transe | valid on valid subgraphs
+2023-12-13 13:32:48 | _transe | valid on valid subgraphs
+2023-12-13 13:32:48 | _transe |  mrr: 0.1568, hits@1: 0.0653, hits@5: 0.2158, hits@10: 0.3299
+2023-12-13 13:32:48 | _transe |  mrr: 0.1568, hits@1: 0.0653, hits@5: 0.2158, hits@10: 0.3299
+2023-12-13 13:32:48 | _transe | resource.struct_rusage(ru_utime=106.39489, ru_stime=10.296796, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=1645048, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=2368, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=5978, ru_nivcsw=1947)
+2023-12-13 13:32:48 | _transe | resource.struct_rusage(ru_utime=106.39489, ru_stime=10.296796, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=1645048, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=2368, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=5978, ru_nivcsw=1947)
+2023-12-13 13:32:48 | _transe | Train Time Sec=26.821227
+2023-12-13 13:32:48 | _transe | Train Time Sec=26.821227
+2023-12-13 13:32:48 | _transe | best model | mrr 0.1568
+2023-12-13 13:32:48 | _transe | best model | mrr 0.1568
+2023-12-13 13:32:49 | _transe | epoch:0 | step: 11 | loss: 0.7555
+2023-12-13 13:32:49 | _transe | epoch:0 | step: 11 | loss: 0.7555
+2023-12-13 13:32:49 | _transe | epoch:0 | step: 12 | loss: 0.7285
+2023-12-13 13:32:49 | _transe | epoch:0 | step: 12 | loss: 0.7285
+2023-12-13 13:32:50 | _transe | epoch:0 | step: 13 | loss: 0.7215
+2023-12-13 13:32:50 | _transe | epoch:0 | step: 13 | loss: 0.7215
+2023-12-13 13:32:50 | _transe | epoch:0 | step: 14 | loss: 0.6886
+2023-12-13 13:32:50 | _transe | epoch:0 | step: 14 | loss: 0.6886
+2023-12-13 13:32:51 | _transe | epoch:0 | step: 15 | loss: 0.6790
+2023-12-13 13:32:51 | _transe | epoch:0 | step: 15 | loss: 0.6790
+2023-12-13 13:32:52 | _transe | valid on valid subgraphs
+2023-12-13 13:32:52 | _transe | valid on valid subgraphs
+2023-12-13 13:32:52 | _transe |  mrr: 0.2321, hits@1: 0.0967, hits@5: 0.3743, hits@10: 0.5731
+2023-12-13 13:32:52 | _transe |  mrr: 0.2321, hits@1: 0.0967, hits@5: 0.3743, hits@10: 0.5731
+2023-12-13 13:32:52 | _transe | resource.struct_rusage(ru_utime=157.877789, ru_stime=14.476599, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=2405620, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=2568, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=8320, ru_nivcsw=2735)
+2023-12-13 13:32:52 | _transe | resource.struct_rusage(ru_utime=157.877789, ru_stime=14.476599, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=2405620, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=2568, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=8320, ru_nivcsw=2735)
+2023-12-13 13:32:52 | _transe | Train Time Sec=31.213468
+2023-12-13 13:32:52 | _transe | Train Time Sec=31.213468
+2023-12-13 13:32:52 | _transe | best model | mrr 0.2321
+2023-12-13 13:32:52 | _transe | best model | mrr 0.2321
+2023-12-13 13:32:53 | _transe | epoch:0 | step: 16 | loss: 0.6820
+2023-12-13 13:32:53 | _transe | epoch:0 | step: 16 | loss: 0.6820
+2023-12-13 13:32:54 | _transe | epoch:0 | step: 17 | loss: 0.6951
+2023-12-13 13:32:54 | _transe | epoch:0 | step: 17 | loss: 0.6951
+2023-12-13 13:32:54 | _transe | epoch:0 | step: 18 | loss: 0.6671
+2023-12-13 13:32:54 | _transe | epoch:0 | step: 18 | loss: 0.6671
+2023-12-13 13:32:55 | _transe | epoch:0 | step: 19 | loss: 0.6626
+2023-12-13 13:32:55 | _transe | epoch:0 | step: 19 | loss: 0.6626
+2023-12-13 13:32:56 | _transe | epoch:0 | step: 20 | loss: 0.6641
+2023-12-13 13:32:56 | _transe | epoch:0 | step: 20 | loss: 0.6641
+2023-12-13 13:32:57 | _transe | valid on valid subgraphs
+2023-12-13 13:32:57 | _transe | valid on valid subgraphs
+2023-12-13 13:32:57 | _transe |  mrr: 0.2503, hits@1: 0.1074, hits@5: 0.3993, hits@10: 0.6041
+2023-12-13 13:32:57 | _transe |  mrr: 0.2503, hits@1: 0.1074, hits@5: 0.3993, hits@10: 0.6041
+2023-12-13 13:32:57 | _transe | resource.struct_rusage(ru_utime=210.071648, ru_stime=19.150565, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=3167857, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=2744, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=10868, ru_nivcsw=3571)
+2023-12-13 13:32:57 | _transe | resource.struct_rusage(ru_utime=210.071648, ru_stime=19.150565, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=3167857, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=2744, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=10868, ru_nivcsw=3571)
+2023-12-13 13:32:57 | _transe | Train Time Sec=35.751171
+2023-12-13 13:32:57 | _transe | Train Time Sec=35.751171
+2023-12-13 13:32:57 | _transe | best model | mrr 0.2503
+2023-12-13 13:32:57 | _transe | best model | mrr 0.2503
+2023-12-13 13:32:58 | _transe | epoch:0 | step: 21 | loss: 0.6709
+2023-12-13 13:32:58 | _transe | epoch:0 | step: 21 | loss: 0.6709
+2023-12-13 13:32:58 | _transe | epoch:0 | step: 22 | loss: 0.6687
+2023-12-13 13:32:58 | _transe | epoch:0 | step: 22 | loss: 0.6687
+2023-12-13 13:32:59 | _transe | epoch:0 | step: 23 | loss: 0.6802
+2023-12-13 13:32:59 | _transe | epoch:0 | step: 23 | loss: 0.6802
+2023-12-13 13:32:59 | _transe | epoch:0 | step: 24 | loss: 0.6672
+2023-12-13 13:32:59 | _transe | epoch:0 | step: 24 | loss: 0.6672
+2023-12-13 13:33:00 | _transe | epoch:0 | step: 25 | loss: 0.6694
+2023-12-13 13:33:00 | _transe | epoch:0 | step: 25 | loss: 0.6694
+2023-12-13 13:33:01 | _transe | valid on valid subgraphs
+2023-12-13 13:33:01 | _transe | valid on valid subgraphs
+2023-12-13 13:33:01 | _transe |  mrr: 0.2700, hits@1: 0.1206, hits@5: 0.4366, hits@10: 0.6304
+2023-12-13 13:33:01 | _transe |  mrr: 0.2700, hits@1: 0.1206, hits@5: 0.4366, hits@10: 0.6304
+2023-12-13 13:33:01 | _transe | resource.struct_rusage(ru_utime=262.150511, ru_stime=23.625821, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=3935386, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=2920, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=13232, ru_nivcsw=4379)
+2023-12-13 13:33:01 | _transe | resource.struct_rusage(ru_utime=262.150511, ru_stime=23.625821, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=3935386, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=2920, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=13232, ru_nivcsw=4379)
+2023-12-13 13:33:01 | _transe | Train Time Sec=40.241499
+2023-12-13 13:33:01 | _transe | Train Time Sec=40.241499
+2023-12-13 13:33:01 | _transe | best model | mrr 0.2700
+2023-12-13 13:33:01 | _transe | best model | mrr 0.2700
+2023-12-13 13:33:02 | _transe | epoch:0 | step: 26 | loss: 0.6757
+2023-12-13 13:33:02 | _transe | epoch:0 | step: 26 | loss: 0.6757
+2023-12-13 13:33:03 | _transe | epoch:0 | step: 27 | loss: 0.6632
+2023-12-13 13:33:03 | _transe | epoch:0 | step: 27 | loss: 0.6632
+2023-12-13 13:33:03 | _transe | epoch:0 | step: 28 | loss: 0.6654
+2023-12-13 13:33:03 | _transe | epoch:0 | step: 28 | loss: 0.6654
+2023-12-13 13:33:04 | _transe | epoch:0 | step: 29 | loss: 0.6546
+2023-12-13 13:33:04 | _transe | epoch:0 | step: 29 | loss: 0.6546
+2023-12-13 13:33:04 | _transe | epoch:0 | step: 30 | loss: 0.6576
+2023-12-13 13:33:04 | _transe | epoch:0 | step: 30 | loss: 0.6576
+2023-12-13 13:33:06 | _transe | valid on valid subgraphs
+2023-12-13 13:33:06 | _transe | valid on valid subgraphs
+2023-12-13 13:33:06 | _transe |  mrr: 0.2802, hits@1: 0.1293, hits@5: 0.4531, hits@10: 0.6456
+2023-12-13 13:33:06 | _transe |  mrr: 0.2802, hits@1: 0.1293, hits@5: 0.4531, hits@10: 0.6456
+2023-12-13 13:33:06 | _transe | resource.struct_rusage(ru_utime=312.816325, ru_stime=28.147661, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=4689170, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=3104, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=15819, ru_nivcsw=5132)
+2023-12-13 13:33:06 | _transe | resource.struct_rusage(ru_utime=312.816325, ru_stime=28.147661, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=4689170, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=3104, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=15819, ru_nivcsw=5132)
+2023-12-13 13:33:06 | _transe | Train Time Sec=44.660475
+2023-12-13 13:33:06 | _transe | Train Time Sec=44.660475
+2023-12-13 13:33:06 | _transe | best model | mrr 0.2802
+2023-12-13 13:33:06 | _transe | best model | mrr 0.2802
+2023-12-13 13:33:07 | _transe | epoch:0 | step: 31 | loss: 0.6641
+2023-12-13 13:33:07 | _transe | epoch:0 | step: 31 | loss: 0.6641
+2023-12-13 13:33:07 | _transe | epoch:0 | step: 32 | loss: 0.6864
+2023-12-13 13:33:07 | _transe | epoch:0 | step: 32 | loss: 0.6864
+2023-12-13 13:33:08 | _transe | epoch:0 | step: 33 | loss: 0.6724
+2023-12-13 13:33:08 | _transe | epoch:0 | step: 33 | loss: 0.6724
+2023-12-13 13:33:08 | _transe | epoch:0 | step: 34 | loss: 0.6570
+2023-12-13 13:33:08 | _transe | epoch:0 | step: 34 | loss: 0.6570
+2023-12-13 13:33:09 | _transe | epoch:0 | step: 35 | loss: 0.6412
+2023-12-13 13:33:09 | _transe | epoch:0 | step: 35 | loss: 0.6412
+2023-12-13 13:33:10 | _transe | valid on valid subgraphs
+2023-12-13 13:33:10 | _transe | valid on valid subgraphs
+2023-12-13 13:33:10 | _transe |  mrr: 0.2846, hits@1: 0.1339, hits@5: 0.4577, hits@10: 0.6347
+2023-12-13 13:33:10 | _transe |  mrr: 0.2846, hits@1: 0.1339, hits@5: 0.4577, hits@10: 0.6347
+2023-12-13 13:33:10 | _transe | resource.struct_rusage(ru_utime=363.490533, ru_stime=32.513501, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=5453679, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=3280, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=18246, ru_nivcsw=5909)
+2023-12-13 13:33:10 | _transe | resource.struct_rusage(ru_utime=363.490533, ru_stime=32.513501, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=5453679, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=3280, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=18246, ru_nivcsw=5909)
+2023-12-13 13:33:10 | _transe | Train Time Sec=49.016873
+2023-12-13 13:33:10 | _transe | Train Time Sec=49.016873
+2023-12-13 13:33:10 | _transe | best model | mrr 0.2846
+2023-12-13 13:33:10 | _transe | best model | mrr 0.2846
+2023-12-13 13:33:11 | _transe | epoch:0 | step: 36 | loss: 0.6414
+2023-12-13 13:33:11 | _transe | epoch:0 | step: 36 | loss: 0.6414
+2023-12-13 13:33:11 | _transe | epoch:0 | step: 37 | loss: 0.6497
+2023-12-13 13:33:11 | _transe | epoch:0 | step: 37 | loss: 0.6497
+2023-12-13 13:33:12 | _transe | epoch:0 | step: 38 | loss: 0.6451
+2023-12-13 13:33:12 | _transe | epoch:0 | step: 38 | loss: 0.6451
+2023-12-13 13:33:13 | _transe | epoch:0 | step: 39 | loss: 0.6293
+2023-12-13 13:33:13 | _transe | epoch:0 | step: 39 | loss: 0.6293
+2023-12-13 13:33:13 | _transe | epoch:0 | step: 40 | loss: 0.6501
+2023-12-13 13:33:13 | _transe | epoch:0 | step: 40 | loss: 0.6501
+2023-12-13 13:33:15 | _transe | valid on valid subgraphs
+2023-12-13 13:33:15 | _transe | valid on valid subgraphs
+2023-12-13 13:33:15 | _transe |  mrr: 0.2981, hits@1: 0.1463, hits@5: 0.4703, hits@10: 0.6355
+2023-12-13 13:33:15 | _transe |  mrr: 0.2981, hits@1: 0.1463, hits@5: 0.4703, hits@10: 0.6355
+2023-12-13 13:33:15 | _transe | resource.struct_rusage(ru_utime=413.589959, ru_stime=36.943765, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=6197704, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=3464, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=20713, ru_nivcsw=6656)
+2023-12-13 13:33:15 | _transe | resource.struct_rusage(ru_utime=413.589959, ru_stime=36.943765, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=6197704, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=3464, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=20713, ru_nivcsw=6656)
+2023-12-13 13:33:15 | _transe | Train Time Sec=53.324035
+2023-12-13 13:33:15 | _transe | Train Time Sec=53.324035
+2023-12-13 13:33:15 | _transe | best model | mrr 0.2981
+2023-12-13 13:33:15 | _transe | best model | mrr 0.2981
+2023-12-13 13:33:15 | _transe | epoch:0 | step: 41 | loss: 0.6404
+2023-12-13 13:33:15 | _transe | epoch:0 | step: 41 | loss: 0.6404
+2023-12-13 13:33:16 | _transe | epoch:0 | step: 42 | loss: 0.6328
+2023-12-13 13:33:16 | _transe | epoch:0 | step: 42 | loss: 0.6328
+2023-12-13 13:33:16 | _transe | epoch:0 | step: 43 | loss: 0.6325
+2023-12-13 13:33:16 | _transe | epoch:0 | step: 43 | loss: 0.6325
+2023-12-13 13:33:17 | _transe | epoch:0 | step: 44 | loss: 0.6283
+2023-12-13 13:33:17 | _transe | epoch:0 | step: 44 | loss: 0.6283
+2023-12-13 13:33:18 | _transe | epoch:0 | step: 45 | loss: 0.6406
+2023-12-13 13:33:18 | _transe | epoch:0 | step: 45 | loss: 0.6406
+2023-12-13 13:33:19 | _transe | valid on valid subgraphs
+2023-12-13 13:33:19 | _transe | valid on valid subgraphs
+2023-12-13 13:33:19 | _transe |  mrr: 0.3083, hits@1: 0.1552, hits@5: 0.4883, hits@10: 0.6455
+2023-12-13 13:33:19 | _transe |  mrr: 0.3083, hits@1: 0.1552, hits@5: 0.4883, hits@10: 0.6455
+2023-12-13 13:33:19 | _transe | resource.struct_rusage(ru_utime=463.805809, ru_stime=41.158756, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=6927897, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=3648, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=23288, ru_nivcsw=7468)
+2023-12-13 13:33:19 | _transe | resource.struct_rusage(ru_utime=463.805809, ru_stime=41.158756, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=6927897, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=3648, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=23288, ru_nivcsw=7468)
+2023-12-13 13:33:19 | _transe | Train Time Sec=57.712791
+2023-12-13 13:33:19 | _transe | Train Time Sec=57.712791
+2023-12-13 13:33:19 | _transe | best model | mrr 0.3083
+2023-12-13 13:33:19 | _transe | best model | mrr 0.3083
+2023-12-13 13:33:20 | _transe | epoch:0 | step: 46 | loss: 0.6303
+2023-12-13 13:33:20 | _transe | epoch:0 | step: 46 | loss: 0.6303
+2023-12-13 13:33:20 | _transe | epoch:0 | step: 47 | loss: 0.6348
+2023-12-13 13:33:20 | _transe | epoch:0 | step: 47 | loss: 0.6348
+2023-12-13 13:33:21 | _transe | epoch:0 | step: 48 | loss: 0.6272
+2023-12-13 13:33:21 | _transe | epoch:0 | step: 48 | loss: 0.6272
+2023-12-13 13:33:21 | _transe | epoch:0 | step: 49 | loss: 0.6228
+2023-12-13 13:33:21 | _transe | epoch:0 | step: 49 | loss: 0.6228
+2023-12-13 13:33:22 | _transe | epoch:0 | step: 50 | loss: 0.6197
+2023-12-13 13:33:22 | _transe | epoch:0 | step: 50 | loss: 0.6197
+2023-12-13 13:33:23 | _transe | valid on valid subgraphs
+2023-12-13 13:33:23 | _transe | valid on valid subgraphs
+2023-12-13 13:33:23 | _transe |  mrr: 0.3221, hits@1: 0.1672, hits@5: 0.5085, hits@10: 0.6544
+2023-12-13 13:33:23 | _transe |  mrr: 0.3221, hits@1: 0.1672, hits@5: 0.5085, hits@10: 0.6544
+2023-12-13 13:33:23 | _transe | resource.struct_rusage(ru_utime=514.495497, ru_stime=45.498975, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=7684943, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=3848, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=25686, ru_nivcsw=8257)
+2023-12-13 13:33:23 | _transe | resource.struct_rusage(ru_utime=514.495497, ru_stime=45.498975, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=7684943, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=3848, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=25686, ru_nivcsw=8257)
+2023-12-13 13:33:23 | _transe | Train Time Sec=62.085259
+2023-12-13 13:33:23 | _transe | Train Time Sec=62.085259
+2023-12-13 13:33:23 | _transe | best model | mrr 0.3221
+2023-12-13 13:33:23 | _transe | best model | mrr 0.3221
+2023-12-13 13:33:24 | _transe | epoch:0 | step: 51 | loss: 0.6269
+2023-12-13 13:33:24 | _transe | epoch:0 | step: 51 | loss: 0.6269
+2023-12-13 13:33:25 | _transe | epoch:0 | step: 52 | loss: 0.6547
+2023-12-13 13:33:25 | _transe | epoch:0 | step: 52 | loss: 0.6547
+2023-12-13 13:33:25 | _transe | epoch:0 | step: 53 | loss: 0.6360
+2023-12-13 13:33:25 | _transe | epoch:0 | step: 53 | loss: 0.6360
+2023-12-13 13:33:26 | _transe | epoch:0 | step: 54 | loss: 0.6258
+2023-12-13 13:33:26 | _transe | epoch:0 | step: 54 | loss: 0.6258
+2023-12-13 13:33:26 | _transe | epoch:0 | step: 55 | loss: 0.6267
+2023-12-13 13:33:26 | _transe | epoch:0 | step: 55 | loss: 0.6267
+2023-12-13 13:33:28 | _transe | valid on valid subgraphs
+2023-12-13 13:33:28 | _transe | valid on valid subgraphs
+2023-12-13 13:33:28 | _transe |  mrr: 0.3439, hits@1: 0.1936, hits@5: 0.5179, hits@10: 0.6547
+2023-12-13 13:33:28 | _transe |  mrr: 0.3439, hits@1: 0.1936, hits@5: 0.5179, hits@10: 0.6547
+2023-12-13 13:33:28 | _transe | resource.struct_rusage(ru_utime=564.930539, ru_stime=49.769119, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=8428139, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=4024, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=28297, ru_nivcsw=9070)
+2023-12-13 13:33:28 | _transe | resource.struct_rusage(ru_utime=564.930539, ru_stime=49.769119, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=8428139, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=4024, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=28297, ru_nivcsw=9070)
+2023-12-13 13:33:28 | _transe | Train Time Sec=66.455899
+2023-12-13 13:33:28 | _transe | Train Time Sec=66.455899
+2023-12-13 13:33:28 | _transe | best model | mrr 0.3439
+2023-12-13 13:33:28 | _transe | best model | mrr 0.3439
+2023-12-13 13:33:28 | _transe | epoch:0 | step: 56 | loss: 0.6271
+2023-12-13 13:33:28 | _transe | epoch:0 | step: 56 | loss: 0.6271
+2023-12-13 13:33:29 | _transe | epoch:0 | step: 57 | loss: 0.6198
+2023-12-13 13:33:29 | _transe | epoch:0 | step: 57 | loss: 0.6198
+2023-12-13 13:33:29 | _transe | epoch:0 | step: 58 | loss: 0.6215
+2023-12-13 13:33:29 | _transe | epoch:0 | step: 58 | loss: 0.6215
+2023-12-13 13:33:30 | _transe | epoch:0 | step: 59 | loss: 0.6281
+2023-12-13 13:33:30 | _transe | epoch:0 | step: 59 | loss: 0.6281
+2023-12-13 13:33:31 | _transe | epoch:0 | step: 60 | loss: 0.6184
+2023-12-13 13:33:31 | _transe | epoch:0 | step: 60 | loss: 0.6184
+2023-12-13 13:33:32 | _transe | valid on valid subgraphs
+2023-12-13 13:33:32 | _transe | valid on valid subgraphs
+2023-12-13 13:33:32 | _transe |  mrr: 0.3652, hits@1: 0.2166, hits@5: 0.5353, hits@10: 0.6710
+2023-12-13 13:33:32 | _transe |  mrr: 0.3652, hits@1: 0.2166, hits@5: 0.5353, hits@10: 0.6710
+2023-12-13 13:33:32 | _transe | resource.struct_rusage(ru_utime=615.490369, ru_stime=54.031459, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9167379, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=4200, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=30886, ru_nivcsw=9836)
+2023-12-13 13:33:32 | _transe | resource.struct_rusage(ru_utime=615.490369, ru_stime=54.031459, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9167379, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=4200, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=30886, ru_nivcsw=9836)
+2023-12-13 13:33:32 | _transe | Train Time Sec=70.779462
+2023-12-13 13:33:32 | _transe | Train Time Sec=70.779462
+2023-12-13 13:33:32 | _transe | best model | mrr 0.3652
+2023-12-13 13:33:32 | _transe | best model | mrr 0.3652
+2023-12-13 13:33:33 | _transe | epoch:0 | step: 61 | loss: 0.6110
+2023-12-13 13:33:33 | _transe | epoch:0 | step: 61 | loss: 0.6110
+2023-12-13 13:33:33 | _transe | epoch:0 | step: 62 | loss: 0.6159
+2023-12-13 13:33:33 | _transe | epoch:0 | step: 62 | loss: 0.6159
+2023-12-13 13:33:34 | _transe | epoch:0 | step: 63 | loss: 0.6083
+2023-12-13 13:33:34 | _transe | epoch:0 | step: 63 | loss: 0.6083
+2023-12-13 13:33:34 | _transe | epoch:0 | step: 64 | loss: 0.6275
+2023-12-13 13:33:34 | _transe | epoch:0 | step: 64 | loss: 0.6275
+2023-12-13 13:33:35 | _transe | epoch:0 | step: 65 | loss: 0.6234
+2023-12-13 13:33:35 | _transe | epoch:0 | step: 65 | loss: 0.6234
+2023-12-13 13:33:36 | _transe | valid on valid subgraphs
+2023-12-13 13:33:36 | _transe | valid on valid subgraphs
+2023-12-13 13:33:36 | _transe |  mrr: 0.3698, hits@1: 0.2198, hits@5: 0.5393, hits@10: 0.6773
+2023-12-13 13:33:36 | _transe |  mrr: 0.3698, hits@1: 0.2198, hits@5: 0.5393, hits@10: 0.6773
+2023-12-13 13:33:36 | _transe | resource.struct_rusage(ru_utime=666.139017, ru_stime=58.402556, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9921323, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=4400, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=33150, ru_nivcsw=10588)
+2023-12-13 13:33:36 | _transe | resource.struct_rusage(ru_utime=666.139017, ru_stime=58.402556, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9921323, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=4400, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=33150, ru_nivcsw=10588)
+2023-12-13 13:33:36 | _transe | Train Time Sec=75.187809
+2023-12-13 13:33:36 | _transe | Train Time Sec=75.187809
+2023-12-13 13:33:36 | _transe | best model | mrr 0.3698
+2023-12-13 13:33:36 | _transe | best model | mrr 0.3698
+2023-12-13 13:33:37 | _transe | epoch:0 | step: 66 | loss: 0.6197
+2023-12-13 13:33:37 | _transe | epoch:0 | step: 66 | loss: 0.6197
+2023-12-13 13:33:38 | _transe | epoch:0 | step: 67 | loss: 0.6179
+2023-12-13 13:33:38 | _transe | epoch:0 | step: 67 | loss: 0.6179
+2023-12-13 13:33:38 | _transe | epoch:0 | step: 68 | loss: 0.6199
+2023-12-13 13:33:38 | _transe | epoch:0 | step: 68 | loss: 0.6199
+2023-12-13 13:33:39 | _transe | epoch:0 | step: 69 | loss: 0.6096
+2023-12-13 13:33:39 | _transe | epoch:0 | step: 69 | loss: 0.6096
+2023-12-13 13:33:40 | _transe | epoch:0 | step: 70 | loss: 0.6329
+2023-12-13 13:33:40 | _transe | epoch:0 | step: 70 | loss: 0.6329
+2023-12-13 13:33:41 | _transe | valid on valid subgraphs
+2023-12-13 13:33:41 | _transe | valid on valid subgraphs
+2023-12-13 13:33:41 | _transe |  mrr: 0.4034, hits@1: 0.2629, hits@5: 0.5662, hits@10: 0.6812
+2023-12-13 13:33:41 | _transe |  mrr: 0.4034, hits@1: 0.2629, hits@5: 0.5662, hits@10: 0.6812
+2023-12-13 13:33:41 | _transe | resource.struct_rusage(ru_utime=719.447832, ru_stime=62.602277, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=10665145, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=4576, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=35348, ru_nivcsw=11319)
+2023-12-13 13:33:41 | _transe | resource.struct_rusage(ru_utime=719.447832, ru_stime=62.602277, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=10665145, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=4576, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=35348, ru_nivcsw=11319)
+2023-12-13 13:33:41 | _transe | Train Time Sec=79.728721
+2023-12-13 13:33:41 | _transe | Train Time Sec=79.728721
+2023-12-13 13:33:41 | _transe | best model | mrr 0.4034
+2023-12-13 13:33:41 | _transe | best model | mrr 0.4034
+2023-12-13 13:33:42 | _transe | epoch:0 | step: 71 | loss: 0.6050
+2023-12-13 13:33:42 | _transe | epoch:0 | step: 71 | loss: 0.6050
+2023-12-13 13:33:42 | _transe | epoch:0 | step: 72 | loss: 0.6100
+2023-12-13 13:33:42 | _transe | epoch:0 | step: 72 | loss: 0.6100
+2023-12-13 13:33:43 | _transe | epoch:0 | step: 73 | loss: 0.6192
+2023-12-13 13:33:43 | _transe | epoch:0 | step: 73 | loss: 0.6192
+2023-12-13 13:33:43 | _transe | epoch:0 | step: 74 | loss: 0.6055
+2023-12-13 13:33:43 | _transe | epoch:0 | step: 74 | loss: 0.6055
+2023-12-13 13:33:44 | _transe | epoch:0 | step: 75 | loss: 0.5967
+2023-12-13 13:33:44 | _transe | epoch:0 | step: 75 | loss: 0.5967
+2023-12-13 13:33:45 | _transe | valid on valid subgraphs
+2023-12-13 13:33:45 | _transe | valid on valid subgraphs
+2023-12-13 13:33:45 | _transe |  mrr: 0.4254, hits@1: 0.2867, hits@5: 0.5798, hits@10: 0.6907
+2023-12-13 13:33:45 | _transe |  mrr: 0.4254, hits@1: 0.2867, hits@5: 0.5798, hits@10: 0.6907
+2023-12-13 13:33:45 | _transe | resource.struct_rusage(ru_utime=771.063018, ru_stime=66.984208, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=11437193, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=4760, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=37803, ru_nivcsw=12136)
+2023-12-13 13:33:45 | _transe | resource.struct_rusage(ru_utime=771.063018, ru_stime=66.984208, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=11437193, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=4760, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=37803, ru_nivcsw=12136)
+2023-12-13 13:33:45 | _transe | Train Time Sec=84.172956
+2023-12-13 13:33:45 | _transe | Train Time Sec=84.172956
+2023-12-13 13:33:45 | _transe | best model | mrr 0.4254
+2023-12-13 13:33:45 | _transe | best model | mrr 0.4254
+2023-12-13 13:33:46 | _transe | epoch:0 | step: 76 | loss: 0.6088
+2023-12-13 13:33:46 | _transe | epoch:0 | step: 76 | loss: 0.6088
+2023-12-13 13:33:47 | _transe | epoch:0 | step: 77 | loss: 0.5923
+2023-12-13 13:33:47 | _transe | epoch:0 | step: 77 | loss: 0.5923
+2023-12-13 13:33:47 | _transe | epoch:0 | step: 78 | loss: 0.5961
+2023-12-13 13:33:47 | _transe | epoch:0 | step: 78 | loss: 0.5961
+2023-12-13 13:33:48 | _transe | epoch:0 | step: 79 | loss: 0.5994
+2023-12-13 13:33:48 | _transe | epoch:0 | step: 79 | loss: 0.5994
+2023-12-13 13:33:49 | _transe | epoch:0 | step: 80 | loss: 0.6003
+2023-12-13 13:33:49 | _transe | epoch:0 | step: 80 | loss: 0.6003
+2023-12-13 13:33:50 | _transe | valid on valid subgraphs
+2023-12-13 13:33:50 | _transe | valid on valid subgraphs
+2023-12-13 13:33:50 | _transe |  mrr: 0.4378, hits@1: 0.3042, hits@5: 0.5886, hits@10: 0.6986
+2023-12-13 13:33:50 | _transe |  mrr: 0.4378, hits@1: 0.3042, hits@5: 0.5886, hits@10: 0.6986
+2023-12-13 13:33:50 | _transe | resource.struct_rusage(ru_utime=822.814056, ru_stime=71.572191, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=12187420, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=4944, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=40122, ru_nivcsw=12938)
+2023-12-13 13:33:50 | _transe | resource.struct_rusage(ru_utime=822.814056, ru_stime=71.572191, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=12187420, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=4944, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=40122, ru_nivcsw=12938)
+2023-12-13 13:33:50 | _transe | Train Time Sec=88.65758
+2023-12-13 13:33:50 | _transe | Train Time Sec=88.65758
+2023-12-13 13:33:50 | _transe | best model | mrr 0.4378
+2023-12-13 13:33:50 | _transe | best model | mrr 0.4378
+2023-12-13 13:33:51 | _transe | epoch:0 | step: 81 | loss: 0.5856
+2023-12-13 13:33:51 | _transe | epoch:0 | step: 81 | loss: 0.5856
+2023-12-13 13:33:51 | _transe | epoch:0 | step: 82 | loss: 0.6049
+2023-12-13 13:33:51 | _transe | epoch:0 | step: 82 | loss: 0.6049
+2023-12-13 13:33:52 | _transe | epoch:0 | step: 83 | loss: 0.5901
+2023-12-13 13:33:52 | _transe | epoch:0 | step: 83 | loss: 0.5901
+2023-12-13 13:33:52 | _transe | epoch:0 | step: 84 | loss: 0.5960
+2023-12-13 13:33:52 | _transe | epoch:0 | step: 84 | loss: 0.5960
+2023-12-13 13:33:53 | _transe | epoch:0 | step: 85 | loss: 0.5980
+2023-12-13 13:33:53 | _transe | epoch:0 | step: 85 | loss: 0.5980
+2023-12-13 13:33:54 | _transe | valid on valid subgraphs
+2023-12-13 13:33:54 | _transe | valid on valid subgraphs
+2023-12-13 13:33:54 | _transe |  mrr: 0.4546, hits@1: 0.3311, hits@5: 0.5923, hits@10: 0.6944
+2023-12-13 13:33:54 | _transe |  mrr: 0.4546, hits@1: 0.3311, hits@5: 0.5923, hits@10: 0.6944
+2023-12-13 13:33:54 | _transe | resource.struct_rusage(ru_utime=874.563009, ru_stime=76.181921, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=12944630, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=5136, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=42714, ru_nivcsw=13742)
+2023-12-13 13:33:54 | _transe | resource.struct_rusage(ru_utime=874.563009, ru_stime=76.181921, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=12944630, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=5136, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=42714, ru_nivcsw=13742)
+2023-12-13 13:33:54 | _transe | Train Time Sec=93.125046
+2023-12-13 13:33:54 | _transe | Train Time Sec=93.125046
+2023-12-13 13:33:54 | _transe | best model | mrr 0.4546
+2023-12-13 13:33:54 | _transe | best model | mrr 0.4546
+2023-12-13 13:33:55 | _transe | epoch:0 | step: 86 | loss: 0.5883
+2023-12-13 13:33:55 | _transe | epoch:0 | step: 86 | loss: 0.5883
+2023-12-13 13:33:56 | _transe | epoch:0 | step: 87 | loss: 0.5786
+2023-12-13 13:33:56 | _transe | epoch:0 | step: 87 | loss: 0.5786
+2023-12-13 13:33:56 | _transe | epoch:0 | step: 88 | loss: 0.5704
+2023-12-13 13:33:56 | _transe | epoch:0 | step: 88 | loss: 0.5704
+2023-12-13 13:33:57 | _transe | epoch:0 | step: 89 | loss: 0.5805
+2023-12-13 13:33:57 | _transe | epoch:0 | step: 89 | loss: 0.5805
+2023-12-13 13:33:57 | _transe | epoch:0 | step: 90 | loss: 0.5703
+2023-12-13 13:33:57 | _transe | epoch:0 | step: 90 | loss: 0.5703
+2023-12-13 13:33:59 | _transe | valid on valid subgraphs
+2023-12-13 13:33:59 | _transe | valid on valid subgraphs
+2023-12-13 13:33:59 | _transe |  mrr: 0.4704, hits@1: 0.3494, hits@5: 0.6014, hits@10: 0.7033
+2023-12-13 13:33:59 | _transe |  mrr: 0.4704, hits@1: 0.3494, hits@5: 0.6014, hits@10: 0.7033
+2023-12-13 13:33:59 | _transe | resource.struct_rusage(ru_utime=925.31921, ru_stime=80.659515, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=13709190, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=5320, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=45048, ru_nivcsw=14481)
+2023-12-13 13:33:59 | _transe | resource.struct_rusage(ru_utime=925.31921, ru_stime=80.659515, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=13709190, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=5320, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=45048, ru_nivcsw=14481)
+2023-12-13 13:33:59 | _transe | Train Time Sec=97.534039
+2023-12-13 13:33:59 | _transe | Train Time Sec=97.534039
+2023-12-13 13:33:59 | _transe | best model | mrr 0.4704
+2023-12-13 13:33:59 | _transe | best model | mrr 0.4704
+2023-12-13 13:33:59 | _transe | epoch:0 | step: 91 | loss: 0.5921
+2023-12-13 13:33:59 | _transe | epoch:0 | step: 91 | loss: 0.5921
+2023-12-13 13:34:00 | _transe | epoch:0 | step: 92 | loss: 0.5846
+2023-12-13 13:34:00 | _transe | epoch:0 | step: 92 | loss: 0.5846
+2023-12-13 13:34:01 | _transe | epoch:0 | step: 93 | loss: 0.6015
+2023-12-13 13:34:01 | _transe | epoch:0 | step: 93 | loss: 0.6015
+2023-12-13 13:34:01 | _transe | epoch:0 | step: 94 | loss: 0.5830
+2023-12-13 13:34:01 | _transe | epoch:0 | step: 94 | loss: 0.5830
+2023-12-13 13:34:02 | _transe | epoch:0 | step: 95 | loss: 0.5657
+2023-12-13 13:34:02 | _transe | epoch:0 | step: 95 | loss: 0.5657
+2023-12-13 13:34:03 | _transe | valid on valid subgraphs
+2023-12-13 13:34:03 | _transe | valid on valid subgraphs
+2023-12-13 13:34:03 | _transe |  mrr: 0.4687, hits@1: 0.3478, hits@5: 0.5983, hits@10: 0.6976
+2023-12-13 13:34:03 | _transe |  mrr: 0.4687, hits@1: 0.3478, hits@5: 0.5983, hits@10: 0.6976
+2023-12-13 13:34:03 | _transe | resource.struct_rusage(ru_utime=975.782561, ru_stime=85.117284, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=14458765, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=5496, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=47319, ru_nivcsw=15283)
+2023-12-13 13:34:03 | _transe | resource.struct_rusage(ru_utime=975.782561, ru_stime=85.117284, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=14458765, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=5496, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=47319, ru_nivcsw=15283)
+2023-12-13 13:34:03 | _transe | Train Time Sec=101.870299
+2023-12-13 13:34:03 | _transe | Train Time Sec=101.870299
+2023-12-13 13:34:03 | _transe | best model is at step 90, mrr 0.4704, bad count 1
+2023-12-13 13:34:03 | _transe | best model is at step 90, mrr 0.4704, bad count 1
+2023-12-13 13:34:04 | _transe | epoch:0 | step: 96 | loss: 0.5916
+2023-12-13 13:34:04 | _transe | epoch:0 | step: 96 | loss: 0.5916
+2023-12-13 13:34:04 | _transe | epoch:0 | step: 97 | loss: 0.5694
+2023-12-13 13:34:04 | _transe | epoch:0 | step: 97 | loss: 0.5694
+2023-12-13 13:34:05 | _transe | epoch:0 | step: 98 | loss: 0.5592
+2023-12-13 13:34:05 | _transe | epoch:0 | step: 98 | loss: 0.5592
+2023-12-13 13:34:06 | _transe | epoch:0 | step: 99 | loss: 0.5740
+2023-12-13 13:34:06 | _transe | epoch:0 | step: 99 | loss: 0.5740
+2023-12-13 13:34:06 | _transe | epoch:0 | step: 100 | loss: 0.5714
+2023-12-13 13:34:06 | _transe | epoch:0 | step: 100 | loss: 0.5714
+2023-12-13 13:34:08 | _transe | valid on valid subgraphs
+2023-12-13 13:34:08 | _transe | valid on valid subgraphs
+2023-12-13 13:34:08 | _transe |  mrr: 0.4896, hits@1: 0.3759, hits@5: 0.6106, hits@10: 0.7046
+2023-12-13 13:34:08 | _transe |  mrr: 0.4896, hits@1: 0.3759, hits@5: 0.6106, hits@10: 0.7046
+2023-12-13 13:34:08 | _transe | resource.struct_rusage(ru_utime=1026.6716, ru_stime=89.740606, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=15218110, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=5520, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=49881, ru_nivcsw=16077)
+2023-12-13 13:34:08 | _transe | resource.struct_rusage(ru_utime=1026.6716, ru_stime=89.740606, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=15218110, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=5520, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=49881, ru_nivcsw=16077)
+2023-12-13 13:34:08 | _transe | Train Time Sec=106.296747
+2023-12-13 13:34:08 | _transe | Train Time Sec=106.296747
+2023-12-13 13:34:08 | _transe | best model | mrr 0.4896
+2023-12-13 13:34:08 | _transe | best model | mrr 0.4896
+2023-12-13 13:34:08 | _transe | epoch:0 | step: 101 | loss: 0.5729
+2023-12-13 13:34:08 | _transe | epoch:0 | step: 101 | loss: 0.5729
+2023-12-13 13:34:09 | _transe | epoch:0 | step: 102 | loss: 0.5728
+2023-12-13 13:34:09 | _transe | epoch:0 | step: 102 | loss: 0.5728
+2023-12-13 13:34:09 | _transe | epoch:0 | step: 103 | loss: 0.5651
+2023-12-13 13:34:09 | _transe | epoch:0 | step: 103 | loss: 0.5651
+2023-12-13 13:34:10 | _transe | epoch:0 | step: 104 | loss: 0.5851
+2023-12-13 13:34:10 | _transe | epoch:0 | step: 104 | loss: 0.5851
+2023-12-13 13:34:11 | _transe | epoch:0 | step: 105 | loss: 0.5668
+2023-12-13 13:34:11 | _transe | epoch:0 | step: 105 | loss: 0.5668
+2023-12-13 13:34:12 | _transe | valid on valid subgraphs
+2023-12-13 13:34:12 | _transe | valid on valid subgraphs
+2023-12-13 13:34:12 | _transe |  mrr: 0.4983, hits@1: 0.3874, hits@5: 0.6202, hits@10: 0.7082
+2023-12-13 13:34:12 | _transe |  mrr: 0.4983, hits@1: 0.3874, hits@5: 0.6202, hits@10: 0.7082
+2023-12-13 13:34:12 | _transe | resource.struct_rusage(ru_utime=1079.658383, ru_stime=94.225459, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=15979363, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=5696, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=52198, ru_nivcsw=16851)
+2023-12-13 13:34:12 | _transe | resource.struct_rusage(ru_utime=1079.658383, ru_stime=94.225459, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=15979363, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=5696, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=52198, ru_nivcsw=16851)
+2023-12-13 13:34:12 | _transe | Train Time Sec=110.840681
+2023-12-13 13:34:12 | _transe | Train Time Sec=110.840681
+2023-12-13 13:34:12 | _transe | best model | mrr 0.4983
+2023-12-13 13:34:12 | _transe | best model | mrr 0.4983
+2023-12-13 13:34:13 | _transe | epoch:0 | step: 106 | loss: 0.5810
+2023-12-13 13:34:13 | _transe | epoch:0 | step: 106 | loss: 0.5810
+2023-12-13 13:34:13 | _transe | epoch:0 | step: 107 | loss: 0.5688
+2023-12-13 13:34:13 | _transe | epoch:0 | step: 107 | loss: 0.5688
+2023-12-13 13:34:14 | _transe | epoch:0 | step: 108 | loss: 0.5596
+2023-12-13 13:34:14 | _transe | epoch:0 | step: 108 | loss: 0.5596
+2023-12-13 13:34:15 | _transe | epoch:0 | step: 109 | loss: 0.5714
+2023-12-13 13:34:15 | _transe | epoch:0 | step: 109 | loss: 0.5714
+2023-12-13 13:34:15 | _transe | epoch:0 | step: 110 | loss: 0.5660
+2023-12-13 13:34:15 | _transe | epoch:0 | step: 110 | loss: 0.5660
+2023-12-13 13:34:17 | _transe | valid on valid subgraphs
+2023-12-13 13:34:17 | _transe | valid on valid subgraphs
+2023-12-13 13:34:17 | _transe |  mrr: 0.5150, hits@1: 0.4055, hits@5: 0.6312, hits@10: 0.7244
+2023-12-13 13:34:17 | _transe |  mrr: 0.5150, hits@1: 0.4055, hits@5: 0.6312, hits@10: 0.7244
+2023-12-13 13:34:17 | _transe | resource.struct_rusage(ru_utime=1134.119415, ru_stime=98.358739, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=16726337, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=5880, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=54639, ru_nivcsw=17689)
+2023-12-13 13:34:17 | _transe | resource.struct_rusage(ru_utime=1134.119415, ru_stime=98.358739, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=16726337, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=5880, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=54639, ru_nivcsw=17689)
+2023-12-13 13:34:17 | _transe | Train Time Sec=115.48088
+2023-12-13 13:34:17 | _transe | Train Time Sec=115.48088
+2023-12-13 13:34:17 | _transe | best model | mrr 0.5150
+2023-12-13 13:34:17 | _transe | best model | mrr 0.5150
+2023-12-13 13:34:17 | _transe | epoch:0 | step: 111 | loss: 0.5600
+2023-12-13 13:34:17 | _transe | epoch:0 | step: 111 | loss: 0.5600
+2023-12-13 13:34:18 | _transe | epoch:0 | step: 112 | loss: 0.5521
+2023-12-13 13:34:18 | _transe | epoch:0 | step: 112 | loss: 0.5521
+2023-12-13 13:34:19 | _transe | epoch:0 | step: 113 | loss: 0.5600
+2023-12-13 13:34:19 | _transe | epoch:0 | step: 113 | loss: 0.5600
+2023-12-13 13:34:19 | _transe | epoch:0 | step: 114 | loss: 0.5472
+2023-12-13 13:34:19 | _transe | epoch:0 | step: 114 | loss: 0.5472
+2023-12-13 13:34:20 | _transe | epoch:0 | step: 115 | loss: 0.5509
+2023-12-13 13:34:20 | _transe | epoch:0 | step: 115 | loss: 0.5509
+2023-12-13 13:34:21 | _transe | valid on valid subgraphs
+2023-12-13 13:34:21 | _transe | valid on valid subgraphs
+2023-12-13 13:34:21 | _transe |  mrr: 0.5207, hits@1: 0.4147, hits@5: 0.6300, hits@10: 0.7235
+2023-12-13 13:34:21 | _transe |  mrr: 0.5207, hits@1: 0.4147, hits@5: 0.6300, hits@10: 0.7235
+2023-12-13 13:34:21 | _transe | resource.struct_rusage(ru_utime=1187.290916, ru_stime=102.639485, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=17479676, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=6064, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=57085, ru_nivcsw=18650)
+2023-12-13 13:34:21 | _transe | resource.struct_rusage(ru_utime=1187.290916, ru_stime=102.639485, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=17479676, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=6064, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=57085, ru_nivcsw=18650)
+2023-12-13 13:34:21 | _transe | Train Time Sec=120.061426
+2023-12-13 13:34:21 | _transe | Train Time Sec=120.061426
+2023-12-13 13:34:21 | _transe | best model | mrr 0.5207
+2023-12-13 13:34:21 | _transe | best model | mrr 0.5207
+2023-12-13 13:34:22 | _transe | epoch:0 | step: 116 | loss: 0.5905
+2023-12-13 13:34:22 | _transe | epoch:0 | step: 116 | loss: 0.5905
+2023-12-13 13:34:23 | _transe | epoch:0 | step: 117 | loss: 0.5874
+2023-12-13 13:34:23 | _transe | epoch:0 | step: 117 | loss: 0.5874
+2023-12-13 13:34:23 | _transe | epoch:0 | step: 118 | loss: 0.5363
+2023-12-13 13:34:23 | _transe | epoch:0 | step: 118 | loss: 0.5363
+2023-12-13 13:34:24 | _transe | epoch:0 | step: 119 | loss: 0.5741
+2023-12-13 13:34:24 | _transe | epoch:0 | step: 119 | loss: 0.5741
+2023-12-13 13:34:24 | _transe | epoch:0 | step: 120 | loss: 0.5536
+2023-12-13 13:34:24 | _transe | epoch:0 | step: 120 | loss: 0.5536
+2023-12-13 13:34:26 | _transe | valid on valid subgraphs
+2023-12-13 13:34:26 | _transe | valid on valid subgraphs
+2023-12-13 13:34:26 | _transe |  mrr: 0.5214, hits@1: 0.4157, hits@5: 0.6386, hits@10: 0.7235
+2023-12-13 13:34:26 | _transe |  mrr: 0.5214, hits@1: 0.4157, hits@5: 0.6386, hits@10: 0.7235
+2023-12-13 13:34:26 | _transe | resource.struct_rusage(ru_utime=1238.082703, ru_stime=106.905946, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18226330, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=6256, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=59687, ru_nivcsw=19486)
+2023-12-13 13:34:26 | _transe | resource.struct_rusage(ru_utime=1238.082703, ru_stime=106.905946, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18226330, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=6256, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=59687, ru_nivcsw=19486)
+2023-12-13 13:34:26 | _transe | Train Time Sec=124.446618
+2023-12-13 13:34:26 | _transe | Train Time Sec=124.446618
+2023-12-13 13:34:26 | _transe | best model | mrr 0.5214
+2023-12-13 13:34:26 | _transe | best model | mrr 0.5214
+2023-12-13 13:34:26 | _transe | epoch:0 | step: 121 | loss: 0.5321
+2023-12-13 13:34:26 | _transe | epoch:0 | step: 121 | loss: 0.5321
+2023-12-13 13:34:27 | _transe | epoch:0 | step: 122 | loss: 0.5413
+2023-12-13 13:34:27 | _transe | epoch:0 | step: 122 | loss: 0.5413
+2023-12-13 13:34:27 | _transe | epoch:0 | step: 123 | loss: 0.5546
+2023-12-13 13:34:27 | _transe | epoch:0 | step: 123 | loss: 0.5546
+2023-12-13 13:34:28 | _transe | epoch:0 | step: 124 | loss: 0.5798
+2023-12-13 13:34:28 | _transe | epoch:0 | step: 124 | loss: 0.5798
+2023-12-13 13:34:29 | _transe | epoch:0 | step: 125 | loss: 0.5429
+2023-12-13 13:34:29 | _transe | epoch:0 | step: 125 | loss: 0.5429
+2023-12-13 13:34:30 | _transe | valid on valid subgraphs
+2023-12-13 13:34:30 | _transe | valid on valid subgraphs
+2023-12-13 13:34:30 | _transe |  mrr: 0.5306, hits@1: 0.4293, hits@5: 0.6339, hits@10: 0.7180
+2023-12-13 13:34:30 | _transe |  mrr: 0.5306, hits@1: 0.4293, hits@5: 0.6339, hits@10: 0.7180
+2023-12-13 13:34:30 | _transe | resource.struct_rusage(ru_utime=1289.734439, ru_stime=111.196148, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18987293, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=6432, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=61826, ru_nivcsw=20294)
+2023-12-13 13:34:30 | _transe | resource.struct_rusage(ru_utime=1289.734439, ru_stime=111.196148, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18987293, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=6432, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=61826, ru_nivcsw=20294)
+2023-12-13 13:34:30 | _transe | Train Time Sec=128.894275
+2023-12-13 13:34:30 | _transe | Train Time Sec=128.894275
+2023-12-13 13:34:30 | _transe | best model | mrr 0.5306
+2023-12-13 13:34:30 | _transe | best model | mrr 0.5306
+2023-12-13 13:34:31 | _transe | epoch:0 | step: 126 | loss: 0.5688
+2023-12-13 13:34:31 | _transe | epoch:0 | step: 126 | loss: 0.5688
+2023-12-13 13:34:31 | _transe | epoch:0 | step: 127 | loss: 0.5616
+2023-12-13 13:34:31 | _transe | epoch:0 | step: 127 | loss: 0.5616
+2023-12-13 13:34:32 | _transe | epoch:0 | step: 128 | loss: 0.5669
+2023-12-13 13:34:32 | _transe | epoch:0 | step: 128 | loss: 0.5669
+2023-12-13 13:34:33 | _transe | epoch:0 | step: 129 | loss: 0.5335
+2023-12-13 13:34:33 | _transe | epoch:0 | step: 129 | loss: 0.5335
+2023-12-13 13:34:33 | _transe | epoch:0 | step: 130 | loss: 0.5629
+2023-12-13 13:34:33 | _transe | epoch:0 | step: 130 | loss: 0.5629
+2023-12-13 13:34:35 | _transe | valid on valid subgraphs
+2023-12-13 13:34:35 | _transe | valid on valid subgraphs
+2023-12-13 13:34:35 | _transe |  mrr: 0.5355, hits@1: 0.4373, hits@5: 0.6310, hits@10: 0.7135
+2023-12-13 13:34:35 | _transe |  mrr: 0.5355, hits@1: 0.4373, hits@5: 0.6310, hits@10: 0.7135
+2023-12-13 13:34:35 | _transe | resource.struct_rusage(ru_utime=1341.39679, ru_stime=115.687404, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=19755610, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=6616, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=64289, ru_nivcsw=21150)
+2023-12-13 13:34:35 | _transe | resource.struct_rusage(ru_utime=1341.39679, ru_stime=115.687404, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=19755610, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=6616, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=64289, ru_nivcsw=21150)
+2023-12-13 13:34:35 | _transe | Train Time Sec=133.33354
+2023-12-13 13:34:35 | _transe | Train Time Sec=133.33354
+2023-12-13 13:34:35 | _transe | best model | mrr 0.5355
+2023-12-13 13:34:35 | _transe | best model | mrr 0.5355
+2023-12-13 13:34:35 | _transe | epoch:0 | step: 131 | loss: 0.5652
+2023-12-13 13:34:35 | _transe | epoch:0 | step: 131 | loss: 0.5652
+2023-12-13 13:34:36 | _transe | epoch:0 | step: 132 | loss: 0.5565
+2023-12-13 13:34:36 | _transe | epoch:0 | step: 132 | loss: 0.5565
+2023-12-13 13:34:36 | _transe | epoch:0 | step: 133 | loss: 0.5485
+2023-12-13 13:34:36 | _transe | epoch:0 | step: 133 | loss: 0.5485
+2023-12-13 13:34:37 | _transe | epoch:0 | step: 134 | loss: 0.5356
+2023-12-13 13:34:37 | _transe | epoch:0 | step: 134 | loss: 0.5356
+2023-12-13 13:34:37 | _transe | epoch:0 | step: 135 | loss: 0.5583
+2023-12-13 13:34:37 | _transe | epoch:0 | step: 135 | loss: 0.5583
+2023-12-13 13:34:39 | _transe | valid on valid subgraphs
+2023-12-13 13:34:39 | _transe | valid on valid subgraphs
+2023-12-13 13:34:39 | _transe |  mrr: 0.5302, hits@1: 0.4311, hits@5: 0.6322, hits@10: 0.7205
+2023-12-13 13:34:39 | _transe |  mrr: 0.5302, hits@1: 0.4311, hits@5: 0.6322, hits@10: 0.7205
+2023-12-13 13:34:39 | _transe | resource.struct_rusage(ru_utime=1391.280986, ru_stime=119.830232, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=20492739, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=6816, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=66796, ru_nivcsw=21915)
+2023-12-13 13:34:39 | _transe | resource.struct_rusage(ru_utime=1391.280986, ru_stime=119.830232, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=20492739, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=6816, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=66796, ru_nivcsw=21915)
+2023-12-13 13:34:39 | _transe | Train Time Sec=137.642861
+2023-12-13 13:34:39 | _transe | Train Time Sec=137.642861
+2023-12-13 13:34:39 | _transe | best model is at step 130, mrr 0.5355, bad count 1
+2023-12-13 13:34:39 | _transe | best model is at step 130, mrr 0.5355, bad count 1
+2023-12-13 13:34:39 | _transe | epoch:0 | step: 136 | loss: 0.5611
+2023-12-13 13:34:39 | _transe | epoch:0 | step: 136 | loss: 0.5611
+2023-12-13 13:34:40 | _transe | epoch:0 | step: 137 | loss: 0.5404
+2023-12-13 13:34:40 | _transe | epoch:0 | step: 137 | loss: 0.5404
+2023-12-13 13:34:41 | _transe | epoch:0 | step: 138 | loss: 0.5330
+2023-12-13 13:34:41 | _transe | epoch:0 | step: 138 | loss: 0.5330
+2023-12-13 13:34:41 | _transe | epoch:0 | step: 139 | loss: 0.5654
+2023-12-13 13:34:41 | _transe | epoch:0 | step: 139 | loss: 0.5654
+2023-12-13 13:34:42 | _transe | epoch:0 | step: 140 | loss: 0.5614
+2023-12-13 13:34:42 | _transe | epoch:0 | step: 140 | loss: 0.5614
+2023-12-13 13:34:43 | _transe | valid on valid subgraphs
+2023-12-13 13:34:43 | _transe | valid on valid subgraphs
+2023-12-13 13:34:43 | _transe |  mrr: 0.5452, hits@1: 0.4493, hits@5: 0.6465, hits@10: 0.7321
+2023-12-13 13:34:43 | _transe |  mrr: 0.5452, hits@1: 0.4493, hits@5: 0.6465, hits@10: 0.7321
+2023-12-13 13:34:43 | _transe | resource.struct_rusage(ru_utime=1445.033613, ru_stime=124.197426, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=21252458, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=6816, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=69343, ru_nivcsw=22674)
+2023-12-13 13:34:43 | _transe | resource.struct_rusage(ru_utime=1445.033613, ru_stime=124.197426, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=21252458, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=6816, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=69343, ru_nivcsw=22674)
+2023-12-13 13:34:43 | _transe | Train Time Sec=142.23696
+2023-12-13 13:34:43 | _transe | Train Time Sec=142.23696
+2023-12-13 13:34:43 | _transe | best model | mrr 0.5452
+2023-12-13 13:34:43 | _transe | best model | mrr 0.5452
+2023-12-13 13:34:44 | _transe | epoch:0 | step: 141 | loss: 0.5315
+2023-12-13 13:34:44 | _transe | epoch:0 | step: 141 | loss: 0.5315
+2023-12-13 13:34:45 | _transe | epoch:0 | step: 142 | loss: 0.5403
+2023-12-13 13:34:45 | _transe | epoch:0 | step: 142 | loss: 0.5403
+2023-12-13 13:34:45 | _transe | epoch:0 | step: 143 | loss: 0.5377
+2023-12-13 13:34:45 | _transe | epoch:0 | step: 143 | loss: 0.5377
+2023-12-13 13:34:46 | _transe | epoch:0 | step: 144 | loss: 0.5572
+2023-12-13 13:34:46 | _transe | epoch:0 | step: 144 | loss: 0.5572
+2023-12-13 13:34:46 | _transe | epoch:0 | step: 145 | loss: 0.5612
+2023-12-13 13:34:46 | _transe | epoch:0 | step: 145 | loss: 0.5612
+2023-12-13 13:34:48 | _transe | valid on valid subgraphs
+2023-12-13 13:34:48 | _transe | valid on valid subgraphs
+2023-12-13 13:34:48 | _transe |  mrr: 0.5498, hits@1: 0.4550, hits@5: 0.6486, hits@10: 0.7237
+2023-12-13 13:34:48 | _transe |  mrr: 0.5498, hits@1: 0.4550, hits@5: 0.6486, hits@10: 0.7237
+2023-12-13 13:34:48 | _transe | resource.struct_rusage(ru_utime=1495.999755, ru_stime=128.462914, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=22007348, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=7000, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=71797, ru_nivcsw=23513)
+2023-12-13 13:34:48 | _transe | resource.struct_rusage(ru_utime=1495.999755, ru_stime=128.462914, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=22007348, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=7000, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=71797, ru_nivcsw=23513)
+2023-12-13 13:34:48 | _transe | Train Time Sec=146.643136
+2023-12-13 13:34:48 | _transe | Train Time Sec=146.643136
+2023-12-13 13:34:48 | _transe | best model | mrr 0.5498
+2023-12-13 13:34:48 | _transe | best model | mrr 0.5498
+2023-12-13 13:34:48 | _transe | epoch:0 | step: 146 | loss: 0.5413
+2023-12-13 13:34:48 | _transe | epoch:0 | step: 146 | loss: 0.5413
+2023-12-13 13:34:49 | _transe | epoch:0 | step: 147 | loss: 0.5241
+2023-12-13 13:34:49 | _transe | epoch:0 | step: 147 | loss: 0.5241
+2023-12-13 13:34:50 | _transe | epoch:0 | step: 148 | loss: 0.5525
+2023-12-13 13:34:50 | _transe | epoch:0 | step: 148 | loss: 0.5525
+2023-12-13 13:34:50 | _transe | epoch:0 | step: 149 | loss: 0.5517
+2023-12-13 13:34:50 | _transe | epoch:0 | step: 149 | loss: 0.5517
+2023-12-13 13:34:51 | _transe | epoch:0 | step: 150 | loss: 0.5217
+2023-12-13 13:34:51 | _transe | epoch:0 | step: 150 | loss: 0.5217
+2023-12-13 13:34:52 | _transe | valid on valid subgraphs
+2023-12-13 13:34:52 | _transe | valid on valid subgraphs
+2023-12-13 13:34:52 | _transe |  mrr: 0.5514, hits@1: 0.4568, hits@5: 0.6488, hits@10: 0.7334
+2023-12-13 13:34:52 | _transe |  mrr: 0.5514, hits@1: 0.4568, hits@5: 0.6488, hits@10: 0.7334
+2023-12-13 13:34:52 | _transe | resource.struct_rusage(ru_utime=1546.709425, ru_stime=132.848049, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=22770840, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=7192, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=74206, ru_nivcsw=24281)
+2023-12-13 13:34:52 | _transe | resource.struct_rusage(ru_utime=1546.709425, ru_stime=132.848049, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=22770840, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=7192, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=74206, ru_nivcsw=24281)
+2023-12-13 13:34:52 | _transe | Train Time Sec=151.001219
+2023-12-13 13:34:52 | _transe | Train Time Sec=151.001219
+2023-12-13 13:34:52 | _transe | best model | mrr 0.5514
+2023-12-13 13:34:52 | _transe | best model | mrr 0.5514
+2023-12-13 13:34:53 | _transe | epoch:0 | step: 151 | loss: 0.5366
+2023-12-13 13:34:53 | _transe | epoch:0 | step: 151 | loss: 0.5366
+2023-12-13 13:34:54 | _transe | epoch:0 | step: 152 | loss: 0.5319
+2023-12-13 13:34:54 | _transe | epoch:0 | step: 152 | loss: 0.5319
+2023-12-13 13:34:54 | _transe | epoch:0 | step: 153 | loss: 0.5356
+2023-12-13 13:34:54 | _transe | epoch:0 | step: 153 | loss: 0.5356
+2023-12-13 13:34:55 | _transe | epoch:0 | step: 154 | loss: 0.5273
+2023-12-13 13:34:55 | _transe | epoch:0 | step: 154 | loss: 0.5273
+2023-12-13 13:34:55 | _transe | epoch:0 | step: 155 | loss: 0.5639
+2023-12-13 13:34:55 | _transe | epoch:0 | step: 155 | loss: 0.5639
+2023-12-13 13:34:57 | _transe | valid on valid subgraphs
+2023-12-13 13:34:57 | _transe | valid on valid subgraphs
+2023-12-13 13:34:57 | _transe |  mrr: 0.5577, hits@1: 0.4672, hits@5: 0.6441, hits@10: 0.7316
+2023-12-13 13:34:57 | _transe |  mrr: 0.5577, hits@1: 0.4672, hits@5: 0.6441, hits@10: 0.7316
+2023-12-13 13:34:57 | _transe | resource.struct_rusage(ru_utime=1597.50129, ru_stime=137.287454, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=23537901, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=7376, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=76413, ru_nivcsw=25005)
+2023-12-13 13:34:57 | _transe | resource.struct_rusage(ru_utime=1597.50129, ru_stime=137.287454, ru_maxrss=2857188, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=23537901, ru_majflt=68, ru_nswap=0, ru_inblock=0, ru_oublock=7376, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=76413, ru_nivcsw=25005)
+2023-12-13 13:34:57 | _transe | Train Time Sec=155.358899
+2023-12-13 13:34:57 | _transe | Train Time Sec=155.358899
+2023-12-13 13:34:57 | _transe | best model | mrr 0.5577
+2023-12-13 13:34:57 | _transe | best model | mrr 0.5577
+2023-12-13 13:34:57 | _transe | epoch:0 | step: 156 | loss: 0.5517
+2023-12-13 13:34:57 | _transe | epoch:0 | step: 156 | loss: 0.5517
+2023-12-13 13:34:58 | _transe | epoch:0 | step: 157 | loss: 0.5338
+2023-12-13 13:34:58 | _transe | epoch:0 | step: 157 | loss: 0.5338
+2023-12-13 13:34:58 | _transe | finish meta-training
+2023-12-13 13:34:58 | _transe | finish meta-training
+2023-12-13 13:34:58 | _transe | save best model
+2023-12-13 13:34:58 | _transe | save best model
+2023-12-13 13:34:58 | _transe | best validation | epoch:0, mrr: 0.5577, hits@1: 0.4672, hits@5: 0.6441, hits@10: 0.7316
+2023-12-13 13:34:58 | _transe | best validation | epoch:0, mrr: 0.5577, hits@1: 0.4672, hits@5: 0.6441, hits@10: 0.7316
+2023-12-13 13:35:00 | _transe | test on ind-test-graph, sample 50
+2023-12-13 13:35:00 | _transe | test on ind-test-graph, sample 50
+2023-12-13 13:35:00 | _transe | mrr: 0.5308, hits@1: 0.4237, hits@5: 0.6402, hits@10: 0.7418
+2023-12-13 13:35:00 | _transe | mrr: 0.5308, hits@1: 0.4237, hits@5: 0.6402, hits@10: 0.7418
+2023-12-13 13:35:00 | _transe | Train Time Sec=159.287913
+2023-12-13 13:35:00 | _transe | Train Time Sec=159.287913
+2023-12-13 13:35:00 | _transe | Total Time Sec=159.662204
+2023-12-13 13:35:00 | _transe | Total Time Sec=159.662204
+2023-12-13 13:37:14 | _transe | df_test_g_train len=38136
+2023-12-13 13:37:14 | _transe | df_test_g_train len=38136
+2023-12-13 13:37:14 | _transe | df_train_g_test len=7232
+2023-12-13 13:37:14 | _transe | df_train_g_test len=7232
+2023-12-13 13:37:14 | _transe | df_train_g_train len=41467
+2023-12-13 13:37:14 | _transe | df_train_g_train len=41467
+2023-12-13 13:37:14 | _transe | df_train_g_valid len=1691
+2023-12-13 13:37:14 | _transe | df_train_g_valid len=1691
+2023-12-13 13:37:14 | _transe | df_test_g_valid len=1343
+2023-12-13 13:37:14 | _transe | df_test_g_valid len=1343
+2023-12-13 13:37:15 | _transe | Sampling Time Sec=4.236372
+2023-12-13 13:37:15 | _transe | Sampling Time Sec=4.236372
+2023-12-13 13:37:15 | _transe | {"dataset_name": "wn18rr", "name": "_transe", "root_path": "/home/afandi/GitRepos/KGNET/Datasets/", "loadTrainedModel": 0, "modelID": "DBLP_Paper_Venue_FM_FTD_d1h1_2021.model", "step": "meta_train", "metatrain_state": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE.best", "state_dir": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE", "log_dir": "./log", "tb_log_dir": "./tb_log", "num_train_subgraph": 10000, "num_valid_subgraph": 200, "num_sample_for_estimate_size": 50, "rw_0": 10, "rw_1": 10, "rw_2": 5, "num_sample_cand": 5, "metatrain_num_neg": 64, "metatrain_num_epoch": 1, "metatrain_bs": 64, "metatrain_lr": 0.01, "metatrain_check_per_step": 5, "indtest_eval_bs": 512, "posttrain_num_neg": 64, "posttrain_bs": 512, "posttrain_lr": 0.001, "posttrain_num_epoch": 10, "posttrain_check_per_epoch": 1, "num_layers": 3, "num_bases": 4, "emb_dim": 32, "kge": "TransE", "gamma": 10, "adv_temp": 1, "gpu": "cpu", "seed": 1234, "ent_dim": 32, "rel_dim": 32, "data_path": "/home/afandi/GitRepos/KGNET/Datasets/wn18rr/wn18rr.pkl", "db_path": "/home/afandi/GitRepos/KGNET/Datasets/wn18rr_subgraph", "num_rel": 11}
+2023-12-13 13:37:15 | _transe | {"dataset_name": "wn18rr", "name": "_transe", "root_path": "/home/afandi/GitRepos/KGNET/Datasets/", "loadTrainedModel": 0, "modelID": "DBLP_Paper_Venue_FM_FTD_d1h1_2021.model", "step": "meta_train", "metatrain_state": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE.best", "state_dir": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE", "log_dir": "./log", "tb_log_dir": "./tb_log", "num_train_subgraph": 10000, "num_valid_subgraph": 200, "num_sample_for_estimate_size": 50, "rw_0": 10, "rw_1": 10, "rw_2": 5, "num_sample_cand": 5, "metatrain_num_neg": 64, "metatrain_num_epoch": 1, "metatrain_bs": 64, "metatrain_lr": 0.01, "metatrain_check_per_step": 5, "indtest_eval_bs": 512, "posttrain_num_neg": 64, "posttrain_bs": 512, "posttrain_lr": 0.001, "posttrain_num_epoch": 10, "posttrain_check_per_epoch": 1, "num_layers": 3, "num_bases": 4, "emb_dim": 32, "kge": "TransE", "gamma": 10, "adv_temp": 1, "gpu": "cpu", "seed": 1234, "ent_dim": 32, "rel_dim": 32, "data_path": "/home/afandi/GitRepos/KGNET/Datasets/wn18rr/wn18rr.pkl", "db_path": "/home/afandi/GitRepos/KGNET/Datasets/wn18rr_subgraph", "num_rel": 11}
+2023-12-13 13:37:19 | _transe | start meta-training
+2023-12-13 13:37:19 | _transe | start meta-training
+2023-12-13 13:37:19 | _transe | resource.struct_rusage(ru_utime=3.343772, ru_stime=0.229882, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=93513, ru_majflt=0, ru_nswap=0, ru_inblock=0, ru_oublock=2176, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=1413, ru_nivcsw=69)
+2023-12-13 13:37:19 | _transe | resource.struct_rusage(ru_utime=3.343772, ru_stime=0.229882, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=93513, ru_majflt=0, ru_nswap=0, ru_inblock=0, ru_oublock=2176, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=1413, ru_nivcsw=69)
+2023-12-13 13:37:37 | _transe | epoch:0 | step: 1 | loss: 1.6496
+2023-12-13 13:37:37 | _transe | epoch:0 | step: 1 | loss: 1.6496
+2023-12-13 13:37:38 | _transe | epoch:0 | step: 2 | loss: 1.7416
+2023-12-13 13:37:38 | _transe | epoch:0 | step: 2 | loss: 1.7416
+2023-12-13 13:37:39 | _transe | epoch:0 | step: 3 | loss: 1.4913
+2023-12-13 13:37:39 | _transe | epoch:0 | step: 3 | loss: 1.4913
+2023-12-13 13:37:40 | _transe | epoch:0 | step: 4 | loss: 1.2570
+2023-12-13 13:37:40 | _transe | epoch:0 | step: 4 | loss: 1.2570
+2023-12-13 13:37:40 | _transe | epoch:0 | step: 5 | loss: 1.1868
+2023-12-13 13:37:40 | _transe | epoch:0 | step: 5 | loss: 1.1868
+2023-12-13 13:37:42 | _transe | valid on valid subgraphs
+2023-12-13 13:37:42 | _transe | valid on valid subgraphs
+2023-12-13 13:37:42 | _transe |  mrr: 0.0878, hits@1: 0.0206, hits@5: 0.1031, hits@10: 0.2157
+2023-12-13 13:37:42 | _transe |  mrr: 0.0878, hits@1: 0.0206, hits@5: 0.1031, hits@10: 0.2157
+2023-12-13 13:37:42 | _transe | resource.struct_rusage(ru_utime=63.965238, ru_stime=5.372419, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=892432, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=2192, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=5597, ru_nivcsw=1202)
+2023-12-13 13:37:42 | _transe | resource.struct_rusage(ru_utime=63.965238, ru_stime=5.372419, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=892432, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=2192, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=5597, ru_nivcsw=1202)
+2023-12-13 13:37:42 | _transe | Train Time Sec=23.044584
+2023-12-13 13:37:42 | _transe | Train Time Sec=23.044584
+2023-12-13 13:37:42 | _transe | best model | mrr 0.0878
+2023-12-13 13:37:42 | _transe | best model | mrr 0.0878
+2023-12-13 13:37:43 | _transe | epoch:0 | step: 6 | loss: 1.0926
+2023-12-13 13:37:43 | _transe | epoch:0 | step: 6 | loss: 1.0926
+2023-12-13 13:37:43 | _transe | epoch:0 | step: 7 | loss: 1.0115
+2023-12-13 13:37:43 | _transe | epoch:0 | step: 7 | loss: 1.0115
+2023-12-13 13:37:44 | _transe | epoch:0 | step: 8 | loss: 0.9384
+2023-12-13 13:37:44 | _transe | epoch:0 | step: 8 | loss: 0.9384
+2023-12-13 13:37:45 | _transe | epoch:0 | step: 9 | loss: 0.8951
+2023-12-13 13:37:45 | _transe | epoch:0 | step: 9 | loss: 0.8951
+2023-12-13 13:37:46 | _transe | epoch:0 | step: 10 | loss: 0.8131
+2023-12-13 13:37:46 | _transe | epoch:0 | step: 10 | loss: 0.8131
+2023-12-13 13:37:47 | _transe | valid on valid subgraphs
+2023-12-13 13:37:47 | _transe | valid on valid subgraphs
+2023-12-13 13:37:47 | _transe |  mrr: 0.1568, hits@1: 0.0653, hits@5: 0.2158, hits@10: 0.3298
+2023-12-13 13:37:47 | _transe |  mrr: 0.1568, hits@1: 0.0653, hits@5: 0.2158, hits@10: 0.3298
+2023-12-13 13:37:47 | _transe | resource.struct_rusage(ru_utime=121.462157, ru_stime=9.729859, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=1655273, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=2376, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=8606, ru_nivcsw=2028)
+2023-12-13 13:37:47 | _transe | resource.struct_rusage(ru_utime=121.462157, ru_stime=9.729859, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=1655273, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=2376, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=8606, ru_nivcsw=2028)
+2023-12-13 13:37:47 | _transe | Train Time Sec=28.167713
+2023-12-13 13:37:47 | _transe | Train Time Sec=28.167713
+2023-12-13 13:37:47 | _transe | best model | mrr 0.1568
+2023-12-13 13:37:47 | _transe | best model | mrr 0.1568
+2023-12-13 13:37:48 | _transe | epoch:0 | step: 11 | loss: 0.7555
+2023-12-13 13:37:48 | _transe | epoch:0 | step: 11 | loss: 0.7555
+2023-12-13 13:37:49 | _transe | epoch:0 | step: 12 | loss: 0.7285
+2023-12-13 13:37:49 | _transe | epoch:0 | step: 12 | loss: 0.7285
+2023-12-13 13:37:49 | _transe | epoch:0 | step: 13 | loss: 0.7215
+2023-12-13 13:37:49 | _transe | epoch:0 | step: 13 | loss: 0.7215
+2023-12-13 13:37:50 | _transe | epoch:0 | step: 14 | loss: 0.6886
+2023-12-13 13:37:50 | _transe | epoch:0 | step: 14 | loss: 0.6886
+2023-12-13 13:37:51 | _transe | epoch:0 | step: 15 | loss: 0.6790
+2023-12-13 13:37:51 | _transe | epoch:0 | step: 15 | loss: 0.6790
+2023-12-13 13:37:52 | _transe | valid on valid subgraphs
+2023-12-13 13:37:52 | _transe | valid on valid subgraphs
+2023-12-13 13:37:52 | _transe |  mrr: 0.2321, hits@1: 0.0967, hits@5: 0.3744, hits@10: 0.5730
+2023-12-13 13:37:52 | _transe |  mrr: 0.2321, hits@1: 0.0967, hits@5: 0.3744, hits@10: 0.5730
+2023-12-13 13:37:52 | _transe | resource.struct_rusage(ru_utime=181.108386, ru_stime=14.103609, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=2416150, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=2560, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=10982, ru_nivcsw=2904)
+2023-12-13 13:37:52 | _transe | resource.struct_rusage(ru_utime=181.108386, ru_stime=14.103609, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=2416150, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=2560, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=10982, ru_nivcsw=2904)
+2023-12-13 13:37:52 | _transe | Train Time Sec=33.504886
+2023-12-13 13:37:52 | _transe | Train Time Sec=33.504886
+2023-12-13 13:37:52 | _transe | best model | mrr 0.2321
+2023-12-13 13:37:52 | _transe | best model | mrr 0.2321
+2023-12-13 13:37:53 | _transe | epoch:0 | step: 16 | loss: 0.6820
+2023-12-13 13:37:53 | _transe | epoch:0 | step: 16 | loss: 0.6820
+2023-12-13 13:37:54 | _transe | epoch:0 | step: 17 | loss: 0.6951
+2023-12-13 13:37:54 | _transe | epoch:0 | step: 17 | loss: 0.6951
+2023-12-13 13:37:55 | _transe | epoch:0 | step: 18 | loss: 0.6671
+2023-12-13 13:37:55 | _transe | epoch:0 | step: 18 | loss: 0.6671
+2023-12-13 13:37:55 | _transe | epoch:0 | step: 19 | loss: 0.6626
+2023-12-13 13:37:55 | _transe | epoch:0 | step: 19 | loss: 0.6626
+2023-12-13 13:37:56 | _transe | epoch:0 | step: 20 | loss: 0.6641
+2023-12-13 13:37:56 | _transe | epoch:0 | step: 20 | loss: 0.6641
+2023-12-13 13:37:58 | _transe | valid on valid subgraphs
+2023-12-13 13:37:58 | _transe | valid on valid subgraphs
+2023-12-13 13:37:58 | _transe |  mrr: 0.2503, hits@1: 0.1074, hits@5: 0.3995, hits@10: 0.6039
+2023-12-13 13:37:58 | _transe |  mrr: 0.2503, hits@1: 0.1074, hits@5: 0.3995, hits@10: 0.6039
+2023-12-13 13:37:58 | _transe | resource.struct_rusage(ru_utime=238.98694, ru_stime=18.64691, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=3181265, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=2752, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=13768, ru_nivcsw=3723)
+2023-12-13 13:37:58 | _transe | resource.struct_rusage(ru_utime=238.98694, ru_stime=18.64691, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=3181265, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=2752, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=13768, ru_nivcsw=3723)
+2023-12-13 13:37:58 | _transe | Train Time Sec=38.654228
+2023-12-13 13:37:58 | _transe | Train Time Sec=38.654228
+2023-12-13 13:37:58 | _transe | best model | mrr 0.2503
+2023-12-13 13:37:58 | _transe | best model | mrr 0.2503
+2023-12-13 13:37:58 | _transe | epoch:0 | step: 21 | loss: 0.6709
+2023-12-13 13:37:58 | _transe | epoch:0 | step: 21 | loss: 0.6709
+2023-12-13 13:37:59 | _transe | epoch:0 | step: 22 | loss: 0.6687
+2023-12-13 13:37:59 | _transe | epoch:0 | step: 22 | loss: 0.6687
+2023-12-13 13:38:00 | _transe | epoch:0 | step: 23 | loss: 0.6802
+2023-12-13 13:38:00 | _transe | epoch:0 | step: 23 | loss: 0.6802
+2023-12-13 13:38:01 | _transe | epoch:0 | step: 24 | loss: 0.6672
+2023-12-13 13:38:01 | _transe | epoch:0 | step: 24 | loss: 0.6672
+2023-12-13 13:38:01 | _transe | epoch:0 | step: 25 | loss: 0.6694
+2023-12-13 13:38:01 | _transe | epoch:0 | step: 25 | loss: 0.6694
+2023-12-13 13:38:03 | _transe | valid on valid subgraphs
+2023-12-13 13:38:03 | _transe | valid on valid subgraphs
+2023-12-13 13:38:03 | _transe |  mrr: 0.2702, hits@1: 0.1207, hits@5: 0.4368, hits@10: 0.6311
+2023-12-13 13:38:03 | _transe |  mrr: 0.2702, hits@1: 0.1207, hits@5: 0.4368, hits@10: 0.6311
+2023-12-13 13:38:03 | _transe | resource.struct_rusage(ru_utime=298.39276, ru_stime=22.995619, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=3952790, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=2928, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=16414, ru_nivcsw=4585)
+2023-12-13 13:38:03 | _transe | resource.struct_rusage(ru_utime=298.39276, ru_stime=22.995619, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=3952790, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=2928, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=16414, ru_nivcsw=4585)
+2023-12-13 13:38:03 | _transe | Train Time Sec=43.916255
+2023-12-13 13:38:03 | _transe | Train Time Sec=43.916255
+2023-12-13 13:38:03 | _transe | best model | mrr 0.2702
+2023-12-13 13:38:03 | _transe | best model | mrr 0.2702
+2023-12-13 13:38:04 | _transe | epoch:0 | step: 26 | loss: 0.6757
+2023-12-13 13:38:04 | _transe | epoch:0 | step: 26 | loss: 0.6757
+2023-12-13 13:38:04 | _transe | epoch:0 | step: 27 | loss: 0.6632
+2023-12-13 13:38:04 | _transe | epoch:0 | step: 27 | loss: 0.6632
+2023-12-13 13:38:05 | _transe | epoch:0 | step: 28 | loss: 0.6654
+2023-12-13 13:38:05 | _transe | epoch:0 | step: 28 | loss: 0.6654
+2023-12-13 13:38:06 | _transe | epoch:0 | step: 29 | loss: 0.6546
+2023-12-13 13:38:06 | _transe | epoch:0 | step: 29 | loss: 0.6546
+2023-12-13 13:38:06 | _transe | epoch:0 | step: 30 | loss: 0.6576
+2023-12-13 13:38:06 | _transe | epoch:0 | step: 30 | loss: 0.6576
+2023-12-13 13:38:08 | _transe | valid on valid subgraphs
+2023-12-13 13:38:08 | _transe | valid on valid subgraphs
+2023-12-13 13:38:08 | _transe |  mrr: 0.2801, hits@1: 0.1290, hits@5: 0.4524, hits@10: 0.6454
+2023-12-13 13:38:08 | _transe |  mrr: 0.2801, hits@1: 0.1290, hits@5: 0.4524, hits@10: 0.6454
+2023-12-13 13:38:08 | _transe | resource.struct_rusage(ru_utime=357.159233, ru_stime=26.893529, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=4706710, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=3120, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=19058, ru_nivcsw=5377)
+2023-12-13 13:38:08 | _transe | resource.struct_rusage(ru_utime=357.159233, ru_stime=26.893529, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=4706710, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=3120, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=19058, ru_nivcsw=5377)
+2023-12-13 13:38:08 | _transe | Train Time Sec=49.182965
+2023-12-13 13:38:08 | _transe | Train Time Sec=49.182965
+2023-12-13 13:38:08 | _transe | best model | mrr 0.2801
+2023-12-13 13:38:08 | _transe | best model | mrr 0.2801
+2023-12-13 13:38:09 | _transe | epoch:0 | step: 31 | loss: 0.6642
+2023-12-13 13:38:09 | _transe | epoch:0 | step: 31 | loss: 0.6642
+2023-12-13 13:38:10 | _transe | epoch:0 | step: 32 | loss: 0.6864
+2023-12-13 13:38:10 | _transe | epoch:0 | step: 32 | loss: 0.6864
+2023-12-13 13:38:10 | _transe | epoch:0 | step: 33 | loss: 0.6725
+2023-12-13 13:38:10 | _transe | epoch:0 | step: 33 | loss: 0.6725
+2023-12-13 13:38:11 | _transe | epoch:0 | step: 34 | loss: 0.6571
+2023-12-13 13:38:11 | _transe | epoch:0 | step: 34 | loss: 0.6571
+2023-12-13 13:38:12 | _transe | epoch:0 | step: 35 | loss: 0.6412
+2023-12-13 13:38:12 | _transe | epoch:0 | step: 35 | loss: 0.6412
+2023-12-13 13:38:13 | _transe | valid on valid subgraphs
+2023-12-13 13:38:13 | _transe | valid on valid subgraphs
+2023-12-13 13:38:13 | _transe |  mrr: 0.2845, hits@1: 0.1337, hits@5: 0.4575, hits@10: 0.6347
+2023-12-13 13:38:13 | _transe |  mrr: 0.2845, hits@1: 0.1337, hits@5: 0.4575, hits@10: 0.6347
+2023-12-13 13:38:13 | _transe | resource.struct_rusage(ru_utime=416.556617, ru_stime=31.218278, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=5473072, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=3304, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=21801, ru_nivcsw=6194)
+2023-12-13 13:38:13 | _transe | resource.struct_rusage(ru_utime=416.556617, ru_stime=31.218278, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=5473072, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=3304, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=21801, ru_nivcsw=6194)
+2023-12-13 13:38:13 | _transe | Train Time Sec=54.458225
+2023-12-13 13:38:13 | _transe | Train Time Sec=54.458225
+2023-12-13 13:38:13 | _transe | best model | mrr 0.2845
+2023-12-13 13:38:13 | _transe | best model | mrr 0.2845
+2023-12-13 13:38:14 | _transe | epoch:0 | step: 36 | loss: 0.6415
+2023-12-13 13:38:14 | _transe | epoch:0 | step: 36 | loss: 0.6415
+2023-12-13 13:38:15 | _transe | epoch:0 | step: 37 | loss: 0.6497
+2023-12-13 13:38:15 | _transe | epoch:0 | step: 37 | loss: 0.6497
+2023-12-13 13:38:15 | _transe | epoch:0 | step: 38 | loss: 0.6451
+2023-12-13 13:38:15 | _transe | epoch:0 | step: 38 | loss: 0.6451
+2023-12-13 13:38:16 | _transe | epoch:0 | step: 39 | loss: 0.6294
+2023-12-13 13:38:16 | _transe | epoch:0 | step: 39 | loss: 0.6294
+2023-12-13 13:38:17 | _transe | epoch:0 | step: 40 | loss: 0.6502
+2023-12-13 13:38:17 | _transe | epoch:0 | step: 40 | loss: 0.6502
+2023-12-13 13:38:18 | _transe | valid on valid subgraphs
+2023-12-13 13:38:18 | _transe | valid on valid subgraphs
+2023-12-13 13:38:18 | _transe |  mrr: 0.2987, hits@1: 0.1477, hits@5: 0.4709, hits@10: 0.6359
+2023-12-13 13:38:18 | _transe |  mrr: 0.2987, hits@1: 0.1477, hits@5: 0.4709, hits@10: 0.6359
+2023-12-13 13:38:19 | _transe | resource.struct_rusage(ru_utime=474.143946, ru_stime=35.47934, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=6216139, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=3488, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=24623, ru_nivcsw=7037)
+2023-12-13 13:38:19 | _transe | resource.struct_rusage(ru_utime=474.143946, ru_stime=35.47934, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=6216139, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=3488, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=24623, ru_nivcsw=7037)
+2023-12-13 13:38:19 | _transe | Train Time Sec=59.569549
+2023-12-13 13:38:19 | _transe | Train Time Sec=59.569549
+2023-12-13 13:38:19 | _transe | best model | mrr 0.2987
+2023-12-13 13:38:19 | _transe | best model | mrr 0.2987
+2023-12-13 13:38:19 | _transe | epoch:0 | step: 41 | loss: 0.6402
+2023-12-13 13:38:19 | _transe | epoch:0 | step: 41 | loss: 0.6402
+2023-12-13 13:38:20 | _transe | epoch:0 | step: 42 | loss: 0.6329
+2023-12-13 13:38:20 | _transe | epoch:0 | step: 42 | loss: 0.6329
+2023-12-13 13:38:21 | _transe | epoch:0 | step: 43 | loss: 0.6328
+2023-12-13 13:38:21 | _transe | epoch:0 | step: 43 | loss: 0.6328
+2023-12-13 13:38:21 | _transe | epoch:0 | step: 44 | loss: 0.6281
+2023-12-13 13:38:21 | _transe | epoch:0 | step: 44 | loss: 0.6281
+2023-12-13 13:38:22 | _transe | epoch:0 | step: 45 | loss: 0.6403
+2023-12-13 13:38:22 | _transe | epoch:0 | step: 45 | loss: 0.6403
+2023-12-13 13:38:24 | _transe | valid on valid subgraphs
+2023-12-13 13:38:24 | _transe | valid on valid subgraphs
+2023-12-13 13:38:24 | _transe |  mrr: 0.3070, hits@1: 0.1538, hits@5: 0.4890, hits@10: 0.6454
+2023-12-13 13:38:24 | _transe |  mrr: 0.3070, hits@1: 0.1538, hits@5: 0.4890, hits@10: 0.6454
+2023-12-13 13:38:24 | _transe | resource.struct_rusage(ru_utime=531.816173, ru_stime=39.770656, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=6948924, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=3688, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=27281, ru_nivcsw=7884)
+2023-12-13 13:38:24 | _transe | resource.struct_rusage(ru_utime=531.816173, ru_stime=39.770656, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=6948924, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=3688, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=27281, ru_nivcsw=7884)
+2023-12-13 13:38:24 | _transe | Train Time Sec=64.797906
+2023-12-13 13:38:24 | _transe | Train Time Sec=64.797906
+2023-12-13 13:38:24 | _transe | best model | mrr 0.3070
+2023-12-13 13:38:24 | _transe | best model | mrr 0.3070
+2023-12-13 13:38:24 | _transe | epoch:0 | step: 46 | loss: 0.6300
+2023-12-13 13:38:24 | _transe | epoch:0 | step: 46 | loss: 0.6300
+2023-12-13 13:38:25 | _transe | epoch:0 | step: 47 | loss: 0.6349
+2023-12-13 13:38:25 | _transe | epoch:0 | step: 47 | loss: 0.6349
+2023-12-13 13:38:26 | _transe | epoch:0 | step: 48 | loss: 0.6272
+2023-12-13 13:38:26 | _transe | epoch:0 | step: 48 | loss: 0.6272
+2023-12-13 13:38:26 | _transe | epoch:0 | step: 49 | loss: 0.6225
+2023-12-13 13:38:26 | _transe | epoch:0 | step: 49 | loss: 0.6225
+2023-12-13 13:38:27 | _transe | epoch:0 | step: 50 | loss: 0.6197
+2023-12-13 13:38:27 | _transe | epoch:0 | step: 50 | loss: 0.6197
+2023-12-13 13:38:29 | _transe | valid on valid subgraphs
+2023-12-13 13:38:29 | _transe | valid on valid subgraphs
+2023-12-13 13:38:29 | _transe |  mrr: 0.3225, hits@1: 0.1677, hits@5: 0.5076, hits@10: 0.6536
+2023-12-13 13:38:29 | _transe |  mrr: 0.3225, hits@1: 0.1677, hits@5: 0.5076, hits@10: 0.6536
+2023-12-13 13:38:29 | _transe | resource.struct_rusage(ru_utime=588.437367, ru_stime=43.64916, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=7707730, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=3864, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=29931, ru_nivcsw=8676)
+2023-12-13 13:38:29 | _transe | resource.struct_rusage(ru_utime=588.437367, ru_stime=43.64916, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=7707730, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=3864, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=29931, ru_nivcsw=8676)
+2023-12-13 13:38:29 | _transe | Train Time Sec=69.801293
+2023-12-13 13:38:29 | _transe | Train Time Sec=69.801293
+2023-12-13 13:38:29 | _transe | best model | mrr 0.3225
+2023-12-13 13:38:29 | _transe | best model | mrr 0.3225
+2023-12-13 13:38:29 | _transe | epoch:0 | step: 51 | loss: 0.6274
+2023-12-13 13:38:29 | _transe | epoch:0 | step: 51 | loss: 0.6274
+2023-12-13 13:38:30 | _transe | epoch:0 | step: 52 | loss: 0.6554
+2023-12-13 13:38:30 | _transe | epoch:0 | step: 52 | loss: 0.6554
+2023-12-13 13:38:31 | _transe | epoch:0 | step: 53 | loss: 0.6356
+2023-12-13 13:38:31 | _transe | epoch:0 | step: 53 | loss: 0.6356
+2023-12-13 13:38:32 | _transe | epoch:0 | step: 54 | loss: 0.6262
+2023-12-13 13:38:32 | _transe | epoch:0 | step: 54 | loss: 0.6262
+2023-12-13 13:38:32 | _transe | epoch:0 | step: 55 | loss: 0.6270
+2023-12-13 13:38:32 | _transe | epoch:0 | step: 55 | loss: 0.6270
+2023-12-13 13:38:34 | _transe | valid on valid subgraphs
+2023-12-13 13:38:34 | _transe | valid on valid subgraphs
+2023-12-13 13:38:34 | _transe |  mrr: 0.3443, hits@1: 0.1938, hits@5: 0.5159, hits@10: 0.6529
+2023-12-13 13:38:34 | _transe |  mrr: 0.3443, hits@1: 0.1938, hits@5: 0.5159, hits@10: 0.6529
+2023-12-13 13:38:34 | _transe | resource.struct_rusage(ru_utime=647.069029, ru_stime=47.964316, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=8462445, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=4048, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=32799, ru_nivcsw=9564)
+2023-12-13 13:38:34 | _transe | resource.struct_rusage(ru_utime=647.069029, ru_stime=47.964316, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=8462445, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=4048, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=32799, ru_nivcsw=9564)
+2023-12-13 13:38:34 | _transe | Train Time Sec=75.064798
+2023-12-13 13:38:34 | _transe | Train Time Sec=75.064798
+2023-12-13 13:38:34 | _transe | best model | mrr 0.3443
+2023-12-13 13:38:34 | _transe | best model | mrr 0.3443
+2023-12-13 13:38:35 | _transe | epoch:0 | step: 56 | loss: 0.6272
+2023-12-13 13:38:35 | _transe | epoch:0 | step: 56 | loss: 0.6272
+2023-12-13 13:38:35 | _transe | epoch:0 | step: 57 | loss: 0.6199
+2023-12-13 13:38:35 | _transe | epoch:0 | step: 57 | loss: 0.6199
+2023-12-13 13:38:36 | _transe | epoch:0 | step: 58 | loss: 0.6213
+2023-12-13 13:38:36 | _transe | epoch:0 | step: 58 | loss: 0.6213
+2023-12-13 13:38:37 | _transe | epoch:0 | step: 59 | loss: 0.6280
+2023-12-13 13:38:37 | _transe | epoch:0 | step: 59 | loss: 0.6280
+2023-12-13 13:38:37 | _transe | epoch:0 | step: 60 | loss: 0.6177
+2023-12-13 13:38:37 | _transe | epoch:0 | step: 60 | loss: 0.6177
+2023-12-13 13:38:39 | _transe | valid on valid subgraphs
+2023-12-13 13:38:39 | _transe | valid on valid subgraphs
+2023-12-13 13:38:39 | _transe |  mrr: 0.3685, hits@1: 0.2211, hits@5: 0.5360, hits@10: 0.6669
+2023-12-13 13:38:39 | _transe |  mrr: 0.3685, hits@1: 0.2211, hits@5: 0.5360, hits@10: 0.6669
+2023-12-13 13:38:39 | _transe | resource.struct_rusage(ru_utime=704.20889, ru_stime=52.187994, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9201656, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=4240, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=35574, ru_nivcsw=10382)
+2023-12-13 13:38:39 | _transe | resource.struct_rusage(ru_utime=704.20889, ru_stime=52.187994, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9201656, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=4240, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=35574, ru_nivcsw=10382)
+2023-12-13 13:38:39 | _transe | Train Time Sec=80.151457
+2023-12-13 13:38:39 | _transe | Train Time Sec=80.151457
+2023-12-13 13:38:39 | _transe | best model | mrr 0.3685
+2023-12-13 13:38:39 | _transe | best model | mrr 0.3685
+2023-12-13 13:38:40 | _transe | epoch:0 | step: 61 | loss: 0.6104
+2023-12-13 13:38:40 | _transe | epoch:0 | step: 61 | loss: 0.6104
+2023-12-13 13:38:40 | _transe | epoch:0 | step: 62 | loss: 0.6154
+2023-12-13 13:38:40 | _transe | epoch:0 | step: 62 | loss: 0.6154
+2023-12-13 13:38:41 | _transe | epoch:0 | step: 63 | loss: 0.6088
+2023-12-13 13:38:41 | _transe | epoch:0 | step: 63 | loss: 0.6088
+2023-12-13 13:38:42 | _transe | epoch:0 | step: 64 | loss: 0.6288
+2023-12-13 13:38:42 | _transe | epoch:0 | step: 64 | loss: 0.6288
+2023-12-13 13:38:43 | _transe | epoch:0 | step: 65 | loss: 0.6242
+2023-12-13 13:38:43 | _transe | epoch:0 | step: 65 | loss: 0.6242
+2023-12-13 13:38:44 | _transe | valid on valid subgraphs
+2023-12-13 13:38:44 | _transe | valid on valid subgraphs
+2023-12-13 13:38:44 | _transe |  mrr: 0.3729, hits@1: 0.2236, hits@5: 0.5439, hits@10: 0.6772
+2023-12-13 13:38:44 | _transe |  mrr: 0.3729, hits@1: 0.2236, hits@5: 0.5439, hits@10: 0.6772
+2023-12-13 13:38:44 | _transe | resource.struct_rusage(ru_utime=760.816118, ru_stime=56.476331, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9954415, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=4424, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=38068, ru_nivcsw=11190)
+2023-12-13 13:38:44 | _transe | resource.struct_rusage(ru_utime=760.816118, ru_stime=56.476331, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9954415, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=4424, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=38068, ru_nivcsw=11190)
+2023-12-13 13:38:44 | _transe | Train Time Sec=85.185239
+2023-12-13 13:38:44 | _transe | Train Time Sec=85.185239
+2023-12-13 13:38:44 | _transe | best model | mrr 0.3729
+2023-12-13 13:38:44 | _transe | best model | mrr 0.3729
+2023-12-13 13:38:45 | _transe | epoch:0 | step: 66 | loss: 0.6204
+2023-12-13 13:38:45 | _transe | epoch:0 | step: 66 | loss: 0.6204
+2023-12-13 13:38:46 | _transe | epoch:0 | step: 67 | loss: 0.6169
+2023-12-13 13:38:46 | _transe | epoch:0 | step: 67 | loss: 0.6169
+2023-12-13 13:38:46 | _transe | epoch:0 | step: 68 | loss: 0.6197
+2023-12-13 13:38:46 | _transe | epoch:0 | step: 68 | loss: 0.6197
+2023-12-13 13:38:47 | _transe | epoch:0 | step: 69 | loss: 0.6098
+2023-12-13 13:38:47 | _transe | epoch:0 | step: 69 | loss: 0.6098
+2023-12-13 13:38:48 | _transe | epoch:0 | step: 70 | loss: 0.6320
+2023-12-13 13:38:48 | _transe | epoch:0 | step: 70 | loss: 0.6320
+2023-12-13 13:38:49 | _transe | valid on valid subgraphs
+2023-12-13 13:38:49 | _transe | valid on valid subgraphs
+2023-12-13 13:38:49 | _transe |  mrr: 0.4023, hits@1: 0.2611, hits@5: 0.5650, hits@10: 0.6815
+2023-12-13 13:38:49 | _transe |  mrr: 0.4023, hits@1: 0.2611, hits@5: 0.5650, hits@10: 0.6815
+2023-12-13 13:38:49 | _transe | resource.struct_rusage(ru_utime=820.033284, ru_stime=60.661073, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=10694987, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=4600, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=40591, ru_nivcsw=12003)
+2023-12-13 13:38:49 | _transe | resource.struct_rusage(ru_utime=820.033284, ru_stime=60.661073, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=10694987, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=4600, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=40591, ru_nivcsw=12003)
+2023-12-13 13:38:49 | _transe | Train Time Sec=90.457766
+2023-12-13 13:38:49 | _transe | Train Time Sec=90.457766
+2023-12-13 13:38:49 | _transe | best model | mrr 0.4023
+2023-12-13 13:38:49 | _transe | best model | mrr 0.4023
+2023-12-13 13:38:50 | _transe | epoch:0 | step: 71 | loss: 0.6044
+2023-12-13 13:38:50 | _transe | epoch:0 | step: 71 | loss: 0.6044
+2023-12-13 13:38:51 | _transe | epoch:0 | step: 72 | loss: 0.6113
+2023-12-13 13:38:51 | _transe | epoch:0 | step: 72 | loss: 0.6113
+2023-12-13 13:38:52 | _transe | epoch:0 | step: 73 | loss: 0.6166
+2023-12-13 13:38:52 | _transe | epoch:0 | step: 73 | loss: 0.6166
+2023-12-13 13:38:52 | _transe | epoch:0 | step: 74 | loss: 0.6049
+2023-12-13 13:38:52 | _transe | epoch:0 | step: 74 | loss: 0.6049
+2023-12-13 13:38:53 | _transe | epoch:0 | step: 75 | loss: 0.5972
+2023-12-13 13:38:53 | _transe | epoch:0 | step: 75 | loss: 0.5972
+2023-12-13 13:38:55 | _transe | valid on valid subgraphs
+2023-12-13 13:38:55 | _transe | valid on valid subgraphs
+2023-12-13 13:38:55 | _transe |  mrr: 0.4268, hits@1: 0.2915, hits@5: 0.5776, hits@10: 0.6895
+2023-12-13 13:38:55 | _transe |  mrr: 0.4268, hits@1: 0.2915, hits@5: 0.5776, hits@10: 0.6895
+2023-12-13 13:38:55 | _transe | resource.struct_rusage(ru_utime=879.602676, ru_stime=65.024499, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=11468584, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=4800, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=43345, ru_nivcsw=12835)
+2023-12-13 13:38:55 | _transe | resource.struct_rusage(ru_utime=879.602676, ru_stime=65.024499, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=11468584, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=4800, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=43345, ru_nivcsw=12835)
+2023-12-13 13:38:55 | _transe | Train Time Sec=95.764219
+2023-12-13 13:38:55 | _transe | Train Time Sec=95.764219
+2023-12-13 13:38:55 | _transe | best model | mrr 0.4268
+2023-12-13 13:38:55 | _transe | best model | mrr 0.4268
+2023-12-13 13:38:55 | _transe | epoch:0 | step: 76 | loss: 0.6102
+2023-12-13 13:38:55 | _transe | epoch:0 | step: 76 | loss: 0.6102
+2023-12-13 13:38:56 | _transe | epoch:0 | step: 77 | loss: 0.5918
+2023-12-13 13:38:56 | _transe | epoch:0 | step: 77 | loss: 0.5918
+2023-12-13 13:38:57 | _transe | epoch:0 | step: 78 | loss: 0.5964
+2023-12-13 13:38:57 | _transe | epoch:0 | step: 78 | loss: 0.5964
+2023-12-13 13:38:57 | _transe | epoch:0 | step: 79 | loss: 0.5990
+2023-12-13 13:38:57 | _transe | epoch:0 | step: 79 | loss: 0.5990
+2023-12-13 13:38:58 | _transe | epoch:0 | step: 80 | loss: 0.5990
+2023-12-13 13:38:58 | _transe | epoch:0 | step: 80 | loss: 0.5990
+2023-12-13 13:39:00 | _transe | valid on valid subgraphs
+2023-12-13 13:39:00 | _transe | valid on valid subgraphs
+2023-12-13 13:39:00 | _transe |  mrr: 0.4362, hits@1: 0.3013, hits@5: 0.5892, hits@10: 0.6983
+2023-12-13 13:39:00 | _transe |  mrr: 0.4362, hits@1: 0.3013, hits@5: 0.5892, hits@10: 0.6983
+2023-12-13 13:39:00 | _transe | resource.struct_rusage(ru_utime=936.631725, ru_stime=69.574783, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=12224505, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=4976, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=45890, ru_nivcsw=13666)
+2023-12-13 13:39:00 | _transe | resource.struct_rusage(ru_utime=936.631725, ru_stime=69.574783, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=12224505, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=4976, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=45890, ru_nivcsw=13666)
+2023-12-13 13:39:00 | _transe | Train Time Sec=100.871685
+2023-12-13 13:39:00 | _transe | Train Time Sec=100.871685
+2023-12-13 13:39:00 | _transe | best model | mrr 0.4362
+2023-12-13 13:39:00 | _transe | best model | mrr 0.4362
+2023-12-13 13:39:01 | _transe | epoch:0 | step: 81 | loss: 0.5868
+2023-12-13 13:39:01 | _transe | epoch:0 | step: 81 | loss: 0.5868
+2023-12-13 13:39:02 | _transe | epoch:0 | step: 82 | loss: 0.6021
+2023-12-13 13:39:02 | _transe | epoch:0 | step: 82 | loss: 0.6021
+2023-12-13 13:39:02 | _transe | epoch:0 | step: 83 | loss: 0.5886
+2023-12-13 13:39:02 | _transe | epoch:0 | step: 83 | loss: 0.5886
+2023-12-13 13:39:03 | _transe | epoch:0 | step: 84 | loss: 0.5933
+2023-12-13 13:39:03 | _transe | epoch:0 | step: 84 | loss: 0.5933
+2023-12-13 13:39:04 | _transe | epoch:0 | step: 85 | loss: 0.5952
+2023-12-13 13:39:04 | _transe | epoch:0 | step: 85 | loss: 0.5952
+2023-12-13 13:39:05 | _transe | valid on valid subgraphs
+2023-12-13 13:39:05 | _transe | valid on valid subgraphs
+2023-12-13 13:39:05 | _transe |  mrr: 0.4553, hits@1: 0.3338, hits@5: 0.5888, hits@10: 0.6928
+2023-12-13 13:39:05 | _transe |  mrr: 0.4553, hits@1: 0.3338, hits@5: 0.5888, hits@10: 0.6928
+2023-12-13 13:39:05 | _transe | resource.struct_rusage(ru_utime=998.532246, ru_stime=74.09708, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=12981966, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=5152, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=48712, ru_nivcsw=14539)
+2023-12-13 13:39:05 | _transe | resource.struct_rusage(ru_utime=998.532246, ru_stime=74.09708, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=12981966, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=5152, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=48712, ru_nivcsw=14539)
+2023-12-13 13:39:05 | _transe | Train Time Sec=106.385482
+2023-12-13 13:39:05 | _transe | Train Time Sec=106.385482
+2023-12-13 13:39:05 | _transe | best model | mrr 0.4553
+2023-12-13 13:39:05 | _transe | best model | mrr 0.4553
+2023-12-13 13:39:06 | _transe | epoch:0 | step: 86 | loss: 0.5890
+2023-12-13 13:39:06 | _transe | epoch:0 | step: 86 | loss: 0.5890
+2023-12-13 13:39:07 | _transe | epoch:0 | step: 87 | loss: 0.5793
+2023-12-13 13:39:07 | _transe | epoch:0 | step: 87 | loss: 0.5793
+2023-12-13 13:39:07 | _transe | epoch:0 | step: 88 | loss: 0.5721
+2023-12-13 13:39:07 | _transe | epoch:0 | step: 88 | loss: 0.5721
+2023-12-13 13:39:08 | _transe | epoch:0 | step: 89 | loss: 0.5865
+2023-12-13 13:39:08 | _transe | epoch:0 | step: 89 | loss: 0.5865
+2023-12-13 13:39:09 | _transe | epoch:0 | step: 90 | loss: 0.5705
+2023-12-13 13:39:09 | _transe | epoch:0 | step: 90 | loss: 0.5705
+2023-12-13 13:39:11 | _transe | valid on valid subgraphs
+2023-12-13 13:39:11 | _transe | valid on valid subgraphs
+2023-12-13 13:39:11 | _transe |  mrr: 0.4677, hits@1: 0.3427, hits@5: 0.6042, hits@10: 0.7066
+2023-12-13 13:39:11 | _transe |  mrr: 0.4677, hits@1: 0.3427, hits@5: 0.6042, hits@10: 0.7066
+2023-12-13 13:39:11 | _transe | resource.struct_rusage(ru_utime=1057.258471, ru_stime=78.116877, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=13746290, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=5360, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=51428, ru_nivcsw=15332)
+2023-12-13 13:39:11 | _transe | resource.struct_rusage(ru_utime=1057.258471, ru_stime=78.116877, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=13746290, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=5360, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=51428, ru_nivcsw=15332)
+2023-12-13 13:39:11 | _transe | Train Time Sec=111.588047
+2023-12-13 13:39:11 | _transe | Train Time Sec=111.588047
+2023-12-13 13:39:11 | _transe | best model | mrr 0.4677
+2023-12-13 13:39:11 | _transe | best model | mrr 0.4677
+2023-12-13 13:39:11 | _transe | epoch:0 | step: 91 | loss: 0.5918
+2023-12-13 13:39:11 | _transe | epoch:0 | step: 91 | loss: 0.5918
+2023-12-13 13:39:12 | _transe | epoch:0 | step: 92 | loss: 0.5845
+2023-12-13 13:39:12 | _transe | epoch:0 | step: 92 | loss: 0.5845
+2023-12-13 13:39:13 | _transe | epoch:0 | step: 93 | loss: 0.6022
+2023-12-13 13:39:13 | _transe | epoch:0 | step: 93 | loss: 0.6022
+2023-12-13 13:39:13 | _transe | epoch:0 | step: 94 | loss: 0.5831
+2023-12-13 13:39:13 | _transe | epoch:0 | step: 94 | loss: 0.5831
+2023-12-13 13:39:14 | _transe | epoch:0 | step: 95 | loss: 0.5652
+2023-12-13 13:39:14 | _transe | epoch:0 | step: 95 | loss: 0.5652
+2023-12-13 13:39:16 | _transe | valid on valid subgraphs
+2023-12-13 13:39:16 | _transe | valid on valid subgraphs
+2023-12-13 13:39:16 | _transe |  mrr: 0.4720, hits@1: 0.3527, hits@5: 0.6032, hits@10: 0.6950
+2023-12-13 13:39:16 | _transe |  mrr: 0.4720, hits@1: 0.3527, hits@5: 0.6032, hits@10: 0.6950
+2023-12-13 13:39:16 | _transe | resource.struct_rusage(ru_utime=1114.022918, ru_stime=82.274782, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=14501960, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=5536, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=54201, ru_nivcsw=16139)
+2023-12-13 13:39:16 | _transe | resource.struct_rusage(ru_utime=1114.022918, ru_stime=82.274782, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=14501960, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=5536, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=54201, ru_nivcsw=16139)
+2023-12-13 13:39:16 | _transe | Train Time Sec=116.6693
+2023-12-13 13:39:16 | _transe | Train Time Sec=116.6693
+2023-12-13 13:39:16 | _transe | best model | mrr 0.4720
+2023-12-13 13:39:16 | _transe | best model | mrr 0.4720
+2023-12-13 13:39:16 | _transe | epoch:0 | step: 96 | loss: 0.5915
+2023-12-13 13:39:16 | _transe | epoch:0 | step: 96 | loss: 0.5915
+2023-12-13 13:39:17 | _transe | epoch:0 | step: 97 | loss: 0.5650
+2023-12-13 13:39:17 | _transe | epoch:0 | step: 97 | loss: 0.5650
+2023-12-13 13:39:18 | _transe | epoch:0 | step: 98 | loss: 0.5551
+2023-12-13 13:39:18 | _transe | epoch:0 | step: 98 | loss: 0.5551
+2023-12-13 13:39:18 | _transe | epoch:0 | step: 99 | loss: 0.5749
+2023-12-13 13:39:18 | _transe | epoch:0 | step: 99 | loss: 0.5749
+2023-12-13 13:39:19 | _transe | epoch:0 | step: 100 | loss: 0.5765
+2023-12-13 13:39:19 | _transe | epoch:0 | step: 100 | loss: 0.5765
+2023-12-13 13:39:21 | _transe | valid on valid subgraphs
+2023-12-13 13:39:21 | _transe | valid on valid subgraphs
+2023-12-13 13:39:21 | _transe |  mrr: 0.4897, hits@1: 0.3767, hits@5: 0.6131, hits@10: 0.7022
+2023-12-13 13:39:21 | _transe |  mrr: 0.4897, hits@1: 0.3767, hits@5: 0.6131, hits@10: 0.7022
+2023-12-13 13:39:21 | _transe | resource.struct_rusage(ru_utime=1170.50868, ru_stime=86.660244, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=15262221, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=5720, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=56750, ru_nivcsw=16899)
+2023-12-13 13:39:21 | _transe | resource.struct_rusage(ru_utime=1170.50868, ru_stime=86.660244, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=15262221, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=5720, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=56750, ru_nivcsw=16899)
+2023-12-13 13:39:21 | _transe | Train Time Sec=121.707988
+2023-12-13 13:39:21 | _transe | Train Time Sec=121.707988
+2023-12-13 13:39:21 | _transe | best model | mrr 0.4897
+2023-12-13 13:39:21 | _transe | best model | mrr 0.4897
+2023-12-13 13:39:21 | _transe | epoch:0 | step: 101 | loss: 0.5749
+2023-12-13 13:39:21 | _transe | epoch:0 | step: 101 | loss: 0.5749
+2023-12-13 13:39:22 | _transe | epoch:0 | step: 102 | loss: 0.5683
+2023-12-13 13:39:22 | _transe | epoch:0 | step: 102 | loss: 0.5683
+2023-12-13 13:39:23 | _transe | epoch:0 | step: 103 | loss: 0.5580
+2023-12-13 13:39:23 | _transe | epoch:0 | step: 103 | loss: 0.5580
+2023-12-13 13:39:23 | _transe | epoch:0 | step: 104 | loss: 0.5802
+2023-12-13 13:39:23 | _transe | epoch:0 | step: 104 | loss: 0.5802
+2023-12-13 13:39:24 | _transe | epoch:0 | step: 105 | loss: 0.5610
+2023-12-13 13:39:24 | _transe | epoch:0 | step: 105 | loss: 0.5610
+2023-12-13 13:39:26 | _transe | valid on valid subgraphs
+2023-12-13 13:39:26 | _transe | valid on valid subgraphs
+2023-12-13 13:39:26 | _transe |  mrr: 0.5083, hits@1: 0.4006, hits@5: 0.6201, hits@10: 0.7086
+2023-12-13 13:39:26 | _transe |  mrr: 0.5083, hits@1: 0.4006, hits@5: 0.6201, hits@10: 0.7086
+2023-12-13 13:39:26 | _transe | resource.struct_rusage(ru_utime=1226.304564, ru_stime=90.939799, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=16020100, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=5912, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=59363, ru_nivcsw=17691)
+2023-12-13 13:39:26 | _transe | resource.struct_rusage(ru_utime=1226.304564, ru_stime=90.939799, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=16020100, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=5912, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=59363, ru_nivcsw=17691)
+2023-12-13 13:39:26 | _transe | Train Time Sec=126.690172
+2023-12-13 13:39:26 | _transe | Train Time Sec=126.690172
+2023-12-13 13:39:26 | _transe | best model | mrr 0.5083
+2023-12-13 13:39:26 | _transe | best model | mrr 0.5083
+2023-12-13 13:39:26 | _transe | epoch:0 | step: 106 | loss: 0.5776
+2023-12-13 13:39:26 | _transe | epoch:0 | step: 106 | loss: 0.5776
+2023-12-13 13:39:27 | _transe | epoch:0 | step: 107 | loss: 0.5690
+2023-12-13 13:39:27 | _transe | epoch:0 | step: 107 | loss: 0.5690
+2023-12-13 13:39:28 | _transe | epoch:0 | step: 108 | loss: 0.5568
+2023-12-13 13:39:28 | _transe | epoch:0 | step: 108 | loss: 0.5568
+2023-12-13 13:39:28 | _transe | epoch:0 | step: 109 | loss: 0.5741
+2023-12-13 13:39:28 | _transe | epoch:0 | step: 109 | loss: 0.5741
+2023-12-13 13:39:29 | _transe | epoch:0 | step: 110 | loss: 0.5653
+2023-12-13 13:39:29 | _transe | epoch:0 | step: 110 | loss: 0.5653
+2023-12-13 13:39:31 | _transe | valid on valid subgraphs
+2023-12-13 13:39:31 | _transe | valid on valid subgraphs
+2023-12-13 13:39:31 | _transe |  mrr: 0.5212, hits@1: 0.4152, hits@5: 0.6323, hits@10: 0.7207
+2023-12-13 13:39:31 | _transe |  mrr: 0.5212, hits@1: 0.4152, hits@5: 0.6323, hits@10: 0.7207
+2023-12-13 13:39:31 | _transe | resource.struct_rusage(ru_utime=1284.672649, ru_stime=95.033137, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=16764339, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=6096, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=62026, ru_nivcsw=18605)
+2023-12-13 13:39:31 | _transe | resource.struct_rusage(ru_utime=1284.672649, ru_stime=95.033137, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=16764339, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=6096, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=62026, ru_nivcsw=18605)
+2023-12-13 13:39:31 | _transe | Train Time Sec=131.89769
+2023-12-13 13:39:31 | _transe | Train Time Sec=131.89769
+2023-12-13 13:39:31 | _transe | best model | mrr 0.5212
+2023-12-13 13:39:31 | _transe | best model | mrr 0.5212
+2023-12-13 13:39:32 | _transe | epoch:0 | step: 111 | loss: 0.5602
+2023-12-13 13:39:32 | _transe | epoch:0 | step: 111 | loss: 0.5602
+2023-12-13 13:39:32 | _transe | epoch:0 | step: 112 | loss: 0.5528
+2023-12-13 13:39:32 | _transe | epoch:0 | step: 112 | loss: 0.5528
+2023-12-13 13:39:33 | _transe | epoch:0 | step: 113 | loss: 0.5588
+2023-12-13 13:39:33 | _transe | epoch:0 | step: 113 | loss: 0.5588
+2023-12-13 13:39:34 | _transe | epoch:0 | step: 114 | loss: 0.5471
+2023-12-13 13:39:34 | _transe | epoch:0 | step: 114 | loss: 0.5471
+2023-12-13 13:39:35 | _transe | epoch:0 | step: 115 | loss: 0.5438
+2023-12-13 13:39:35 | _transe | epoch:0 | step: 115 | loss: 0.5438
+2023-12-13 13:39:36 | _transe | valid on valid subgraphs
+2023-12-13 13:39:36 | _transe | valid on valid subgraphs
+2023-12-13 13:39:36 | _transe |  mrr: 0.5237, hits@1: 0.4182, hits@5: 0.6357, hits@10: 0.7225
+2023-12-13 13:39:36 | _transe |  mrr: 0.5237, hits@1: 0.4182, hits@5: 0.6357, hits@10: 0.7225
+2023-12-13 13:39:36 | _transe | resource.struct_rusage(ru_utime=1344.288557, ru_stime=99.417238, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=17513171, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=6272, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=64960, ru_nivcsw=19506)
+2023-12-13 13:39:36 | _transe | resource.struct_rusage(ru_utime=1344.288557, ru_stime=99.417238, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=17513171, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=6272, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=64960, ru_nivcsw=19506)
+2023-12-13 13:39:36 | _transe | Train Time Sec=137.217654
+2023-12-13 13:39:36 | _transe | Train Time Sec=137.217654
+2023-12-13 13:39:36 | _transe | best model | mrr 0.5237
+2023-12-13 13:39:36 | _transe | best model | mrr 0.5237
+2023-12-13 13:39:37 | _transe | epoch:0 | step: 116 | loss: 0.5869
+2023-12-13 13:39:37 | _transe | epoch:0 | step: 116 | loss: 0.5869
+2023-12-13 13:39:38 | _transe | epoch:0 | step: 117 | loss: 0.5833
+2023-12-13 13:39:38 | _transe | epoch:0 | step: 117 | loss: 0.5833
+2023-12-13 13:39:38 | _transe | epoch:0 | step: 118 | loss: 0.5357
+2023-12-13 13:39:38 | _transe | epoch:0 | step: 118 | loss: 0.5357
+2023-12-13 13:39:39 | _transe | epoch:0 | step: 119 | loss: 0.5774
+2023-12-13 13:39:39 | _transe | epoch:0 | step: 119 | loss: 0.5774
+2023-12-13 13:39:40 | _transe | epoch:0 | step: 120 | loss: 0.5529
+2023-12-13 13:39:40 | _transe | epoch:0 | step: 120 | loss: 0.5529
+2023-12-13 13:39:41 | _transe | valid on valid subgraphs
+2023-12-13 13:39:41 | _transe | valid on valid subgraphs
+2023-12-13 13:39:41 | _transe |  mrr: 0.5278, hits@1: 0.4232, hits@5: 0.6335, hits@10: 0.7212
+2023-12-13 13:39:41 | _transe |  mrr: 0.5278, hits@1: 0.4232, hits@5: 0.6335, hits@10: 0.7212
+2023-12-13 13:39:41 | _transe | resource.struct_rusage(ru_utime=1400.952895, ru_stime=103.738674, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18258488, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=6472, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=67864, ru_nivcsw=20364)
+2023-12-13 13:39:41 | _transe | resource.struct_rusage(ru_utime=1400.952895, ru_stime=103.738674, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18258488, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=6472, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=67864, ru_nivcsw=20364)
+2023-12-13 13:39:41 | _transe | Train Time Sec=142.305592
+2023-12-13 13:39:41 | _transe | Train Time Sec=142.305592
+2023-12-13 13:39:41 | _transe | best model | mrr 0.5278
+2023-12-13 13:39:41 | _transe | best model | mrr 0.5278
+2023-12-13 13:39:42 | _transe | epoch:0 | step: 121 | loss: 0.5311
+2023-12-13 13:39:42 | _transe | epoch:0 | step: 121 | loss: 0.5311
+2023-12-13 13:39:43 | _transe | epoch:0 | step: 122 | loss: 0.5424
+2023-12-13 13:39:43 | _transe | epoch:0 | step: 122 | loss: 0.5424
+2023-12-13 13:39:43 | _transe | epoch:0 | step: 123 | loss: 0.5516
+2023-12-13 13:39:43 | _transe | epoch:0 | step: 123 | loss: 0.5516
+2023-12-13 13:39:44 | _transe | epoch:0 | step: 124 | loss: 0.5791
+2023-12-13 13:39:44 | _transe | epoch:0 | step: 124 | loss: 0.5791
+2023-12-13 13:39:45 | _transe | epoch:0 | step: 125 | loss: 0.5452
+2023-12-13 13:39:45 | _transe | epoch:0 | step: 125 | loss: 0.5452
+2023-12-13 13:39:46 | _transe | valid on valid subgraphs
+2023-12-13 13:39:46 | _transe | valid on valid subgraphs
+2023-12-13 13:39:46 | _transe |  mrr: 0.5368, hits@1: 0.4394, hits@5: 0.6372, hits@10: 0.7195
+2023-12-13 13:39:46 | _transe |  mrr: 0.5368, hits@1: 0.4394, hits@5: 0.6372, hits@10: 0.7195
+2023-12-13 13:39:46 | _transe | resource.struct_rusage(ru_utime=1458.227418, ru_stime=108.134224, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=19019270, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=6648, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=70346, ru_nivcsw=21155)
+2023-12-13 13:39:46 | _transe | resource.struct_rusage(ru_utime=1458.227418, ru_stime=108.134224, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=19019270, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=6648, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=70346, ru_nivcsw=21155)
+2023-12-13 13:39:46 | _transe | Train Time Sec=147.435932
+2023-12-13 13:39:46 | _transe | Train Time Sec=147.435932
+2023-12-13 13:39:46 | _transe | best model | mrr 0.5368
+2023-12-13 13:39:46 | _transe | best model | mrr 0.5368
+2023-12-13 13:39:47 | _transe | epoch:0 | step: 126 | loss: 0.5596
+2023-12-13 13:39:47 | _transe | epoch:0 | step: 126 | loss: 0.5596
+2023-12-13 13:39:48 | _transe | epoch:0 | step: 127 | loss: 0.5577
+2023-12-13 13:39:48 | _transe | epoch:0 | step: 127 | loss: 0.5577
+2023-12-13 13:39:49 | _transe | epoch:0 | step: 128 | loss: 0.5609
+2023-12-13 13:39:49 | _transe | epoch:0 | step: 128 | loss: 0.5609
+2023-12-13 13:39:49 | _transe | epoch:0 | step: 129 | loss: 0.5319
+2023-12-13 13:39:49 | _transe | epoch:0 | step: 129 | loss: 0.5319
+2023-12-13 13:39:50 | _transe | epoch:0 | step: 130 | loss: 0.5651
+2023-12-13 13:39:50 | _transe | epoch:0 | step: 130 | loss: 0.5651
+2023-12-13 13:39:51 | _transe | valid on valid subgraphs
+2023-12-13 13:39:51 | _transe | valid on valid subgraphs
+2023-12-13 13:39:51 | _transe |  mrr: 0.5376, hits@1: 0.4372, hits@5: 0.6417, hits@10: 0.7262
+2023-12-13 13:39:51 | _transe |  mrr: 0.5376, hits@1: 0.4372, hits@5: 0.6417, hits@10: 0.7262
+2023-12-13 13:39:51 | _transe | resource.struct_rusage(ru_utime=1515.555476, ru_stime=112.452013, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=19793919, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=6824, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=73097, ru_nivcsw=22034)
+2023-12-13 13:39:51 | _transe | resource.struct_rusage(ru_utime=1515.555476, ru_stime=112.452013, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=19793919, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=6824, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=73097, ru_nivcsw=22034)
+2023-12-13 13:39:51 | _transe | Train Time Sec=152.546619
+2023-12-13 13:39:51 | _transe | Train Time Sec=152.546619
+2023-12-13 13:39:51 | _transe | best model | mrr 0.5376
+2023-12-13 13:39:51 | _transe | best model | mrr 0.5376
+2023-12-13 13:39:52 | _transe | epoch:0 | step: 131 | loss: 0.5666
+2023-12-13 13:39:52 | _transe | epoch:0 | step: 131 | loss: 0.5666
+2023-12-13 13:39:53 | _transe | epoch:0 | step: 132 | loss: 0.5571
+2023-12-13 13:39:53 | _transe | epoch:0 | step: 132 | loss: 0.5571
+2023-12-13 13:39:53 | _transe | epoch:0 | step: 133 | loss: 0.5509
+2023-12-13 13:39:53 | _transe | epoch:0 | step: 133 | loss: 0.5509
+2023-12-13 13:39:54 | _transe | epoch:0 | step: 134 | loss: 0.5386
+2023-12-13 13:39:54 | _transe | epoch:0 | step: 134 | loss: 0.5386
+2023-12-13 13:39:55 | _transe | epoch:0 | step: 135 | loss: 0.5597
+2023-12-13 13:39:55 | _transe | epoch:0 | step: 135 | loss: 0.5597
+2023-12-13 13:39:57 | _transe | valid on valid subgraphs
+2023-12-13 13:39:57 | _transe | valid on valid subgraphs
+2023-12-13 13:39:57 | _transe |  mrr: 0.5369, hits@1: 0.4378, hits@5: 0.6433, hits@10: 0.7307
+2023-12-13 13:39:57 | _transe |  mrr: 0.5369, hits@1: 0.4378, hits@5: 0.6433, hits@10: 0.7307
+2023-12-13 13:39:57 | _transe | resource.struct_rusage(ru_utime=1572.394127, ru_stime=116.53657, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=20528709, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=7032, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=75682, ru_nivcsw=22870)
+2023-12-13 13:39:57 | _transe | resource.struct_rusage(ru_utime=1572.394127, ru_stime=116.53657, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=20528709, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=7032, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=75682, ru_nivcsw=22870)
+2023-12-13 13:39:57 | _transe | Train Time Sec=157.640923
+2023-12-13 13:39:57 | _transe | Train Time Sec=157.640923
+2023-12-13 13:39:57 | _transe | best model is at step 130, mrr 0.5376, bad count 1
+2023-12-13 13:39:57 | _transe | best model is at step 130, mrr 0.5376, bad count 1
+2023-12-13 13:39:57 | _transe | epoch:0 | step: 136 | loss: 0.5542
+2023-12-13 13:39:57 | _transe | epoch:0 | step: 136 | loss: 0.5542
+2023-12-13 13:39:58 | _transe | epoch:0 | step: 137 | loss: 0.5333
+2023-12-13 13:39:58 | _transe | epoch:0 | step: 137 | loss: 0.5333
+2023-12-13 13:39:59 | _transe | epoch:0 | step: 138 | loss: 0.5338
+2023-12-13 13:39:59 | _transe | epoch:0 | step: 138 | loss: 0.5338
+2023-12-13 13:40:00 | _transe | epoch:0 | step: 139 | loss: 0.5588
+2023-12-13 13:40:00 | _transe | epoch:0 | step: 139 | loss: 0.5588
+2023-12-13 13:40:00 | _transe | epoch:0 | step: 140 | loss: 0.5535
+2023-12-13 13:40:00 | _transe | epoch:0 | step: 140 | loss: 0.5535
+2023-12-13 13:40:02 | _transe | valid on valid subgraphs
+2023-12-13 13:40:02 | _transe | valid on valid subgraphs
+2023-12-13 13:40:02 | _transe |  mrr: 0.5452, hits@1: 0.4488, hits@5: 0.6471, hits@10: 0.7348
+2023-12-13 13:40:02 | _transe |  mrr: 0.5452, hits@1: 0.4488, hits@5: 0.6471, hits@10: 0.7348
+2023-12-13 13:40:02 | _transe | resource.struct_rusage(ru_utime=1631.084128, ru_stime=120.777415, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=21290869, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=7032, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=78377, ru_nivcsw=23727)
+2023-12-13 13:40:02 | _transe | resource.struct_rusage(ru_utime=1631.084128, ru_stime=120.777415, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=21290869, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=7032, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=78377, ru_nivcsw=23727)
+2023-12-13 13:40:02 | _transe | Train Time Sec=162.875992
+2023-12-13 13:40:02 | _transe | Train Time Sec=162.875992
+2023-12-13 13:40:02 | _transe | best model | mrr 0.5452
+2023-12-13 13:40:02 | _transe | best model | mrr 0.5452
+2023-12-13 13:40:03 | _transe | epoch:0 | step: 141 | loss: 0.5233
+2023-12-13 13:40:03 | _transe | epoch:0 | step: 141 | loss: 0.5233
+2023-12-13 13:40:03 | _transe | epoch:0 | step: 142 | loss: 0.5436
+2023-12-13 13:40:03 | _transe | epoch:0 | step: 142 | loss: 0.5436
+2023-12-13 13:40:04 | _transe | epoch:0 | step: 143 | loss: 0.5437
+2023-12-13 13:40:04 | _transe | epoch:0 | step: 143 | loss: 0.5437
+2023-12-13 13:40:05 | _transe | epoch:0 | step: 144 | loss: 0.5560
+2023-12-13 13:40:05 | _transe | epoch:0 | step: 144 | loss: 0.5560
+2023-12-13 13:40:05 | _transe | epoch:0 | step: 145 | loss: 0.5556
+2023-12-13 13:40:05 | _transe | epoch:0 | step: 145 | loss: 0.5556
+2023-12-13 13:40:07 | _transe | valid on valid subgraphs
+2023-12-13 13:40:07 | _transe | valid on valid subgraphs
+2023-12-13 13:40:07 | _transe |  mrr: 0.5511, hits@1: 0.4564, hits@5: 0.6501, hits@10: 0.7308
+2023-12-13 13:40:07 | _transe |  mrr: 0.5511, hits@1: 0.4564, hits@5: 0.6501, hits@10: 0.7308
+2023-12-13 13:40:07 | _transe | resource.struct_rusage(ru_utime=1687.798941, ru_stime=125.05806, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=22045598, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=7216, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=80836, ru_nivcsw=24554)
+2023-12-13 13:40:07 | _transe | resource.struct_rusage(ru_utime=1687.798941, ru_stime=125.05806, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=22045598, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=7216, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=80836, ru_nivcsw=24554)
+2023-12-13 13:40:07 | _transe | Train Time Sec=167.921042
+2023-12-13 13:40:07 | _transe | Train Time Sec=167.921042
+2023-12-13 13:40:07 | _transe | best model | mrr 0.5511
+2023-12-13 13:40:07 | _transe | best model | mrr 0.5511
+2023-12-13 13:40:08 | _transe | epoch:0 | step: 146 | loss: 0.5422
+2023-12-13 13:40:08 | _transe | epoch:0 | step: 146 | loss: 0.5422
+2023-12-13 13:40:08 | _transe | epoch:0 | step: 147 | loss: 0.5244
+2023-12-13 13:40:08 | _transe | epoch:0 | step: 147 | loss: 0.5244
+2023-12-13 13:40:09 | _transe | epoch:0 | step: 148 | loss: 0.5526
+2023-12-13 13:40:09 | _transe | epoch:0 | step: 148 | loss: 0.5526
+2023-12-13 13:40:10 | _transe | epoch:0 | step: 149 | loss: 0.5499
+2023-12-13 13:40:10 | _transe | epoch:0 | step: 149 | loss: 0.5499
+2023-12-13 13:40:10 | _transe | epoch:0 | step: 150 | loss: 0.5188
+2023-12-13 13:40:10 | _transe | epoch:0 | step: 150 | loss: 0.5188
+2023-12-13 13:40:12 | _transe | valid on valid subgraphs
+2023-12-13 13:40:12 | _transe | valid on valid subgraphs
+2023-12-13 13:40:12 | _transe |  mrr: 0.5508, hits@1: 0.4548, hits@5: 0.6539, hits@10: 0.7294
+2023-12-13 13:40:12 | _transe |  mrr: 0.5508, hits@1: 0.4548, hits@5: 0.6539, hits@10: 0.7294
+2023-12-13 13:40:12 | _transe | resource.struct_rusage(ru_utime=1746.524597, ru_stime=129.559215, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=22808682, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=7408, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=83335, ru_nivcsw=25340)
+2023-12-13 13:40:12 | _transe | resource.struct_rusage(ru_utime=1746.524597, ru_stime=129.559215, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=22808682, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=7408, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=83335, ru_nivcsw=25340)
+2023-12-13 13:40:12 | _transe | Train Time Sec=173.18981
+2023-12-13 13:40:12 | _transe | Train Time Sec=173.18981
+2023-12-13 13:40:12 | _transe | best model is at step 145, mrr 0.5511, bad count 1
+2023-12-13 13:40:12 | _transe | best model is at step 145, mrr 0.5511, bad count 1
+2023-12-13 13:40:13 | _transe | epoch:0 | step: 151 | loss: 0.5396
+2023-12-13 13:40:13 | _transe | epoch:0 | step: 151 | loss: 0.5396
+2023-12-13 13:40:14 | _transe | epoch:0 | step: 152 | loss: 0.5357
+2023-12-13 13:40:14 | _transe | epoch:0 | step: 152 | loss: 0.5357
+2023-12-13 13:40:14 | _transe | epoch:0 | step: 153 | loss: 0.5329
+2023-12-13 13:40:14 | _transe | epoch:0 | step: 153 | loss: 0.5329
+2023-12-13 13:40:15 | _transe | epoch:0 | step: 154 | loss: 0.5307
+2023-12-13 13:40:15 | _transe | epoch:0 | step: 154 | loss: 0.5307
+2023-12-13 13:40:16 | _transe | epoch:0 | step: 155 | loss: 0.5561
+2023-12-13 13:40:16 | _transe | epoch:0 | step: 155 | loss: 0.5561
+2023-12-13 13:40:17 | _transe | valid on valid subgraphs
+2023-12-13 13:40:17 | _transe | valid on valid subgraphs
+2023-12-13 13:40:17 | _transe |  mrr: 0.5575, hits@1: 0.4660, hits@5: 0.6514, hits@10: 0.7289
+2023-12-13 13:40:17 | _transe |  mrr: 0.5575, hits@1: 0.4660, hits@5: 0.6514, hits@10: 0.7289
+2023-12-13 13:40:17 | _transe | resource.struct_rusage(ru_utime=1806.509131, ru_stime=134.044393, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=23573090, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=7416, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=86078, ru_nivcsw=26201)
+2023-12-13 13:40:17 | _transe | resource.struct_rusage(ru_utime=1806.509131, ru_stime=134.044393, ru_maxrss=2861480, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=23573090, ru_majflt=38, ru_nswap=0, ru_inblock=0, ru_oublock=7416, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=86078, ru_nivcsw=26201)
+2023-12-13 13:40:17 | _transe | Train Time Sec=178.564245
+2023-12-13 13:40:17 | _transe | Train Time Sec=178.564245
+2023-12-13 13:40:17 | _transe | best model | mrr 0.5575
+2023-12-13 13:40:17 | _transe | best model | mrr 0.5575
+2023-12-13 13:40:18 | _transe | epoch:0 | step: 156 | loss: 0.5500
+2023-12-13 13:40:18 | _transe | epoch:0 | step: 156 | loss: 0.5500
+2023-12-13 13:40:19 | _transe | epoch:0 | step: 157 | loss: 0.5193
+2023-12-13 13:40:19 | _transe | epoch:0 | step: 157 | loss: 0.5193
+2023-12-13 13:40:19 | _transe | finish meta-training
+2023-12-13 13:40:19 | _transe | finish meta-training
+2023-12-13 13:40:19 | _transe | save best model
+2023-12-13 13:40:19 | _transe | save best model

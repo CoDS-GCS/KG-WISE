@@ -1,0 +1,349 @@
+2024-04-16 12:19:43 | Yago3-10_isConnectedTo | df_test_g_train len=18478
+2024-04-16 12:19:43 | Yago3-10_isConnectedTo | df_train_g_test len=2686
+2024-04-16 12:19:43 | Yago3-10_isConnectedTo | df_train_g_train len=10891
+2024-04-16 12:19:43 | Yago3-10_isConnectedTo | df_train_g_valid len=54
+2024-04-16 12:19:43 | Yago3-10_isConnectedTo | df_test_g_valid len=79
+2024-04-16 12:19:43 | Yago3-10_isConnectedTo | Sampling Time Sec=0.099094
+2024-04-16 12:19:43 | Yago3-10_isConnectedTo | {"dataset_name": "Yago3-10_isConnectedTo", "name": "Yago3-10_isConnectedTo", "root_path": "/home/afandi/GitRepos/KGNET/Datasets/", "loadTrainedModel": 1, "modelID": "wn18rr.model", "step": "meta_train", "metatrain_state": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE.best", "state_dir": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE", "log_dir": "./log", "tb_log_dir": "./tb_log", "num_train_subgraph": 10000, "num_valid_subgraph": 200, "num_sample_for_estimate_size": 50, "rw_0": 10, "rw_1": 10, "rw_2": 5, "num_sample_cand": 5, "metatrain_num_neg": 64, "metatrain_num_epoch": 1, "metatrain_bs": 64, "metatrain_lr": 0.01, "metatrain_check_per_step": 5, "indtest_eval_bs": 512, "posttrain_num_neg": 64, "posttrain_bs": 512, "posttrain_lr": 0.001, "posttrain_num_epoch": 10, "posttrain_check_per_epoch": 1, "num_layers": 3, "num_bases": 4, "emb_dim": 32, "kge": "TransE", "gamma": 10, "adv_temp": 1, "gpu": "cpu", "seed": 1234, "ent_dim": 32, "rel_dim": 32, "data_path": "/home/afandi/GitRepos/KGNET/Datasets/Yago3-10_isConnectedTo/Yago3-10_isConnectedTo.pkl", "db_path": "/home/afandi/GitRepos/KGNET/Datasets/Yago3-10_isConnectedTo_subgraph", "num_rel": 1}
+2024-04-16 12:25:53 | Yago3-10_isConnectedTo | df_test_g_train len=18478
+2024-04-16 12:25:53 | Yago3-10_isConnectedTo | df_train_g_test len=2676
+2024-04-16 12:25:53 | Yago3-10_isConnectedTo | df_train_g_train len=10901
+2024-04-16 12:25:53 | Yago3-10_isConnectedTo | df_train_g_valid len=54
+2024-04-16 12:25:53 | Yago3-10_isConnectedTo | df_test_g_valid len=79
+2024-04-16 12:25:53 | Yago3-10_isConnectedTo | Sampling Time Sec=0.106192
+2024-04-16 12:29:56 | Yago3-10_isConnectedTo | {"dataset_name": "Yago3-10_isConnectedTo", "name": "Yago3-10_isConnectedTo", "root_path": "/home/afandi/GitRepos/KGNET/Datasets/", "loadTrainedModel": 0, "modelID": "wn18rr.model", "step": "meta_train", "metatrain_state": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE.best", "state_dir": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE", "log_dir": "./log", "tb_log_dir": "./tb_log", "num_train_subgraph": 10000, "num_valid_subgraph": 200, "num_sample_for_estimate_size": 50, "rw_0": 10, "rw_1": 10, "rw_2": 5, "num_sample_cand": 5, "metatrain_num_neg": 64, "metatrain_num_epoch": 1, "metatrain_bs": 64, "metatrain_lr": 0.01, "metatrain_check_per_step": 5, "indtest_eval_bs": 512, "posttrain_num_neg": 64, "posttrain_bs": 512, "posttrain_lr": 0.001, "posttrain_num_epoch": 10, "posttrain_check_per_epoch": 1, "num_layers": 3, "num_bases": 4, "emb_dim": 32, "kge": "TransE", "gamma": 10, "adv_temp": 1, "gpu": "cpu", "seed": 1234, "ent_dim": 32, "rel_dim": 32, "data_path": "/home/afandi/GitRepos/KGNET/Datasets/Yago3-10_isConnectedTo/Yago3-10_isConnectedTo.pkl", "db_path": "/home/afandi/GitRepos/KGNET/Datasets/Yago3-10_isConnectedTo_subgraph", "num_rel": 1}
+2024-04-16 12:29:56 | Yago3-10_isConnectedTo | start meta-training
+2024-04-16 12:29:56 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=168.034447, ru_stime=25.22335, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=70141, ru_majflt=1, ru_nswap=0, ru_inblock=56, ru_oublock=1040496, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=2618637, ru_nivcsw=23650)
+2024-04-16 12:30:05 | Yago3-10_isConnectedTo | epoch:0 | step: 1 | loss: 1.6997
+2024-04-16 12:30:15 | Yago3-10_isConnectedTo | epoch:0 | step: 2 | loss: 1.8218
+2024-04-16 12:30:24 | Yago3-10_isConnectedTo | epoch:0 | step: 3 | loss: 1.4790
+2024-04-16 12:30:34 | Yago3-10_isConnectedTo | epoch:0 | step: 4 | loss: 1.3522
+2024-04-16 12:30:43 | Yago3-10_isConnectedTo | epoch:0 | step: 5 | loss: 1.2286
+2024-04-16 12:30:57 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:30:57 | Yago3-10_isConnectedTo |  mrr: 0.0272, hits@1: 0.0025, hits@5: 0.0165, hits@10: 0.0427
+2024-04-16 12:30:57 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=537.521514, ru_stime=79.378049, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9896745, ru_majflt=74, ru_nswap=0, ru_inblock=7208, ru_oublock=1040592, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=3546460, ru_nivcsw=32432)
+2024-04-16 12:30:57 | Yago3-10_isConnectedTo | Train Time Sec=60.732163
+2024-04-16 12:30:57 | Yago3-10_isConnectedTo | best model | mrr 0.0272
+2024-04-16 12:31:07 | Yago3-10_isConnectedTo | epoch:0 | step: 6 | loss: 1.1104
+2024-04-16 12:31:17 | Yago3-10_isConnectedTo | epoch:0 | step: 7 | loss: 0.9707
+2024-04-16 12:31:26 | Yago3-10_isConnectedTo | epoch:0 | step: 8 | loss: 0.8913
+2024-04-16 12:31:36 | Yago3-10_isConnectedTo | epoch:0 | step: 9 | loss: 0.8159
+2024-04-16 12:31:45 | Yago3-10_isConnectedTo | epoch:0 | step: 10 | loss: 0.7712
+2024-04-16 12:31:58 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:31:58 | Yago3-10_isConnectedTo |  mrr: 0.0287, hits@1: 0.0030, hits@5: 0.0201, hits@10: 0.0451
+2024-04-16 12:31:58 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=912.510098, ru_stime=133.539021, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=19477725, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1040768, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=4469215, ru_nivcsw=45543)
+2024-04-16 12:31:58 | Yago3-10_isConnectedTo | Train Time Sec=122.190514
+2024-04-16 12:31:58 | Yago3-10_isConnectedTo | best model | mrr 0.0287
+2024-04-16 12:32:08 | Yago3-10_isConnectedTo | epoch:0 | step: 11 | loss: 0.7364
+2024-04-16 12:32:18 | Yago3-10_isConnectedTo | epoch:0 | step: 12 | loss: 0.7119
+2024-04-16 12:32:28 | Yago3-10_isConnectedTo | epoch:0 | step: 13 | loss: 0.7183
+2024-04-16 12:32:37 | Yago3-10_isConnectedTo | epoch:0 | step: 14 | loss: 0.7110
+2024-04-16 12:32:47 | Yago3-10_isConnectedTo | epoch:0 | step: 15 | loss: 0.7218
+2024-04-16 12:33:00 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:33:00 | Yago3-10_isConnectedTo |  mrr: 0.0327, hits@1: 0.0042, hits@5: 0.0279, hits@10: 0.0620
+2024-04-16 12:33:00 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=1300.673287, ru_stime=188.390034, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=29337699, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1040960, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=5400478, ru_nivcsw=58753)
+2024-04-16 12:33:00 | Yago3-10_isConnectedTo | Train Time Sec=184.243164
+2024-04-16 12:33:00 | Yago3-10_isConnectedTo | best model | mrr 0.0327
+2024-04-16 12:33:11 | Yago3-10_isConnectedTo | epoch:0 | step: 16 | loss: 0.7276
+2024-04-16 12:33:19 | Yago3-10_isConnectedTo | epoch:0 | step: 17 | loss: 0.7441
+2024-04-16 12:33:29 | Yago3-10_isConnectedTo | epoch:0 | step: 18 | loss: 0.7442
+2024-04-16 12:33:38 | Yago3-10_isConnectedTo | epoch:0 | step: 19 | loss: 0.7493
+2024-04-16 12:33:48 | Yago3-10_isConnectedTo | epoch:0 | step: 20 | loss: 0.7519
+2024-04-16 12:34:02 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:34:02 | Yago3-10_isConnectedTo |  mrr: 0.0369, hits@1: 0.0049, hits@5: 0.0336, hits@10: 0.0747
+2024-04-16 12:34:02 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=1682.488823, ru_stime=241.420185, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=39102750, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1041152, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=6331514, ru_nivcsw=71002)
+2024-04-16 12:34:02 | Yago3-10_isConnectedTo | Train Time Sec=246.134544
+2024-04-16 12:34:02 | Yago3-10_isConnectedTo | best model | mrr 0.0369
+2024-04-16 12:34:10 | Yago3-10_isConnectedTo | epoch:0 | step: 21 | loss: 0.7555
+2024-04-16 12:34:20 | Yago3-10_isConnectedTo | epoch:0 | step: 22 | loss: 0.7473
+2024-04-16 12:34:31 | Yago3-10_isConnectedTo | epoch:0 | step: 23 | loss: 0.7388
+2024-04-16 12:34:41 | Yago3-10_isConnectedTo | epoch:0 | step: 24 | loss: 0.7349
+2024-04-16 12:34:52 | Yago3-10_isConnectedTo | epoch:0 | step: 25 | loss: 0.7180
+2024-04-16 12:35:05 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:35:05 | Yago3-10_isConnectedTo |  mrr: 0.0340, hits@1: 0.0036, hits@5: 0.0272, hits@10: 0.0636
+2024-04-16 12:35:05 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=2059.236094, ru_stime=296.422369, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=48803679, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1041352, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=7263866, ru_nivcsw=96406)
+2024-04-16 12:35:05 | Yago3-10_isConnectedTo | Train Time Sec=309.151413
+2024-04-16 12:35:05 | Yago3-10_isConnectedTo | best model is at step 20, mrr 0.0369, bad count 1
+2024-04-16 12:35:15 | Yago3-10_isConnectedTo | epoch:0 | step: 26 | loss: 0.7079
+2024-04-16 12:35:24 | Yago3-10_isConnectedTo | epoch:0 | step: 27 | loss: 0.7042
+2024-04-16 12:35:34 | Yago3-10_isConnectedTo | epoch:0 | step: 28 | loss: 0.6930
+2024-04-16 12:35:43 | Yago3-10_isConnectedTo | epoch:0 | step: 29 | loss: 0.6906
+2024-04-16 12:35:53 | Yago3-10_isConnectedTo | epoch:0 | step: 30 | loss: 0.6906
+2024-04-16 12:36:06 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:36:06 | Yago3-10_isConnectedTo |  mrr: 0.0373, hits@1: 0.0048, hits@5: 0.0336, hits@10: 0.0749
+2024-04-16 12:36:06 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=2428.425362, ru_stime=349.498887, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=58277977, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1041448, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=8185611, ru_nivcsw=104974)
+2024-04-16 12:36:06 | Yago3-10_isConnectedTo | Train Time Sec=369.736117
+2024-04-16 12:36:06 | Yago3-10_isConnectedTo | best model | mrr 0.0373
+2024-04-16 12:36:15 | Yago3-10_isConnectedTo | epoch:0 | step: 31 | loss: 0.6922
+2024-04-16 12:36:24 | Yago3-10_isConnectedTo | epoch:0 | step: 32 | loss: 0.6927
+2024-04-16 12:36:33 | Yago3-10_isConnectedTo | epoch:0 | step: 33 | loss: 0.6940
+2024-04-16 12:36:42 | Yago3-10_isConnectedTo | epoch:0 | step: 34 | loss: 0.6964
+2024-04-16 12:36:52 | Yago3-10_isConnectedTo | epoch:0 | step: 35 | loss: 0.6981
+2024-04-16 12:37:05 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:37:05 | Yago3-10_isConnectedTo |  mrr: 0.0338, hits@1: 0.0045, hits@5: 0.0266, hits@10: 0.0583
+2024-04-16 12:37:05 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=2788.128217, ru_stime=399.790499, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=67689418, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1041640, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=9101382, ru_nivcsw=112261)
+2024-04-16 12:37:05 | Yago3-10_isConnectedTo | Train Time Sec=428.687133
+2024-04-16 12:37:05 | Yago3-10_isConnectedTo | best model is at step 30, mrr 0.0373, bad count 1
+2024-04-16 12:37:14 | Yago3-10_isConnectedTo | epoch:0 | step: 36 | loss: 0.7000
+2024-04-16 12:37:23 | Yago3-10_isConnectedTo | epoch:0 | step: 37 | loss: 0.7001
+2024-04-16 12:37:36 | Yago3-10_isConnectedTo | epoch:0 | step: 38 | loss: 0.7010
+2024-04-16 12:37:45 | Yago3-10_isConnectedTo | epoch:0 | step: 39 | loss: 0.6997
+2024-04-16 12:37:55 | Yago3-10_isConnectedTo | epoch:0 | step: 40 | loss: 0.7002
+2024-04-16 12:38:09 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:38:09 | Yago3-10_isConnectedTo |  mrr: 0.0383, hits@1: 0.0058, hits@5: 0.0333, hits@10: 0.0712
+2024-04-16 12:38:09 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=3142.638975, ru_stime=497.891807, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=83907526, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1041736, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=10021357, ru_nivcsw=120147)
+2024-04-16 12:38:09 | Yago3-10_isConnectedTo | Train Time Sec=492.588027
+2024-04-16 12:38:09 | Yago3-10_isConnectedTo | best model | mrr 0.0383
+2024-04-16 12:38:18 | Yago3-10_isConnectedTo | epoch:0 | step: 41 | loss: 0.6970
+2024-04-16 12:38:27 | Yago3-10_isConnectedTo | epoch:0 | step: 42 | loss: 0.6964
+2024-04-16 12:38:36 | Yago3-10_isConnectedTo | epoch:0 | step: 43 | loss: 0.6944
+2024-04-16 12:38:45 | Yago3-10_isConnectedTo | epoch:0 | step: 44 | loss: 0.6923
+2024-04-16 12:38:54 | Yago3-10_isConnectedTo | epoch:0 | step: 45 | loss: 0.6952
+2024-04-16 12:39:07 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:39:07 | Yago3-10_isConnectedTo |  mrr: 0.0358, hits@1: 0.0049, hits@5: 0.0282, hits@10: 0.0619
+2024-04-16 12:39:07 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=3499.427907, ru_stime=548.822624, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=93260854, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1041944, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=10938144, ru_nivcsw=127439)
+2024-04-16 12:39:07 | Yago3-10_isConnectedTo | Train Time Sec=551.107824
+2024-04-16 12:39:07 | Yago3-10_isConnectedTo | best model is at step 40, mrr 0.0383, bad count 1
+2024-04-16 12:39:16 | Yago3-10_isConnectedTo | epoch:0 | step: 46 | loss: 0.6903
+2024-04-16 12:39:24 | Yago3-10_isConnectedTo | epoch:0 | step: 47 | loss: 0.6916
+2024-04-16 12:39:32 | Yago3-10_isConnectedTo | epoch:0 | step: 48 | loss: 0.6920
+2024-04-16 12:39:42 | Yago3-10_isConnectedTo | epoch:0 | step: 49 | loss: 0.6906
+2024-04-16 12:39:51 | Yago3-10_isConnectedTo | epoch:0 | step: 50 | loss: 0.6888
+2024-04-16 12:40:05 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:40:05 | Yago3-10_isConnectedTo |  mrr: 0.0403, hits@1: 0.0061, hits@5: 0.0366, hits@10: 0.0799
+2024-04-16 12:40:05 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=3857.605103, ru_stime=601.108972, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=102744875, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1042040, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=11857615, ru_nivcsw=139849)
+2024-04-16 12:40:05 | Yago3-10_isConnectedTo | Train Time Sec=609.121289
+2024-04-16 12:40:05 | Yago3-10_isConnectedTo | best model | mrr 0.0403
+2024-04-16 12:40:15 | Yago3-10_isConnectedTo | epoch:0 | step: 51 | loss: 0.6885
+2024-04-16 12:40:24 | Yago3-10_isConnectedTo | epoch:0 | step: 52 | loss: 0.6896
+2024-04-16 12:40:33 | Yago3-10_isConnectedTo | epoch:0 | step: 53 | loss: 0.6872
+2024-04-16 12:40:42 | Yago3-10_isConnectedTo | epoch:0 | step: 54 | loss: 0.6869
+2024-04-16 12:40:51 | Yago3-10_isConnectedTo | epoch:0 | step: 55 | loss: 0.6869
+2024-04-16 12:41:05 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:41:05 | Yago3-10_isConnectedTo |  mrr: 0.0398, hits@1: 0.0056, hits@5: 0.0351, hits@10: 0.0784
+2024-04-16 12:41:05 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=4217.684947, ru_stime=653.14577, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=112164941, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1042232, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=12778136, ru_nivcsw=148595)
+2024-04-16 12:41:05 | Yago3-10_isConnectedTo | Train Time Sec=668.482491
+2024-04-16 12:41:05 | Yago3-10_isConnectedTo | best model is at step 50, mrr 0.0403, bad count 1
+2024-04-16 12:41:14 | Yago3-10_isConnectedTo | epoch:0 | step: 56 | loss: 0.6867
+2024-04-16 12:41:23 | Yago3-10_isConnectedTo | epoch:0 | step: 57 | loss: 0.6859
+2024-04-16 12:41:32 | Yago3-10_isConnectedTo | epoch:0 | step: 58 | loss: 0.6878
+2024-04-16 12:41:42 | Yago3-10_isConnectedTo | epoch:0 | step: 59 | loss: 0.6865
+2024-04-16 12:41:51 | Yago3-10_isConnectedTo | epoch:0 | step: 60 | loss: 0.6866
+2024-04-16 12:42:04 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:42:04 | Yago3-10_isConnectedTo |  mrr: 0.0411, hits@1: 0.0061, hits@5: 0.0371, hits@10: 0.0807
+2024-04-16 12:42:04 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=4582.813783, ru_stime=703.552202, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=121606360, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1042328, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=13705022, ru_nivcsw=156668)
+2024-04-16 12:42:04 | Yago3-10_isConnectedTo | Train Time Sec=728.073342
+2024-04-16 12:42:04 | Yago3-10_isConnectedTo | best model | mrr 0.0411
+2024-04-16 12:42:13 | Yago3-10_isConnectedTo | epoch:0 | step: 61 | loss: 0.6856
+2024-04-16 12:42:22 | Yago3-10_isConnectedTo | epoch:0 | step: 62 | loss: 0.6844
+2024-04-16 12:42:32 | Yago3-10_isConnectedTo | epoch:0 | step: 63 | loss: 0.6866
+2024-04-16 12:42:41 | Yago3-10_isConnectedTo | epoch:0 | step: 64 | loss: 0.6859
+2024-04-16 12:42:51 | Yago3-10_isConnectedTo | epoch:0 | step: 65 | loss: 0.6861
+2024-04-16 12:43:04 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:43:04 | Yago3-10_isConnectedTo |  mrr: 0.0428, hits@1: 0.0070, hits@5: 0.0399, hits@10: 0.0842
+2024-04-16 12:43:04 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=4949.636115, ru_stime=755.932567, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=130966319, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1042528, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=14623918, ru_nivcsw=167751)
+2024-04-16 12:43:04 | Yago3-10_isConnectedTo | Train Time Sec=787.870387
+2024-04-16 12:43:04 | Yago3-10_isConnectedTo | best model | mrr 0.0428
+2024-04-16 12:43:13 | Yago3-10_isConnectedTo | epoch:0 | step: 66 | loss: 0.6880
+2024-04-16 12:43:22 | Yago3-10_isConnectedTo | epoch:0 | step: 67 | loss: 0.6881
+2024-04-16 12:43:31 | Yago3-10_isConnectedTo | epoch:0 | step: 68 | loss: 0.6876
+2024-04-16 12:43:40 | Yago3-10_isConnectedTo | epoch:0 | step: 69 | loss: 0.6879
+2024-04-16 12:43:50 | Yago3-10_isConnectedTo | epoch:0 | step: 70 | loss: 0.6873
+2024-04-16 12:44:03 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:44:03 | Yago3-10_isConnectedTo |  mrr: 0.0439, hits@1: 0.0074, hits@5: 0.0404, hits@10: 0.0854
+2024-04-16 12:44:03 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=5308.274859, ru_stime=806.406397, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=140301077, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1042720, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=15545122, ru_nivcsw=175480)
+2024-04-16 12:44:03 | Yago3-10_isConnectedTo | Train Time Sec=846.700862
+2024-04-16 12:44:03 | Yago3-10_isConnectedTo | best model | mrr 0.0439
+2024-04-16 12:44:12 | Yago3-10_isConnectedTo | epoch:0 | step: 71 | loss: 0.6878
+2024-04-16 12:44:22 | Yago3-10_isConnectedTo | epoch:0 | step: 72 | loss: 0.6863
+2024-04-16 12:44:31 | Yago3-10_isConnectedTo | epoch:0 | step: 73 | loss: 0.6860
+2024-04-16 12:44:40 | Yago3-10_isConnectedTo | epoch:0 | step: 74 | loss: 0.6894
+2024-04-16 12:44:48 | Yago3-10_isConnectedTo | epoch:0 | step: 75 | loss: 0.6842
+2024-04-16 12:45:02 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:45:02 | Yago3-10_isConnectedTo |  mrr: 0.0448, hits@1: 0.0075, hits@5: 0.0412, hits@10: 0.0891
+2024-04-16 12:45:02 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=5668.749053, ru_stime=858.149536, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=149776099, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1042912, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=16471013, ru_nivcsw=186979)
+2024-04-16 12:45:02 | Yago3-10_isConnectedTo | Train Time Sec=905.550864
+2024-04-16 12:45:02 | Yago3-10_isConnectedTo | best model | mrr 0.0448
+2024-04-16 12:45:10 | Yago3-10_isConnectedTo | epoch:0 | step: 76 | loss: 0.6834
+2024-04-16 12:45:20 | Yago3-10_isConnectedTo | epoch:0 | step: 77 | loss: 0.6830
+2024-04-16 12:45:29 | Yago3-10_isConnectedTo | epoch:0 | step: 78 | loss: 0.6845
+2024-04-16 12:45:38 | Yago3-10_isConnectedTo | epoch:0 | step: 79 | loss: 0.6832
+2024-04-16 12:45:48 | Yago3-10_isConnectedTo | epoch:0 | step: 80 | loss: 0.6824
+2024-04-16 12:46:01 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:46:01 | Yago3-10_isConnectedTo |  mrr: 0.0446, hits@1: 0.0071, hits@5: 0.0398, hits@10: 0.0900
+2024-04-16 12:46:01 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=6035.868723, ru_stime=908.692521, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=159383248, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1043104, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=17398524, ru_nivcsw=195999)
+2024-04-16 12:46:01 | Yago3-10_isConnectedTo | Train Time Sec=964.758885
+2024-04-16 12:46:01 | Yago3-10_isConnectedTo | best model is at step 75, mrr 0.0448, bad count 1
+2024-04-16 12:46:10 | Yago3-10_isConnectedTo | epoch:0 | step: 81 | loss: 0.6821
+2024-04-16 12:46:24 | Yago3-10_isConnectedTo | epoch:0 | step: 82 | loss: 0.6913
+2024-04-16 12:46:34 | Yago3-10_isConnectedTo | epoch:0 | step: 83 | loss: 0.6876
+2024-04-16 12:46:43 | Yago3-10_isConnectedTo | epoch:0 | step: 84 | loss: 0.6834
+2024-04-16 12:46:52 | Yago3-10_isConnectedTo | epoch:0 | step: 85 | loss: 0.6834
+2024-04-16 12:47:06 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:47:06 | Yago3-10_isConnectedTo |  mrr: 0.0443, hits@1: 0.0066, hits@5: 0.0403, hits@10: 0.0908
+2024-04-16 12:47:06 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=6399.125283, ru_stime=1006.425459, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=175801789, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1043208, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=18325159, ru_nivcsw=204314)
+2024-04-16 12:47:06 | Yago3-10_isConnectedTo | Train Time Sec=1029.561143
+2024-04-16 12:47:06 | Yago3-10_isConnectedTo | best model is at step 75, mrr 0.0448, bad count 2
+2024-04-16 12:47:15 | Yago3-10_isConnectedTo | epoch:0 | step: 86 | loss: 0.6824
+2024-04-16 12:47:24 | Yago3-10_isConnectedTo | epoch:0 | step: 87 | loss: 0.6858
+2024-04-16 12:47:32 | Yago3-10_isConnectedTo | epoch:0 | step: 88 | loss: 0.6814
+2024-04-16 12:47:42 | Yago3-10_isConnectedTo | epoch:0 | step: 89 | loss: 0.6803
+2024-04-16 12:47:51 | Yago3-10_isConnectedTo | epoch:0 | step: 90 | loss: 0.6852
+2024-04-16 12:48:06 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:48:06 | Yago3-10_isConnectedTo |  mrr: 0.0446, hits@1: 0.0056, hits@5: 0.0409, hits@10: 0.0950
+2024-04-16 12:48:06 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=6762.748621, ru_stime=1058.847141, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=185291896, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1043312, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=19245070, ru_nivcsw=214334)
+2024-04-16 12:48:06 | Yago3-10_isConnectedTo | Train Time Sec=1089.604944
+2024-04-16 12:48:06 | Yago3-10_isConnectedTo | best model is at step 75, mrr 0.0448, bad count 3
+2024-04-16 12:48:16 | Yago3-10_isConnectedTo | epoch:0 | step: 91 | loss: 0.6835
+2024-04-16 12:48:25 | Yago3-10_isConnectedTo | epoch:0 | step: 92 | loss: 0.6806
+2024-04-16 12:48:34 | Yago3-10_isConnectedTo | epoch:0 | step: 93 | loss: 0.6811
+2024-04-16 12:48:43 | Yago3-10_isConnectedTo | epoch:0 | step: 94 | loss: 0.6794
+2024-04-16 12:48:52 | Yago3-10_isConnectedTo | epoch:0 | step: 95 | loss: 0.6789
+2024-04-16 12:49:06 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:49:06 | Yago3-10_isConnectedTo |  mrr: 0.0476, hits@1: 0.0063, hits@5: 0.0440, hits@10: 0.0995
+2024-04-16 12:49:06 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=7126.300892, ru_stime=1110.414545, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=194870351, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1043408, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=20163187, ru_nivcsw=222756)
+2024-04-16 12:49:06 | Yago3-10_isConnectedTo | Train Time Sec=1149.55436
+2024-04-16 12:49:06 | Yago3-10_isConnectedTo | best model | mrr 0.0476
+2024-04-16 12:49:15 | Yago3-10_isConnectedTo | epoch:0 | step: 96 | loss: 0.6776
+2024-04-16 12:49:25 | Yago3-10_isConnectedTo | epoch:0 | step: 97 | loss: 0.6777
+2024-04-16 12:49:34 | Yago3-10_isConnectedTo | epoch:0 | step: 98 | loss: 0.6797
+2024-04-16 12:49:44 | Yago3-10_isConnectedTo | epoch:0 | step: 99 | loss: 0.6748
+2024-04-16 12:49:54 | Yago3-10_isConnectedTo | epoch:0 | step: 100 | loss: 0.6760
+2024-04-16 12:50:08 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:50:08 | Yago3-10_isConnectedTo |  mrr: 0.0495, hits@1: 0.0075, hits@5: 0.0469, hits@10: 0.1029
+2024-04-16 12:50:08 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=7510.571294, ru_stime=1164.068833, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=204566062, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1043592, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=21088106, ru_nivcsw=242172)
+2024-04-16 12:50:08 | Yago3-10_isConnectedTo | Train Time Sec=1211.972333
+2024-04-16 12:50:08 | Yago3-10_isConnectedTo | best model | mrr 0.0495
+2024-04-16 12:50:18 | Yago3-10_isConnectedTo | epoch:0 | step: 101 | loss: 0.6832
+2024-04-16 12:50:27 | Yago3-10_isConnectedTo | epoch:0 | step: 102 | loss: 0.6769
+2024-04-16 12:50:36 | Yago3-10_isConnectedTo | epoch:0 | step: 103 | loss: 0.6797
+2024-04-16 12:50:45 | Yago3-10_isConnectedTo | epoch:0 | step: 104 | loss: 0.6754
+2024-04-16 12:50:54 | Yago3-10_isConnectedTo | epoch:0 | step: 105 | loss: 0.6757
+2024-04-16 12:51:08 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:51:08 | Yago3-10_isConnectedTo |  mrr: 0.0526, hits@1: 0.0075, hits@5: 0.0524, hits@10: 0.1142
+2024-04-16 12:51:08 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=7878.046462, ru_stime=1218.011158, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=214112143, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1043784, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=22013525, ru_nivcsw=286987)
+2024-04-16 12:51:08 | Yago3-10_isConnectedTo | Train Time Sec=1272.256529
+2024-04-16 12:51:08 | Yago3-10_isConnectedTo | best model | mrr 0.0526
+2024-04-16 12:51:18 | Yago3-10_isConnectedTo | epoch:0 | step: 106 | loss: 0.6771
+2024-04-16 12:51:27 | Yago3-10_isConnectedTo | epoch:0 | step: 107 | loss: 0.6730
+2024-04-16 12:51:37 | Yago3-10_isConnectedTo | epoch:0 | step: 108 | loss: 0.6732
+2024-04-16 12:51:47 | Yago3-10_isConnectedTo | epoch:0 | step: 109 | loss: 0.6732
+2024-04-16 12:51:56 | Yago3-10_isConnectedTo | epoch:0 | step: 110 | loss: 0.6743
+2024-04-16 12:52:10 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:52:10 | Yago3-10_isConnectedTo |  mrr: 0.0589, hits@1: 0.0104, hits@5: 0.0617, hits@10: 0.1302
+2024-04-16 12:52:10 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=8251.414016, ru_stime=1271.05829, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=223789184, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1043960, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=22933169, ru_nivcsw=308626)
+2024-04-16 12:52:10 | Yago3-10_isConnectedTo | Train Time Sec=1333.773775
+2024-04-16 12:52:10 | Yago3-10_isConnectedTo | best model | mrr 0.0589
+2024-04-16 12:52:19 | Yago3-10_isConnectedTo | epoch:0 | step: 111 | loss: 0.6737
+2024-04-16 12:52:28 | Yago3-10_isConnectedTo | epoch:0 | step: 112 | loss: 0.6741
+2024-04-16 12:52:38 | Yago3-10_isConnectedTo | epoch:0 | step: 113 | loss: 0.6726
+2024-04-16 12:52:48 | Yago3-10_isConnectedTo | epoch:0 | step: 114 | loss: 0.6719
+2024-04-16 12:52:57 | Yago3-10_isConnectedTo | epoch:0 | step: 115 | loss: 0.6747
+2024-04-16 12:53:12 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:53:12 | Yago3-10_isConnectedTo |  mrr: 0.0618, hits@1: 0.0108, hits@5: 0.0663, hits@10: 0.1417
+2024-04-16 12:53:12 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=8626.291368, ru_stime=1325.438297, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=233447080, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1044152, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=23854803, ru_nivcsw=331464)
+2024-04-16 12:53:12 | Yago3-10_isConnectedTo | Train Time Sec=1396.213978
+2024-04-16 12:53:12 | Yago3-10_isConnectedTo | best model | mrr 0.0618
+2024-04-16 12:53:22 | Yago3-10_isConnectedTo | epoch:0 | step: 116 | loss: 0.6731
+2024-04-16 12:53:32 | Yago3-10_isConnectedTo | epoch:0 | step: 117 | loss: 0.6769
+2024-04-16 12:53:42 | Yago3-10_isConnectedTo | epoch:0 | step: 118 | loss: 0.6843
+2024-04-16 12:53:51 | Yago3-10_isConnectedTo | epoch:0 | step: 119 | loss: 0.6837
+2024-04-16 12:54:00 | Yago3-10_isConnectedTo | epoch:0 | step: 120 | loss: 0.6788
+2024-04-16 12:54:15 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:54:15 | Yago3-10_isConnectedTo |  mrr: 0.0666, hits@1: 0.0128, hits@5: 0.0755, hits@10: 0.1532
+2024-04-16 12:54:15 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=9002.224402, ru_stime=1380.073885, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=242925624, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1044336, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=24779396, ru_nivcsw=349018)
+2024-04-16 12:54:15 | Yago3-10_isConnectedTo | Train Time Sec=1458.733824
+2024-04-16 12:54:15 | Yago3-10_isConnectedTo | best model | mrr 0.0666
+2024-04-16 12:54:24 | Yago3-10_isConnectedTo | epoch:0 | step: 121 | loss: 0.6742
+2024-04-16 12:54:34 | Yago3-10_isConnectedTo | epoch:0 | step: 122 | loss: 0.6738
+2024-04-16 12:54:43 | Yago3-10_isConnectedTo | epoch:0 | step: 123 | loss: 0.6731
+2024-04-16 12:54:53 | Yago3-10_isConnectedTo | epoch:0 | step: 124 | loss: 0.6752
+2024-04-16 12:55:02 | Yago3-10_isConnectedTo | epoch:0 | step: 125 | loss: 0.6765
+2024-04-16 12:55:17 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:55:17 | Yago3-10_isConnectedTo |  mrr: 0.0687, hits@1: 0.0144, hits@5: 0.0799, hits@10: 0.1551
+2024-04-16 12:55:17 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=9372.592764, ru_stime=1434.604752, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=252374779, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1044512, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=25702075, ru_nivcsw=363781)
+2024-04-16 12:55:17 | Yago3-10_isConnectedTo | Train Time Sec=1520.50789
+2024-04-16 12:55:17 | Yago3-10_isConnectedTo | best model | mrr 0.0687
+2024-04-16 12:55:27 | Yago3-10_isConnectedTo | epoch:0 | step: 126 | loss: 0.6727
+2024-04-16 12:55:37 | Yago3-10_isConnectedTo | epoch:0 | step: 127 | loss: 0.6772
+2024-04-16 12:55:46 | Yago3-10_isConnectedTo | epoch:0 | step: 128 | loss: 0.6735
+2024-04-16 12:55:55 | Yago3-10_isConnectedTo | epoch:0 | step: 129 | loss: 0.6723
+2024-04-16 12:56:04 | Yago3-10_isConnectedTo | epoch:0 | step: 130 | loss: 0.6763
+2024-04-16 12:56:18 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:56:18 | Yago3-10_isConnectedTo |  mrr: 0.0711, hits@1: 0.0162, hits@5: 0.0834, hits@10: 0.1598
+2024-04-16 12:56:18 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=9747.307253, ru_stime=1489.36426, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=261967036, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1044704, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=26626264, ru_nivcsw=390246)
+2024-04-16 12:56:18 | Yago3-10_isConnectedTo | Train Time Sec=1582.414544
+2024-04-16 12:56:18 | Yago3-10_isConnectedTo | best model | mrr 0.0711
+2024-04-16 12:56:28 | Yago3-10_isConnectedTo | epoch:0 | step: 131 | loss: 0.6700
+2024-04-16 12:56:36 | Yago3-10_isConnectedTo | epoch:0 | step: 132 | loss: 0.6713
+2024-04-16 12:56:46 | Yago3-10_isConnectedTo | epoch:0 | step: 133 | loss: 0.6713
+2024-04-16 12:56:55 | Yago3-10_isConnectedTo | epoch:0 | step: 134 | loss: 0.6717
+2024-04-16 12:57:04 | Yago3-10_isConnectedTo | epoch:0 | step: 135 | loss: 0.6738
+2024-04-16 12:57:19 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:57:19 | Yago3-10_isConnectedTo |  mrr: 0.0762, hits@1: 0.0182, hits@5: 0.0919, hits@10: 0.1748
+2024-04-16 12:57:19 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=10111.597812, ru_stime=1543.150383, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=271373621, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1044904, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=27544969, ru_nivcsw=410702)
+2024-04-16 12:57:19 | Yago3-10_isConnectedTo | Train Time Sec=1642.558538
+2024-04-16 12:57:19 | Yago3-10_isConnectedTo | best model | mrr 0.0762
+2024-04-16 12:57:29 | Yago3-10_isConnectedTo | epoch:0 | step: 136 | loss: 0.6689
+2024-04-16 12:57:39 | Yago3-10_isConnectedTo | epoch:0 | step: 137 | loss: 0.6752
+2024-04-16 12:57:49 | Yago3-10_isConnectedTo | epoch:0 | step: 138 | loss: 0.6691
+2024-04-16 12:57:58 | Yago3-10_isConnectedTo | epoch:0 | step: 139 | loss: 0.6733
+2024-04-16 12:58:07 | Yago3-10_isConnectedTo | epoch:0 | step: 140 | loss: 0.6712
+2024-04-16 12:58:21 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:58:21 | Yago3-10_isConnectedTo |  mrr: 0.0771, hits@1: 0.0191, hits@5: 0.0908, hits@10: 0.1759
+2024-04-16 12:58:21 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=10491.151439, ru_stime=1598.061994, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=281005483, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1045104, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=28472279, ru_nivcsw=440914)
+2024-04-16 12:58:21 | Yago3-10_isConnectedTo | Train Time Sec=1705.270083
+2024-04-16 12:58:21 | Yago3-10_isConnectedTo | best model | mrr 0.0771
+2024-04-16 12:58:30 | Yago3-10_isConnectedTo | epoch:0 | step: 141 | loss: 0.6725
+2024-04-16 12:58:40 | Yago3-10_isConnectedTo | epoch:0 | step: 142 | loss: 0.6726
+2024-04-16 12:58:48 | Yago3-10_isConnectedTo | epoch:0 | step: 143 | loss: 0.6679
+2024-04-16 12:58:58 | Yago3-10_isConnectedTo | epoch:0 | step: 144 | loss: 0.6720
+2024-04-16 12:59:08 | Yago3-10_isConnectedTo | epoch:0 | step: 145 | loss: 0.6707
+2024-04-16 12:59:22 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 12:59:22 | Yago3-10_isConnectedTo |  mrr: 0.0771, hits@1: 0.0203, hits@5: 0.0912, hits@10: 0.1699
+2024-04-16 12:59:22 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=10855.186554, ru_stime=1650.905078, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=290453408, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1045296, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=29392218, ru_nivcsw=460645)
+2024-04-16 12:59:22 | Yago3-10_isConnectedTo | Train Time Sec=1765.758968
+2024-04-16 12:59:22 | Yago3-10_isConnectedTo | best model | mrr 0.0771
+2024-04-16 12:59:31 | Yago3-10_isConnectedTo | epoch:0 | step: 146 | loss: 0.6738
+2024-04-16 12:59:42 | Yago3-10_isConnectedTo | epoch:0 | step: 147 | loss: 0.6673
+2024-04-16 12:59:52 | Yago3-10_isConnectedTo | epoch:0 | step: 148 | loss: 0.6670
+2024-04-16 13:00:01 | Yago3-10_isConnectedTo | epoch:0 | step: 149 | loss: 0.6657
+2024-04-16 13:00:11 | Yago3-10_isConnectedTo | epoch:0 | step: 150 | loss: 0.6688
+2024-04-16 13:00:25 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 13:00:25 | Yago3-10_isConnectedTo |  mrr: 0.0840, hits@1: 0.0222, hits@5: 0.1036, hits@10: 0.1940
+2024-04-16 13:00:25 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=11242.921912, ru_stime=1705.914232, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=300180905, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1045488, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=30318059, ru_nivcsw=482492)
+2024-04-16 13:00:25 | Yago3-10_isConnectedTo | Train Time Sec=1829.364558
+2024-04-16 13:00:25 | Yago3-10_isConnectedTo | best model | mrr 0.0840
+2024-04-16 13:00:35 | Yago3-10_isConnectedTo | epoch:0 | step: 151 | loss: 0.6713
+2024-04-16 13:00:44 | Yago3-10_isConnectedTo | epoch:0 | step: 152 | loss: 0.6711
+2024-04-16 13:00:54 | Yago3-10_isConnectedTo | epoch:0 | step: 153 | loss: 0.6694
+2024-04-16 13:01:03 | Yago3-10_isConnectedTo | epoch:0 | step: 154 | loss: 0.6672
+2024-04-16 13:01:13 | Yago3-10_isConnectedTo | epoch:0 | step: 155 | loss: 0.6662
+2024-04-16 13:01:26 | Yago3-10_isConnectedTo | valid on valid subgraphs
+2024-04-16 13:01:26 | Yago3-10_isConnectedTo |  mrr: 0.0866, hits@1: 0.0228, hits@5: 0.1083, hits@10: 0.2017
+2024-04-16 13:01:26 | Yago3-10_isConnectedTo | resource.struct_rusage(ru_utime=11616.408521, ru_stime=1759.304607, ru_maxrss=11904000, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=309896900, ru_majflt=74, ru_nswap=0, ru_inblock=7216, ru_oublock=1045680, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=31241915, ru_nivcsw=495251)
+2024-04-16 13:01:26 | Yago3-10_isConnectedTo | Train Time Sec=1890.19169
+2024-04-16 13:01:26 | Yago3-10_isConnectedTo | best model | mrr 0.0866
+2024-04-16 13:01:34 | Yago3-10_isConnectedTo | epoch:0 | step: 156 | loss: 0.6648
+2024-04-16 13:01:36 | Yago3-10_isConnectedTo | epoch:0 | step: 157 | loss: 0.6640
+2024-04-16 13:01:36 | Yago3-10_isConnectedTo | finish meta-training
+2024-04-16 13:01:36 | Yago3-10_isConnectedTo | save best model
+2024-04-16 13:01:36 | Yago3-10_isConnectedTo | best validation | epoch:0, mrr: 0.0866, hits@1: 0.0228, hits@5: 0.1083, hits@10: 0.2017
+2024-04-16 13:01:37 | Yago3-10_isConnectedTo | test on ind-test-graph, sample 50
+2024-04-16 13:01:37 | Yago3-10_isConnectedTo | mrr: 0.2129, hits@1: 0.0818, hits@5: 0.3095, hits@10: 0.5203
+2024-04-16 13:01:37 | Yago3-10_isConnectedTo | Train Time Sec=1900.587226
+2024-04-16 13:01:37 | Yago3-10_isConnectedTo | Total Time Sec=2143.216764
+2024-12-17 10:14:40 | Yago3-10_isConnectedTo | df_test_g_train len=18784
+2024-12-17 10:14:40 | Yago3-10_isConnectedTo | df_train_g_test len=3008
+2024-12-17 10:14:40 | Yago3-10_isConnectedTo | df_train_g_train len=13384
+2024-12-17 10:14:40 | Yago3-10_isConnectedTo | df_train_g_valid len=54
+2024-12-17 10:14:40 | Yago3-10_isConnectedTo | df_test_g_valid len=79
+2024-12-17 10:14:40 | Yago3-10_isConnectedTo | Sampling Time Sec=0.125608
+2024-12-17 10:14:40 | Yago3-10_isConnectedTo | {"dataset_name": "Yago3-10_isConnectedTo", "name": "Yago3-10_isConnectedTo", "root_path": "/home/afandi/GitRepos/KGNET/Datasets/", "loadTrainedModel": 1, "modelID": "YAGO_3-10_isConnectedTo_FG.model", "step": "meta_train", "metatrain_state": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE.best", "state_dir": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE", "log_dir": "./log", "tb_log_dir": "./tb_log", "num_train_subgraph": 10000, "num_valid_subgraph": 200, "num_sample_for_estimate_size": 50, "rw_0": 10, "rw_1": 10, "rw_2": 5, "num_sample_cand": 5, "metatrain_num_neg": 64, "metatrain_num_epoch": 1, "metatrain_bs": 64, "metatrain_lr": 0.01, "metatrain_check_per_step": 5, "indtest_eval_bs": 512, "posttrain_num_neg": 64, "posttrain_bs": 512, "posttrain_lr": 0.001, "posttrain_num_epoch": 10, "posttrain_check_per_epoch": 1, "num_layers": 3, "num_bases": 4, "emb_dim": 32, "kge": "TransE", "gamma": 10, "adv_temp": 1, "gpu": "cpu", "seed": 1234, "ent_dim": 32, "rel_dim": 32, "data_path": "/home/afandi/GitRepos/KGNET/Datasets/Yago3-10_isConnectedTo/Yago3-10_isConnectedTo.pkl", "db_path": "/home/afandi/GitRepos/KGNET/Datasets/Yago3-10_isConnectedTo_subgraph", "num_rel": 12}
+2024-12-17 10:25:14 | Yago3-10_isConnectedTo | df_test_g_train len=18784
+2024-12-17 10:25:14 | Yago3-10_isConnectedTo | df_train_g_test len=2993
+2024-12-17 10:25:14 | Yago3-10_isConnectedTo | df_train_g_train len=13399
+2024-12-17 10:25:14 | Yago3-10_isConnectedTo | df_train_g_valid len=54
+2024-12-17 10:25:14 | Yago3-10_isConnectedTo | df_test_g_valid len=79
+2024-12-17 10:25:14 | Yago3-10_isConnectedTo | Sampling Time Sec=0.266097
+2024-12-17 10:25:14 | Yago3-10_isConnectedTo | {"dataset_name": "Yago3-10_isConnectedTo", "name": "Yago3-10_isConnectedTo", "root_path": "/home/afandi/GitRepos/KGNET/Datasets/", "loadTrainedModel": 1, "modelID": "YAGO_3-10_isConnectedTo_FG.model", "step": "meta_train", "metatrain_state": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE.best", "state_dir": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE", "log_dir": "./log", "tb_log_dir": "./tb_log", "num_train_subgraph": 10000, "num_valid_subgraph": 200, "num_sample_for_estimate_size": 50, "rw_0": 10, "rw_1": 10, "rw_2": 5, "num_sample_cand": 5, "metatrain_num_neg": 64, "metatrain_num_epoch": 1, "metatrain_bs": 64, "metatrain_lr": 0.01, "metatrain_check_per_step": 5, "indtest_eval_bs": 512, "posttrain_num_neg": 64, "posttrain_bs": 512, "posttrain_lr": 0.001, "posttrain_num_epoch": 10, "posttrain_check_per_epoch": 1, "num_layers": 3, "num_bases": 4, "emb_dim": 32, "kge": "TransE", "gamma": 10, "adv_temp": 1, "gpu": "cpu", "seed": 1234, "ent_dim": 32, "rel_dim": 32, "data_path": "/home/afandi/GitRepos/KGNET/Datasets/Yago3-10_isConnectedTo/Yago3-10_isConnectedTo.pkl", "db_path": "/home/afandi/GitRepos/KGNET/Datasets/Yago3-10_isConnectedTo_subgraph", "num_rel": 12}

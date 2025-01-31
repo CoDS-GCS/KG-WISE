@@ -1,0 +1,3 @@
+data(cora,node0.5), model(none,gcn,label),        	 lr(0.005), wd(0.05), alpha(0.5), t(1.0), dt(0.1) 	perf: 2.80 $\pm$ nan
+data(cora,node0.5), model(none,gcn,label),        	 lr(0.005), wd(0.05), alpha(0.5), t(1.0), dt(0.1) 	perf: 5.78 $\pm$ nan
+data(cora,node0.5), model(none,gcn,label),        	 lr(0.005), wd(0.05), alpha(0.5), t(1.0), dt(0.1) 	perf: 6.95 $\pm$ nan

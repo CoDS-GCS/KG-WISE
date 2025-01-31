@@ -1,0 +1,4 @@
+data(pubmed,edge0.5), model(none,gcn,no),        	 lr(0.01), wd(0.05), alpha(0.5), t(1.0), dt(0.1) 	perf: 85.21 $\pm$ 0.47
+data(pubmed,edge0.5), model(none,gcn,gkd),        	 lr(0.01), wd(0.05), alpha(0.5), t(1.0), dt(0.1) 	perf: 86.69 $\pm$ 0.33
+data(pubmed,edge0.5), model(none,gcn,no),        	 lr(0.01), wd(0.05), alpha(0.5), t(1.0), dt(0.1) 	perf: 84.65 $\pm$ 0.74
+data(pubmed,edge0.5), model(none,gcn,gkd),        	 lr(0.01), wd(0.05), alpha(0.5), t(1.0), dt(0.1) 	perf: 86.84 $\pm$ 0.34

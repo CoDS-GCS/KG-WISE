@@ -1,0 +1,656 @@
+2023-12-13 13:45:10 | wn18rr | df_test_g_train len=38136
+2023-12-13 13:45:10 | wn18rr | df_train_g_test len=7160
+2023-12-13 13:45:10 | wn18rr | df_train_g_train len=41539
+2023-12-13 13:45:10 | wn18rr | df_train_g_valid len=1691
+2023-12-13 13:45:10 | wn18rr | df_test_g_valid len=1343
+2023-12-13 13:45:10 | wn18rr | Sampling Time Sec=0.269931
+2023-12-13 13:45:10 | wn18rr | {"dataset_name": "wn18rr", "name": "wn18rr", "root_path": "/home/afandi/GitRepos/KGNET/Datasets/", "loadTrainedModel": 0, "modelID": "DBLP_Paper_Venue_FM_FTD_d1h1_2021.model", "step": "meta_train", "metatrain_state": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE.best", "state_dir": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE", "log_dir": "./log", "tb_log_dir": "./tb_log", "num_train_subgraph": 10000, "num_valid_subgraph": 200, "num_sample_for_estimate_size": 50, "rw_0": 10, "rw_1": 10, "rw_2": 5, "num_sample_cand": 5, "metatrain_num_neg": 64, "metatrain_num_epoch": 1, "metatrain_bs": 64, "metatrain_lr": 0.01, "metatrain_check_per_step": 5, "indtest_eval_bs": 512, "posttrain_num_neg": 64, "posttrain_bs": 512, "posttrain_lr": 0.001, "posttrain_num_epoch": 10, "posttrain_check_per_epoch": 1, "num_layers": 3, "num_bases": 4, "emb_dim": 32, "kge": "TransE", "gamma": 10, "adv_temp": 1, "gpu": "cpu", "seed": 1234, "ent_dim": 32, "rel_dim": 32, "data_path": "/home/afandi/GitRepos/KGNET/Datasets/wn18rr/wn18rr.pkl", "db_path": "/home/afandi/GitRepos/KGNET/Datasets/wn18rr_subgraph", "num_rel": 11}
+2023-12-13 13:45:10 | wn18rr | start meta-training
+2023-12-13 13:45:10 | wn18rr | resource.struct_rusage(ru_utime=2.008659, ru_stime=0.200865, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=87358, ru_majflt=0, ru_nswap=0, ru_inblock=0, ru_oublock=2184, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=99, ru_nivcsw=40)
+2023-12-13 13:45:28 | wn18rr | epoch:0 | step: 1 | loss: 1.6496
+2023-12-13 13:45:29 | wn18rr | epoch:0 | step: 2 | loss: 1.7416
+2023-12-13 13:45:30 | wn18rr | epoch:0 | step: 3 | loss: 1.4913
+2023-12-13 13:45:30 | wn18rr | epoch:0 | step: 4 | loss: 1.2570
+2023-12-13 13:45:31 | wn18rr | epoch:0 | step: 5 | loss: 1.1868
+2023-12-13 13:45:32 | wn18rr | valid on valid subgraphs
+2023-12-13 13:45:32 | wn18rr |  mrr: 0.0878, hits@1: 0.0206, hits@5: 0.1033, hits@10: 0.2157
+2023-12-13 13:45:32 | wn18rr | resource.struct_rusage(ru_utime=54.202418, ru_stime=5.245782, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=878622, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=2200, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=3367, ru_nivcsw=1150)
+2023-12-13 13:45:32 | wn18rr | Train Time Sec=22.21379
+2023-12-13 13:45:32 | wn18rr | best model | mrr 0.0878
+2023-12-13 13:45:33 | wn18rr | epoch:0 | step: 6 | loss: 1.0926
+2023-12-13 13:45:33 | wn18rr | epoch:0 | step: 7 | loss: 1.0115
+2023-12-13 13:45:34 | wn18rr | epoch:0 | step: 8 | loss: 0.9384
+2023-12-13 13:45:35 | wn18rr | epoch:0 | step: 9 | loss: 0.8951
+2023-12-13 13:45:35 | wn18rr | epoch:0 | step: 10 | loss: 0.8131
+2023-12-13 13:45:37 | wn18rr | valid on valid subgraphs
+2023-12-13 13:45:37 | wn18rr |  mrr: 0.1568, hits@1: 0.0653, hits@5: 0.2159, hits@10: 0.3298
+2023-12-13 13:45:37 | wn18rr | resource.struct_rusage(ru_utime=106.030162, ru_stime=9.500066, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=1634968, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=2376, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=5964, ru_nivcsw=1950)
+2023-12-13 13:45:37 | wn18rr | Train Time Sec=26.723794
+2023-12-13 13:45:37 | wn18rr | best model | mrr 0.1568
+2023-12-13 13:45:37 | wn18rr | epoch:0 | step: 11 | loss: 0.7555
+2023-12-13 13:45:38 | wn18rr | epoch:0 | step: 12 | loss: 0.7285
+2023-12-13 13:45:39 | wn18rr | epoch:0 | step: 13 | loss: 0.7215
+2023-12-13 13:45:39 | wn18rr | epoch:0 | step: 14 | loss: 0.6886
+2023-12-13 13:45:40 | wn18rr | epoch:0 | step: 15 | loss: 0.6790
+2023-12-13 13:45:41 | wn18rr | valid on valid subgraphs
+2023-12-13 13:45:41 | wn18rr |  mrr: 0.2321, hits@1: 0.0967, hits@5: 0.3743, hits@10: 0.5731
+2023-12-13 13:45:41 | wn18rr | resource.struct_rusage(ru_utime=157.11937, ru_stime=13.685144, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=2391347, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=2568, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=8181, ru_nivcsw=2784)
+2023-12-13 13:45:41 | wn18rr | Train Time Sec=31.084348
+2023-12-13 13:45:41 | wn18rr | best model | mrr 0.2321
+2023-12-13 13:45:42 | wn18rr | epoch:0 | step: 16 | loss: 0.6820
+2023-12-13 13:45:42 | wn18rr | epoch:0 | step: 17 | loss: 0.6951
+2023-12-13 13:45:43 | wn18rr | epoch:0 | step: 18 | loss: 0.6671
+2023-12-13 13:45:44 | wn18rr | epoch:0 | step: 19 | loss: 0.6626
+2023-12-13 13:45:44 | wn18rr | epoch:0 | step: 20 | loss: 0.6641
+2023-12-13 13:45:46 | wn18rr | valid on valid subgraphs
+2023-12-13 13:45:46 | wn18rr |  mrr: 0.2503, hits@1: 0.1076, hits@5: 0.3993, hits@10: 0.6040
+2023-12-13 13:45:46 | wn18rr | resource.struct_rusage(ru_utime=208.925693, ru_stime=18.016895, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=3149475, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=2752, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=10853, ru_nivcsw=3580)
+2023-12-13 13:45:46 | wn18rr | Train Time Sec=35.562004
+2023-12-13 13:45:46 | wn18rr | best model | mrr 0.2503
+2023-12-13 13:45:46 | wn18rr | epoch:0 | step: 21 | loss: 0.6709
+2023-12-13 13:45:47 | wn18rr | epoch:0 | step: 22 | loss: 0.6687
+2023-12-13 13:45:47 | wn18rr | epoch:0 | step: 23 | loss: 0.6802
+2023-12-13 13:45:48 | wn18rr | epoch:0 | step: 24 | loss: 0.6671
+2023-12-13 13:45:49 | wn18rr | epoch:0 | step: 25 | loss: 0.6694
+2023-12-13 13:45:50 | wn18rr | valid on valid subgraphs
+2023-12-13 13:45:50 | wn18rr |  mrr: 0.2700, hits@1: 0.1206, hits@5: 0.4366, hits@10: 0.6312
+2023-12-13 13:45:50 | wn18rr | resource.struct_rusage(ru_utime=261.823274, ru_stime=22.381164, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=3912811, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=2928, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=13298, ru_nivcsw=4415)
+2023-12-13 13:45:50 | wn18rr | Train Time Sec=40.084587
+2023-12-13 13:45:50 | wn18rr | best model | mrr 0.2700
+2023-12-13 13:45:51 | wn18rr | epoch:0 | step: 26 | loss: 0.6758
+2023-12-13 13:45:51 | wn18rr | epoch:0 | step: 27 | loss: 0.6633
+2023-12-13 13:45:52 | wn18rr | epoch:0 | step: 28 | loss: 0.6654
+2023-12-13 13:45:53 | wn18rr | epoch:0 | step: 29 | loss: 0.6545
+2023-12-13 13:45:53 | wn18rr | epoch:0 | step: 30 | loss: 0.6576
+2023-12-13 13:45:55 | wn18rr | valid on valid subgraphs
+2023-12-13 13:45:55 | wn18rr |  mrr: 0.2805, hits@1: 0.1295, hits@5: 0.4516, hits@10: 0.6460
+2023-12-13 13:45:55 | wn18rr | resource.struct_rusage(ru_utime=312.659644, ru_stime=26.827694, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=4666538, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=3104, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=15888, ru_nivcsw=5206)
+2023-12-13 13:45:55 | wn18rr | Train Time Sec=44.522402
+2023-12-13 13:45:55 | wn18rr | best model | mrr 0.2805
+2023-12-13 13:45:55 | wn18rr | epoch:0 | step: 31 | loss: 0.6642
+2023-12-13 13:45:56 | wn18rr | epoch:0 | step: 32 | loss: 0.6863
+2023-12-13 13:45:56 | wn18rr | epoch:0 | step: 33 | loss: 0.6723
+2023-12-13 13:45:57 | wn18rr | epoch:0 | step: 34 | loss: 0.6569
+2023-12-13 13:45:58 | wn18rr | epoch:0 | step: 35 | loss: 0.6411
+2023-12-13 13:45:59 | wn18rr | valid on valid subgraphs
+2023-12-13 13:45:59 | wn18rr |  mrr: 0.2847, hits@1: 0.1339, hits@5: 0.4563, hits@10: 0.6342
+2023-12-13 13:45:59 | wn18rr | resource.struct_rusage(ru_utime=363.882324, ru_stime=31.021166, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=5430804, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=3296, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=18382, ru_nivcsw=6008)
+2023-12-13 13:45:59 | wn18rr | Train Time Sec=48.894235
+2023-12-13 13:45:59 | wn18rr | best model | mrr 0.2847
+2023-12-13 13:46:00 | wn18rr | epoch:0 | step: 36 | loss: 0.6417
+2023-12-13 13:46:00 | wn18rr | epoch:0 | step: 37 | loss: 0.6500
+2023-12-13 13:46:01 | wn18rr | epoch:0 | step: 38 | loss: 0.6454
+2023-12-13 13:46:01 | wn18rr | epoch:0 | step: 39 | loss: 0.6294
+2023-12-13 13:46:02 | wn18rr | epoch:0 | step: 40 | loss: 0.6502
+2023-12-13 13:46:03 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:03 | wn18rr |  mrr: 0.2986, hits@1: 0.1481, hits@5: 0.4709, hits@10: 0.6347
+2023-12-13 13:46:03 | wn18rr | resource.struct_rusage(ru_utime=414.622481, ru_stime=35.122937, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=6176024, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=3480, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=20996, ru_nivcsw=6802)
+2023-12-13 13:46:03 | wn18rr | Train Time Sec=53.237661
+2023-12-13 13:46:03 | wn18rr | best model | mrr 0.2986
+2023-12-13 13:46:04 | wn18rr | epoch:0 | step: 41 | loss: 0.6405
+2023-12-13 13:46:05 | wn18rr | epoch:0 | step: 42 | loss: 0.6330
+2023-12-13 13:46:05 | wn18rr | epoch:0 | step: 43 | loss: 0.6326
+2023-12-13 13:46:06 | wn18rr | epoch:0 | step: 44 | loss: 0.6281
+2023-12-13 13:46:06 | wn18rr | epoch:0 | step: 45 | loss: 0.6406
+2023-12-13 13:46:08 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:08 | wn18rr |  mrr: 0.3071, hits@1: 0.1547, hits@5: 0.4869, hits@10: 0.6440
+2023-12-13 13:46:08 | wn18rr | resource.struct_rusage(ru_utime=465.605037, ru_stime=39.287384, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=6905901, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=3664, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=23392, ru_nivcsw=7649)
+2023-12-13 13:46:08 | wn18rr | Train Time Sec=57.644902
+2023-12-13 13:46:08 | wn18rr | best model | mrr 0.3071
+2023-12-13 13:46:08 | wn18rr | epoch:0 | step: 46 | loss: 0.6308
+2023-12-13 13:46:09 | wn18rr | epoch:0 | step: 47 | loss: 0.6351
+2023-12-13 13:46:10 | wn18rr | epoch:0 | step: 48 | loss: 0.6271
+2023-12-13 13:46:10 | wn18rr | epoch:0 | step: 49 | loss: 0.6232
+2023-12-13 13:46:11 | wn18rr | epoch:0 | step: 50 | loss: 0.6202
+2023-12-13 13:46:12 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:12 | wn18rr |  mrr: 0.3217, hits@1: 0.1659, hits@5: 0.5052, hits@10: 0.6561
+2023-12-13 13:46:12 | wn18rr | resource.struct_rusage(ru_utime=517.504573, ru_stime=43.574118, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=7657658, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=3856, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=25698, ru_nivcsw=8435)
+2023-12-13 13:46:12 | wn18rr | Train Time Sec=62.080569
+2023-12-13 13:46:12 | wn18rr | best model | mrr 0.3217
+2023-12-13 13:46:13 | wn18rr | epoch:0 | step: 51 | loss: 0.6269
+2023-12-13 13:46:13 | wn18rr | epoch:0 | step: 52 | loss: 0.6556
+2023-12-13 13:46:14 | wn18rr | epoch:0 | step: 53 | loss: 0.6362
+2023-12-13 13:46:14 | wn18rr | epoch:0 | step: 54 | loss: 0.6262
+2023-12-13 13:46:15 | wn18rr | epoch:0 | step: 55 | loss: 0.6266
+2023-12-13 13:46:16 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:16 | wn18rr |  mrr: 0.3444, hits@1: 0.1928, hits@5: 0.5203, hits@10: 0.6583
+2023-12-13 13:46:16 | wn18rr | resource.struct_rusage(ru_utime=568.181543, ru_stime=47.717739, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=8404570, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=4032, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=28335, ru_nivcsw=9238)
+2023-12-13 13:46:16 | wn18rr | Train Time Sec=66.47129
+2023-12-13 13:46:16 | wn18rr | best model | mrr 0.3444
+2023-12-13 13:46:17 | wn18rr | epoch:0 | step: 56 | loss: 0.6265
+2023-12-13 13:46:18 | wn18rr | epoch:0 | step: 57 | loss: 0.6198
+2023-12-13 13:46:18 | wn18rr | epoch:0 | step: 58 | loss: 0.6214
+2023-12-13 13:46:19 | wn18rr | epoch:0 | step: 59 | loss: 0.6279
+2023-12-13 13:46:19 | wn18rr | epoch:0 | step: 60 | loss: 0.6171
+2023-12-13 13:46:21 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:21 | wn18rr |  mrr: 0.3643, hits@1: 0.2159, hits@5: 0.5372, hits@10: 0.6669
+2023-12-13 13:46:21 | wn18rr | resource.struct_rusage(ru_utime=618.502238, ru_stime=51.9429, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9145414, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=4208, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=31017, ru_nivcsw=10076)
+2023-12-13 13:46:21 | wn18rr | Train Time Sec=70.793796
+2023-12-13 13:46:21 | wn18rr | best model | mrr 0.3643
+2023-12-13 13:46:21 | wn18rr | epoch:0 | step: 61 | loss: 0.6096
+2023-12-13 13:46:22 | wn18rr | epoch:0 | step: 62 | loss: 0.6156
+2023-12-13 13:46:23 | wn18rr | epoch:0 | step: 63 | loss: 0.6069
+2023-12-13 13:46:23 | wn18rr | epoch:0 | step: 64 | loss: 0.6253
+2023-12-13 13:46:24 | wn18rr | epoch:0 | step: 65 | loss: 0.6233
+2023-12-13 13:46:25 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:25 | wn18rr |  mrr: 0.3744, hits@1: 0.2244, hits@5: 0.5476, hits@10: 0.6797
+2023-12-13 13:46:25 | wn18rr | resource.struct_rusage(ru_utime=669.677028, ru_stime=56.082922, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9897639, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=4400, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=33305, ru_nivcsw=10870)
+2023-12-13 13:46:25 | wn18rr | Train Time Sec=75.216928
+2023-12-13 13:46:25 | wn18rr | best model | mrr 0.3744
+2023-12-13 13:46:26 | wn18rr | epoch:0 | step: 66 | loss: 0.6178
+2023-12-13 13:46:26 | wn18rr | epoch:0 | step: 67 | loss: 0.6171
+2023-12-13 13:46:27 | wn18rr | epoch:0 | step: 68 | loss: 0.6182
+2023-12-13 13:46:28 | wn18rr | epoch:0 | step: 69 | loss: 0.6091
+2023-12-13 13:46:28 | wn18rr | epoch:0 | step: 70 | loss: 0.6312
+2023-12-13 13:46:30 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:30 | wn18rr |  mrr: 0.4053, hits@1: 0.2637, hits@5: 0.5689, hits@10: 0.6868
+2023-12-13 13:46:30 | wn18rr | resource.struct_rusage(ru_utime=720.187414, ru_stime=60.108902, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=10634383, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=4584, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=35505, ru_nivcsw=11620)
+2023-12-13 13:46:30 | wn18rr | Train Time Sec=79.510821
+2023-12-13 13:46:30 | wn18rr | best model | mrr 0.4053
+2023-12-13 13:46:30 | wn18rr | epoch:0 | step: 71 | loss: 0.6040
+2023-12-13 13:46:31 | wn18rr | epoch:0 | step: 72 | loss: 0.6105
+2023-12-13 13:46:31 | wn18rr | epoch:0 | step: 73 | loss: 0.6160
+2023-12-13 13:46:32 | wn18rr | epoch:0 | step: 74 | loss: 0.6030
+2023-12-13 13:46:33 | wn18rr | epoch:0 | step: 75 | loss: 0.5970
+2023-12-13 13:46:34 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:34 | wn18rr |  mrr: 0.4277, hits@1: 0.2910, hits@5: 0.5828, hits@10: 0.6952
+2023-12-13 13:46:34 | wn18rr | resource.struct_rusage(ru_utime=771.45753, ru_stime=64.226825, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=11409727, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=4760, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=37922, ru_nivcsw=12354)
+2023-12-13 13:46:34 | wn18rr | Train Time Sec=83.890925
+2023-12-13 13:46:34 | wn18rr | best model | mrr 0.4277
+2023-12-13 13:46:35 | wn18rr | epoch:0 | step: 76 | loss: 0.6094
+2023-12-13 13:46:35 | wn18rr | epoch:0 | step: 77 | loss: 0.5922
+2023-12-13 13:46:36 | wn18rr | epoch:0 | step: 78 | loss: 0.5954
+2023-12-13 13:46:36 | wn18rr | epoch:0 | step: 79 | loss: 0.6007
+2023-12-13 13:46:37 | wn18rr | epoch:0 | step: 80 | loss: 0.6001
+2023-12-13 13:46:38 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:38 | wn18rr |  mrr: 0.4427, hits@1: 0.3076, hits@5: 0.5964, hits@10: 0.7035
+2023-12-13 13:46:38 | wn18rr | resource.struct_rusage(ru_utime=822.587643, ru_stime=68.347376, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=12158916, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=4936, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=40348, ru_nivcsw=13113)
+2023-12-13 13:46:38 | wn18rr | Train Time Sec=88.284651
+2023-12-13 13:46:38 | wn18rr | best model | mrr 0.4427
+2023-12-13 13:46:39 | wn18rr | epoch:0 | step: 81 | loss: 0.5860
+2023-12-13 13:46:40 | wn18rr | epoch:0 | step: 82 | loss: 0.6064
+2023-12-13 13:46:40 | wn18rr | epoch:0 | step: 83 | loss: 0.5858
+2023-12-13 13:46:41 | wn18rr | epoch:0 | step: 84 | loss: 0.5914
+2023-12-13 13:46:41 | wn18rr | epoch:0 | step: 85 | loss: 0.5931
+2023-12-13 13:46:43 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:43 | wn18rr |  mrr: 0.4543, hits@1: 0.3282, hits@5: 0.5944, hits@10: 0.6950
+2023-12-13 13:46:43 | wn18rr | resource.struct_rusage(ru_utime=874.308595, ru_stime=72.475759, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=12920542, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=5136, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=42792, ru_nivcsw=13948)
+2023-12-13 13:46:43 | wn18rr | Train Time Sec=92.688
+2023-12-13 13:46:43 | wn18rr | best model | mrr 0.4543
+2023-12-13 13:46:43 | wn18rr | epoch:0 | step: 86 | loss: 0.5875
+2023-12-13 13:46:44 | wn18rr | epoch:0 | step: 87 | loss: 0.5783
+2023-12-13 13:46:45 | wn18rr | epoch:0 | step: 88 | loss: 0.5705
+2023-12-13 13:46:45 | wn18rr | epoch:0 | step: 89 | loss: 0.5867
+2023-12-13 13:46:46 | wn18rr | epoch:0 | step: 90 | loss: 0.5730
+2023-12-13 13:46:47 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:47 | wn18rr |  mrr: 0.4689, hits@1: 0.3470, hits@5: 0.6005, hits@10: 0.7026
+2023-12-13 13:46:47 | wn18rr | resource.struct_rusage(ru_utime=925.973544, ru_stime=76.361981, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=13684450, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=5320, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=45050, ru_nivcsw=14671)
+2023-12-13 13:46:47 | wn18rr | Train Time Sec=97.124927
+2023-12-13 13:46:47 | wn18rr | best model | mrr 0.4689
+2023-12-13 13:46:48 | wn18rr | epoch:0 | step: 91 | loss: 0.5947
+2023-12-13 13:46:48 | wn18rr | epoch:0 | step: 92 | loss: 0.5870
+2023-12-13 13:46:49 | wn18rr | epoch:0 | step: 93 | loss: 0.5948
+2023-12-13 13:46:50 | wn18rr | epoch:0 | step: 94 | loss: 0.5825
+2023-12-13 13:46:50 | wn18rr | epoch:0 | step: 95 | loss: 0.5627
+2023-12-13 13:46:52 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:52 | wn18rr |  mrr: 0.4746, hits@1: 0.3535, hits@5: 0.6028, hits@10: 0.7041
+2023-12-13 13:46:52 | wn18rr | resource.struct_rusage(ru_utime=976.964819, ru_stime=80.738943, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=14443977, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=5496, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=47335, ru_nivcsw=15422)
+2023-12-13 13:46:52 | wn18rr | Train Time Sec=101.505762
+2023-12-13 13:46:52 | wn18rr | best model | mrr 0.4746
+2023-12-13 13:46:52 | wn18rr | epoch:0 | step: 96 | loss: 0.5881
+2023-12-13 13:46:53 | wn18rr | epoch:0 | step: 97 | loss: 0.5691
+2023-12-13 13:46:53 | wn18rr | epoch:0 | step: 98 | loss: 0.5589
+2023-12-13 13:46:54 | wn18rr | epoch:0 | step: 99 | loss: 0.5743
+2023-12-13 13:46:55 | wn18rr | epoch:0 | step: 100 | loss: 0.5726
+2023-12-13 13:46:56 | wn18rr | valid on valid subgraphs
+2023-12-13 13:46:56 | wn18rr |  mrr: 0.4934, hits@1: 0.3813, hits@5: 0.6151, hits@10: 0.7106
+2023-12-13 13:46:56 | wn18rr | resource.struct_rusage(ru_utime=1027.551282, ru_stime=85.059171, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=15199790, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=5680, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=49777, ru_nivcsw=16138)
+2023-12-13 13:46:56 | wn18rr | Train Time Sec=105.896733
+2023-12-13 13:46:56 | wn18rr | best model | mrr 0.4934
+2023-12-13 13:46:57 | wn18rr | epoch:0 | step: 101 | loss: 0.5752
+2023-12-13 13:46:57 | wn18rr | epoch:0 | step: 102 | loss: 0.5711
+2023-12-13 13:46:58 | wn18rr | epoch:0 | step: 103 | loss: 0.5606
+2023-12-13 13:46:58 | wn18rr | epoch:0 | step: 104 | loss: 0.5821
+2023-12-13 13:46:59 | wn18rr | epoch:0 | step: 105 | loss: 0.5613
+2023-12-13 13:47:00 | wn18rr | valid on valid subgraphs
+2023-12-13 13:47:00 | wn18rr |  mrr: 0.5018, hits@1: 0.3913, hits@5: 0.6223, hits@10: 0.7099
+2023-12-13 13:47:00 | wn18rr | resource.struct_rusage(ru_utime=1079.439827, ru_stime=89.449929, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=15960467, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=5864, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=52297, ru_nivcsw=16956)
+2023-12-13 13:47:00 | wn18rr | Train Time Sec=110.37452
+2023-12-13 13:47:00 | wn18rr | best model | mrr 0.5018
+2023-12-13 13:47:01 | wn18rr | epoch:0 | step: 106 | loss: 0.5754
+2023-12-13 13:47:02 | wn18rr | epoch:0 | step: 107 | loss: 0.5717
+2023-12-13 13:47:02 | wn18rr | epoch:0 | step: 108 | loss: 0.5622
+2023-12-13 13:47:03 | wn18rr | epoch:0 | step: 109 | loss: 0.5725
+2023-12-13 13:47:03 | wn18rr | epoch:0 | step: 110 | loss: 0.5660
+2023-12-13 13:47:05 | wn18rr | valid on valid subgraphs
+2023-12-13 13:47:05 | wn18rr |  mrr: 0.5202, hits@1: 0.4159, hits@5: 0.6293, hits@10: 0.7196
+2023-12-13 13:47:05 | wn18rr | resource.struct_rusage(ru_utime=1129.847033, ru_stime=93.682553, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=16702419, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=6048, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=54751, ru_nivcsw=17767)
+2023-12-13 13:47:05 | wn18rr | Train Time Sec=114.702661
+2023-12-13 13:47:05 | wn18rr | best model | mrr 0.5202
+2023-12-13 13:47:05 | wn18rr | epoch:0 | step: 111 | loss: 0.5592
+2023-12-13 13:47:06 | wn18rr | epoch:0 | step: 112 | loss: 0.5497
+2023-12-13 13:47:07 | wn18rr | epoch:0 | step: 113 | loss: 0.5555
+2023-12-13 13:47:07 | wn18rr | epoch:0 | step: 114 | loss: 0.5430
+2023-12-13 13:47:08 | wn18rr | epoch:0 | step: 115 | loss: 0.5454
+2023-12-13 13:47:09 | wn18rr | valid on valid subgraphs
+2023-12-13 13:47:09 | wn18rr |  mrr: 0.5209, hits@1: 0.4157, hits@5: 0.6295, hits@10: 0.7207
+2023-12-13 13:47:09 | wn18rr | resource.struct_rusage(ru_utime=1181.149313, ru_stime=97.613133, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=17449326, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=6224, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=57116, ru_nivcsw=18566)
+2023-12-13 13:47:09 | wn18rr | Train Time Sec=119.103791
+2023-12-13 13:47:09 | wn18rr | best model | mrr 0.5209
+2023-12-13 13:47:10 | wn18rr | epoch:0 | step: 116 | loss: 0.5881
+2023-12-13 13:47:10 | wn18rr | epoch:0 | step: 117 | loss: 0.5849
+2023-12-13 13:47:11 | wn18rr | epoch:0 | step: 118 | loss: 0.5361
+2023-12-13 13:47:11 | wn18rr | epoch:0 | step: 119 | loss: 0.5763
+2023-12-13 13:47:12 | wn18rr | epoch:0 | step: 120 | loss: 0.5547
+2023-12-13 13:47:13 | wn18rr | valid on valid subgraphs
+2023-12-13 13:47:13 | wn18rr |  mrr: 0.5227, hits@1: 0.4160, hits@5: 0.6382, hits@10: 0.7239
+2023-12-13 13:47:13 | wn18rr | resource.struct_rusage(ru_utime=1231.77944, ru_stime=101.805606, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18191531, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=6416, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=59656, ru_nivcsw=19382)
+2023-12-13 13:47:13 | wn18rr | Train Time Sec=123.444046
+2023-12-13 13:47:13 | wn18rr | best model | mrr 0.5227
+2023-12-13 13:47:14 | wn18rr | epoch:0 | step: 121 | loss: 0.5337
+2023-12-13 13:47:15 | wn18rr | epoch:0 | step: 122 | loss: 0.5408
+2023-12-13 13:47:15 | wn18rr | epoch:0 | step: 123 | loss: 0.5534
+2023-12-13 13:47:16 | wn18rr | epoch:0 | step: 124 | loss: 0.5845
+2023-12-13 13:47:16 | wn18rr | epoch:0 | step: 125 | loss: 0.5425
+2023-12-13 13:47:18 | wn18rr | valid on valid subgraphs
+2023-12-13 13:47:18 | wn18rr |  mrr: 0.5350, hits@1: 0.4356, hits@5: 0.6378, hits@10: 0.7202
+2023-12-13 13:47:18 | wn18rr | resource.struct_rusage(ru_utime=1282.936883, ru_stime=106.078201, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18951869, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=6592, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=61908, ru_nivcsw=20483)
+2023-12-13 13:47:18 | wn18rr | Train Time Sec=127.865888
+2023-12-13 13:47:18 | wn18rr | best model | mrr 0.5350
+2023-12-13 13:47:19 | wn18rr | epoch:0 | step: 126 | loss: 0.5610
+2023-12-13 13:47:19 | wn18rr | epoch:0 | step: 127 | loss: 0.5572
+2023-12-13 13:47:20 | wn18rr | epoch:0 | step: 128 | loss: 0.5638
+2023-12-13 13:47:20 | wn18rr | epoch:0 | step: 129 | loss: 0.5363
+2023-12-13 13:47:21 | wn18rr | epoch:0 | step: 130 | loss: 0.5614
+2023-12-13 13:47:22 | wn18rr | valid on valid subgraphs
+2023-12-13 13:47:22 | wn18rr |  mrr: 0.5348, hits@1: 0.4347, hits@5: 0.6390, hits@10: 0.7194
+2023-12-13 13:47:22 | wn18rr | resource.struct_rusage(ru_utime=1335.149432, ru_stime=110.20756, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=19711762, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=6768, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=64540, ru_nivcsw=21382)
+2023-12-13 13:47:22 | wn18rr | Train Time Sec=132.318825
+2023-12-13 13:47:22 | wn18rr | best model is at step 125, mrr 0.5350, bad count 1
+2023-12-13 13:47:23 | wn18rr | epoch:0 | step: 131 | loss: 0.5717
+2023-12-13 13:47:23 | wn18rr | epoch:0 | step: 132 | loss: 0.5603
+2023-12-13 13:47:24 | wn18rr | epoch:0 | step: 133 | loss: 0.5521
+2023-12-13 13:47:25 | wn18rr | epoch:0 | step: 134 | loss: 0.5358
+2023-12-13 13:47:25 | wn18rr | epoch:0 | step: 135 | loss: 0.5615
+2023-12-13 13:47:27 | wn18rr | valid on valid subgraphs
+2023-12-13 13:47:27 | wn18rr |  mrr: 0.5291, hits@1: 0.4236, hits@5: 0.6408, hits@10: 0.7292
+2023-12-13 13:47:27 | wn18rr | resource.struct_rusage(ru_utime=1386.276847, ru_stime=114.143358, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=20444581, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=6800, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=66890, ru_nivcsw=22203)
+2023-12-13 13:47:27 | wn18rr | Train Time Sec=136.708994
+2023-12-13 13:47:27 | wn18rr | best model is at step 125, mrr 0.5350, bad count 2
+2023-12-13 13:47:27 | wn18rr | epoch:0 | step: 136 | loss: 0.5628
+2023-12-13 13:47:28 | wn18rr | epoch:0 | step: 137 | loss: 0.5442
+2023-12-13 13:47:29 | wn18rr | epoch:0 | step: 138 | loss: 0.5399
+2023-12-13 13:47:29 | wn18rr | epoch:0 | step: 139 | loss: 0.5635
+2023-12-13 13:47:30 | wn18rr | epoch:0 | step: 140 | loss: 0.5631
+2023-12-13 13:47:31 | wn18rr | valid on valid subgraphs
+2023-12-13 13:47:31 | wn18rr |  mrr: 0.5440, hits@1: 0.4463, hits@5: 0.6398, hits@10: 0.7351
+2023-12-13 13:47:31 | wn18rr | resource.struct_rusage(ru_utime=1437.826107, ru_stime=118.062331, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=21201361, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=6800, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=69405, ru_nivcsw=22953)
+2023-12-13 13:47:31 | wn18rr | Train Time Sec=141.077848
+2023-12-13 13:47:31 | wn18rr | best model | mrr 0.5440
+2023-12-13 13:47:32 | wn18rr | epoch:0 | step: 141 | loss: 0.5319
+2023-12-13 13:47:32 | wn18rr | epoch:0 | step: 142 | loss: 0.5507
+2023-12-13 13:47:33 | wn18rr | epoch:0 | step: 143 | loss: 0.5403
+2023-12-13 13:47:34 | wn18rr | epoch:0 | step: 144 | loss: 0.5570
+2023-12-13 13:47:34 | wn18rr | epoch:0 | step: 145 | loss: 0.5581
+2023-12-13 13:47:35 | wn18rr | valid on valid subgraphs
+2023-12-13 13:47:35 | wn18rr |  mrr: 0.5500, hits@1: 0.4546, hits@5: 0.6478, hits@10: 0.7301
+2023-12-13 13:47:35 | wn18rr | resource.struct_rusage(ru_utime=1488.649898, ru_stime=122.24398, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=21951569, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=6976, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=71828, ru_nivcsw=23776)
+2023-12-13 13:47:35 | wn18rr | Train Time Sec=145.488996
+2023-12-13 13:47:35 | wn18rr | best model | mrr 0.5500
+2023-12-13 13:47:36 | wn18rr | epoch:0 | step: 146 | loss: 0.5440
+2023-12-13 13:47:37 | wn18rr | epoch:0 | step: 147 | loss: 0.5256
+2023-12-13 13:47:37 | wn18rr | epoch:0 | step: 148 | loss: 0.5479
+2023-12-13 13:47:38 | wn18rr | epoch:0 | step: 149 | loss: 0.5499
+2023-12-13 13:47:39 | wn18rr | epoch:0 | step: 150 | loss: 0.5229
+2023-12-13 13:47:40 | wn18rr | valid on valid subgraphs
+2023-12-13 13:47:40 | wn18rr |  mrr: 0.5515, hits@1: 0.4552, hits@5: 0.6531, hits@10: 0.7332
+2023-12-13 13:47:40 | wn18rr | resource.struct_rusage(ru_utime=1539.147582, ru_stime=126.640193, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=22706122, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=7152, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=74267, ru_nivcsw=24532)
+2023-12-13 13:47:40 | wn18rr | Train Time Sec=149.824186
+2023-12-13 13:47:40 | wn18rr | best model | mrr 0.5515
+2023-12-13 13:47:40 | wn18rr | epoch:0 | step: 151 | loss: 0.5450
+2023-12-13 13:47:41 | wn18rr | epoch:0 | step: 152 | loss: 0.5357
+2023-12-13 13:47:42 | wn18rr | epoch:0 | step: 153 | loss: 0.5379
+2023-12-13 13:47:42 | wn18rr | epoch:0 | step: 154 | loss: 0.5280
+2023-12-13 13:47:43 | wn18rr | epoch:0 | step: 155 | loss: 0.5562
+2023-12-13 13:47:44 | wn18rr | valid on valid subgraphs
+2023-12-13 13:47:44 | wn18rr |  mrr: 0.5562, hits@1: 0.4626, hits@5: 0.6503, hits@10: 0.7338
+2023-12-13 13:47:44 | wn18rr | resource.struct_rusage(ru_utime=1590.321888, ru_stime=130.786839, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=23469461, ru_majflt=69, ru_nswap=0, ru_inblock=0, ru_oublock=7352, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=76615, ru_nivcsw=25337)
+2023-12-13 13:47:44 | wn18rr | Train Time Sec=154.212512
+2023-12-13 13:47:44 | wn18rr | best model | mrr 0.5562
+2023-12-13 13:47:45 | wn18rr | epoch:0 | step: 156 | loss: 0.5522
+2023-12-13 13:47:45 | wn18rr | epoch:0 | step: 157 | loss: 0.5289
+2023-12-13 13:47:45 | wn18rr | finish meta-training
+2023-12-13 13:47:45 | wn18rr | save best model
+2023-12-13 13:47:45 | wn18rr | best validation | epoch:0, mrr: 0.5562, hits@1: 0.4626, hits@5: 0.6503, hits@10: 0.7338
+2023-12-13 13:47:48 | wn18rr | test on ind-test-graph, sample 50
+2023-12-13 13:47:48 | wn18rr | mrr: 0.5232, hits@1: 0.4187, hits@5: 0.6285, hits@10: 0.7311
+2023-12-13 13:47:48 | wn18rr | Train Time Sec=158.084032
+2023-12-13 13:47:48 | wn18rr | Total Time Sec=158.465187
+2023-12-13 13:49:43 | wn18rr | df_test_g_train len=38136
+2023-12-13 13:49:43 | wn18rr | df_train_g_test len=7164
+2023-12-13 13:49:43 | wn18rr | df_train_g_train len=41535
+2023-12-13 13:49:43 | wn18rr | df_train_g_valid len=1691
+2023-12-13 13:49:43 | wn18rr | df_test_g_valid len=1343
+2023-12-13 13:49:43 | wn18rr | Sampling Time Sec=0.306445
+2023-12-13 13:49:43 | wn18rr | {"dataset_name": "wn18rr", "name": "wn18rr", "root_path": "/home/afandi/GitRepos/KGNET/Datasets/", "loadTrainedModel": 0, "modelID": "DBLP_Paper_Venue_FM_FTD_d1h1_2021.model", "step": "meta_train", "metatrain_state": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE.best", "state_dir": "/home/afandi/GitRepos/KGNET/Datasets/trained_models/MorSE", "log_dir": "./log", "tb_log_dir": "./tb_log", "num_train_subgraph": 10000, "num_valid_subgraph": 200, "num_sample_for_estimate_size": 50, "rw_0": 10, "rw_1": 10, "rw_2": 5, "num_sample_cand": 5, "metatrain_num_neg": 64, "metatrain_num_epoch": 1, "metatrain_bs": 64, "metatrain_lr": 0.01, "metatrain_check_per_step": 5, "indtest_eval_bs": 512, "posttrain_num_neg": 64, "posttrain_bs": 512, "posttrain_lr": 0.001, "posttrain_num_epoch": 10, "posttrain_check_per_epoch": 1, "num_layers": 3, "num_bases": 4, "emb_dim": 32, "kge": "TransE", "gamma": 10, "adv_temp": 1, "gpu": "cpu", "seed": 1234, "ent_dim": 32, "rel_dim": 32, "data_path": "/home/afandi/GitRepos/KGNET/Datasets/wn18rr/wn18rr.pkl", "db_path": "/home/afandi/GitRepos/KGNET/Datasets/wn18rr_subgraph", "num_rel": 11}
+2023-12-13 13:49:43 | wn18rr | start meta-training
+2023-12-13 13:49:43 | wn18rr | resource.struct_rusage(ru_utime=1.999013, ru_stime=0.186415, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=87345, ru_majflt=0, ru_nswap=0, ru_inblock=0, ru_oublock=2184, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=79, ru_nivcsw=55)
+2023-12-13 13:50:02 | wn18rr | epoch:0 | step: 1 | loss: 1.6496
+2023-12-13 13:50:02 | wn18rr | epoch:0 | step: 2 | loss: 1.7416
+2023-12-13 13:50:03 | wn18rr | epoch:0 | step: 3 | loss: 1.4913
+2023-12-13 13:50:04 | wn18rr | epoch:0 | step: 4 | loss: 1.2570
+2023-12-13 13:50:04 | wn18rr | epoch:0 | step: 5 | loss: 1.1868
+2023-12-13 13:50:05 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:05 | wn18rr |  mrr: 0.0878, hits@1: 0.0206, hits@5: 0.1035, hits@10: 0.2157
+2023-12-13 13:50:05 | wn18rr | resource.struct_rusage(ru_utime=53.396278, ru_stime=5.327975, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=883046, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=2200, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=3331, ru_nivcsw=1022)
+2023-12-13 13:50:05 | wn18rr | Train Time Sec=22.074257
+2023-12-13 13:50:05 | wn18rr | best model | mrr 0.0878
+2023-12-13 13:50:06 | wn18rr | epoch:0 | step: 6 | loss: 1.0926
+2023-12-13 13:50:07 | wn18rr | epoch:0 | step: 7 | loss: 1.0115
+2023-12-13 13:50:07 | wn18rr | epoch:0 | step: 8 | loss: 0.9384
+2023-12-13 13:50:08 | wn18rr | epoch:0 | step: 9 | loss: 0.8951
+2023-12-13 13:50:09 | wn18rr | epoch:0 | step: 10 | loss: 0.8131
+2023-12-13 13:50:10 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:10 | wn18rr |  mrr: 0.1567, hits@1: 0.0653, hits@5: 0.2158, hits@10: 0.3298
+2023-12-13 13:50:10 | wn18rr | resource.struct_rusage(ru_utime=103.28855, ru_stime=9.673162, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=1647175, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=2384, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=5969, ru_nivcsw=1806)
+2023-12-13 13:50:10 | wn18rr | Train Time Sec=26.408769
+2023-12-13 13:50:10 | wn18rr | best model | mrr 0.1567
+2023-12-13 13:50:10 | wn18rr | epoch:0 | step: 11 | loss: 0.7555
+2023-12-13 13:50:11 | wn18rr | epoch:0 | step: 12 | loss: 0.7285
+2023-12-13 13:50:12 | wn18rr | epoch:0 | step: 13 | loss: 0.7215
+2023-12-13 13:50:12 | wn18rr | epoch:0 | step: 14 | loss: 0.6886
+2023-12-13 13:50:13 | wn18rr | epoch:0 | step: 15 | loss: 0.6790
+2023-12-13 13:50:14 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:14 | wn18rr |  mrr: 0.2321, hits@1: 0.0965, hits@5: 0.3745, hits@10: 0.5733
+2023-12-13 13:50:14 | wn18rr | resource.struct_rusage(ru_utime=153.077253, ru_stime=13.998889, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=2411719, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=2560, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=8182, ru_nivcsw=2490)
+2023-12-13 13:50:14 | wn18rr | Train Time Sec=30.691471
+2023-12-13 13:50:14 | wn18rr | best model | mrr 0.2321
+2023-12-13 13:50:15 | wn18rr | epoch:0 | step: 16 | loss: 0.6820
+2023-12-13 13:50:15 | wn18rr | epoch:0 | step: 17 | loss: 0.6951
+2023-12-13 13:50:16 | wn18rr | epoch:0 | step: 18 | loss: 0.6671
+2023-12-13 13:50:17 | wn18rr | epoch:0 | step: 19 | loss: 0.6625
+2023-12-13 13:50:17 | wn18rr | epoch:0 | step: 20 | loss: 0.6640
+2023-12-13 13:50:19 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:19 | wn18rr |  mrr: 0.2499, hits@1: 0.1065, hits@5: 0.3999, hits@10: 0.6041
+2023-12-13 13:50:19 | wn18rr | resource.struct_rusage(ru_utime=204.526813, ru_stime=18.404246, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=3175138, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=2736, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=10807, ru_nivcsw=3344)
+2023-12-13 13:50:19 | wn18rr | Train Time Sec=35.154396
+2023-12-13 13:50:19 | wn18rr | best model | mrr 0.2499
+2023-12-13 13:50:19 | wn18rr | epoch:0 | step: 21 | loss: 0.6709
+2023-12-13 13:50:20 | wn18rr | epoch:0 | step: 22 | loss: 0.6688
+2023-12-13 13:50:20 | wn18rr | epoch:0 | step: 23 | loss: 0.6803
+2023-12-13 13:50:21 | wn18rr | epoch:0 | step: 24 | loss: 0.6672
+2023-12-13 13:50:22 | wn18rr | epoch:0 | step: 25 | loss: 0.6693
+2023-12-13 13:50:23 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:23 | wn18rr |  mrr: 0.2702, hits@1: 0.1211, hits@5: 0.4378, hits@10: 0.6303
+2023-12-13 13:50:23 | wn18rr | resource.struct_rusage(ru_utime=255.934494, ru_stime=22.933557, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=3942344, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=2912, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=13299, ru_nivcsw=4118)
+2023-12-13 13:50:23 | wn18rr | Train Time Sec=39.559799
+2023-12-13 13:50:23 | wn18rr | best model | mrr 0.2702
+2023-12-13 13:50:24 | wn18rr | epoch:0 | step: 26 | loss: 0.6756
+2023-12-13 13:50:24 | wn18rr | epoch:0 | step: 27 | loss: 0.6632
+2023-12-13 13:50:25 | wn18rr | epoch:0 | step: 28 | loss: 0.6654
+2023-12-13 13:50:25 | wn18rr | epoch:0 | step: 29 | loss: 0.6548
+2023-12-13 13:50:26 | wn18rr | epoch:0 | step: 30 | loss: 0.6578
+2023-12-13 13:50:27 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:27 | wn18rr |  mrr: 0.2797, hits@1: 0.1290, hits@5: 0.4494, hits@10: 0.6443
+2023-12-13 13:50:27 | wn18rr | resource.struct_rusage(ru_utime=306.559939, ru_stime=27.546, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=4697374, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=3096, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=15954, ru_nivcsw=4902)
+2023-12-13 13:50:27 | wn18rr | Train Time Sec=43.97846
+2023-12-13 13:50:27 | wn18rr | best model | mrr 0.2797
+2023-12-13 13:50:28 | wn18rr | epoch:0 | step: 31 | loss: 0.6647
+2023-12-13 13:50:29 | wn18rr | epoch:0 | step: 32 | loss: 0.6871
+2023-12-13 13:50:29 | wn18rr | epoch:0 | step: 33 | loss: 0.6721
+2023-12-13 13:50:30 | wn18rr | epoch:0 | step: 34 | loss: 0.6569
+2023-12-13 13:50:30 | wn18rr | epoch:0 | step: 35 | loss: 0.6416
+2023-12-13 13:50:32 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:32 | wn18rr |  mrr: 0.2838, hits@1: 0.1323, hits@5: 0.4567, hits@10: 0.6344
+2023-12-13 13:50:32 | wn18rr | resource.struct_rusage(ru_utime=356.996965, ru_stime=32.044816, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=5465052, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=3288, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=18412, ru_nivcsw=5671)
+2023-12-13 13:50:32 | wn18rr | Train Time Sec=48.330317
+2023-12-13 13:50:32 | wn18rr | best model | mrr 0.2838
+2023-12-13 13:50:32 | wn18rr | epoch:0 | step: 36 | loss: 0.6411
+2023-12-13 13:50:33 | wn18rr | epoch:0 | step: 37 | loss: 0.6503
+2023-12-13 13:50:34 | wn18rr | epoch:0 | step: 38 | loss: 0.6454
+2023-12-13 13:50:34 | wn18rr | epoch:0 | step: 39 | loss: 0.6299
+2023-12-13 13:50:35 | wn18rr | epoch:0 | step: 40 | loss: 0.6503
+2023-12-13 13:50:36 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:36 | wn18rr |  mrr: 0.2968, hits@1: 0.1453, hits@5: 0.4693, hits@10: 0.6353
+2023-12-13 13:50:36 | wn18rr | resource.struct_rusage(ru_utime=408.346536, ru_stime=36.366648, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=6206800, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=3464, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=20980, ru_nivcsw=6425)
+2023-12-13 13:50:36 | wn18rr | Train Time Sec=52.735556
+2023-12-13 13:50:36 | wn18rr | best model | mrr 0.2968
+2023-12-13 13:50:37 | wn18rr | epoch:0 | step: 41 | loss: 0.6403
+2023-12-13 13:50:37 | wn18rr | epoch:0 | step: 42 | loss: 0.6329
+2023-12-13 13:50:38 | wn18rr | epoch:0 | step: 43 | loss: 0.6326
+2023-12-13 13:50:39 | wn18rr | epoch:0 | step: 44 | loss: 0.6282
+2023-12-13 13:50:39 | wn18rr | epoch:0 | step: 45 | loss: 0.6412
+2023-12-13 13:50:40 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:40 | wn18rr |  mrr: 0.3036, hits@1: 0.1512, hits@5: 0.4825, hits@10: 0.6430
+2023-12-13 13:50:40 | wn18rr | resource.struct_rusage(ru_utime=457.331393, ru_stime=40.336976, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=6941870, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=3648, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=23360, ru_nivcsw=7153)
+2023-12-13 13:50:40 | wn18rr | Train Time Sec=56.974612
+2023-12-13 13:50:40 | wn18rr | best model | mrr 0.3036
+2023-12-13 13:50:41 | wn18rr | epoch:0 | step: 46 | loss: 0.6312
+2023-12-13 13:50:42 | wn18rr | epoch:0 | step: 47 | loss: 0.6347
+2023-12-13 13:50:42 | wn18rr | epoch:0 | step: 48 | loss: 0.6275
+2023-12-13 13:50:43 | wn18rr | epoch:0 | step: 49 | loss: 0.6233
+2023-12-13 13:50:43 | wn18rr | epoch:0 | step: 50 | loss: 0.6211
+2023-12-13 13:50:45 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:45 | wn18rr |  mrr: 0.3221, hits@1: 0.1682, hits@5: 0.5050, hits@10: 0.6522
+2023-12-13 13:50:45 | wn18rr | resource.struct_rusage(ru_utime=508.325434, ru_stime=44.807812, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=7700060, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=3840, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=25665, ru_nivcsw=7917)
+2023-12-13 13:50:45 | wn18rr | Train Time Sec=61.374516
+2023-12-13 13:50:45 | wn18rr | best model | mrr 0.3221
+2023-12-13 13:50:45 | wn18rr | epoch:0 | step: 51 | loss: 0.6281
+2023-12-13 13:50:46 | wn18rr | epoch:0 | step: 52 | loss: 0.6557
+2023-12-13 13:50:47 | wn18rr | epoch:0 | step: 53 | loss: 0.6379
+2023-12-13 13:50:47 | wn18rr | epoch:0 | step: 54 | loss: 0.6269
+2023-12-13 13:50:48 | wn18rr | epoch:0 | step: 55 | loss: 0.6261
+2023-12-13 13:50:49 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:49 | wn18rr |  mrr: 0.3417, hits@1: 0.1923, hits@5: 0.5143, hits@10: 0.6542
+2023-12-13 13:50:49 | wn18rr | resource.struct_rusage(ru_utime=557.801673, ru_stime=49.26611, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=8448760, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=4024, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=28343, ru_nivcsw=8702)
+2023-12-13 13:50:49 | wn18rr | Train Time Sec=65.68628
+2023-12-13 13:50:49 | wn18rr | best model | mrr 0.3417
+2023-12-13 13:50:50 | wn18rr | epoch:0 | step: 56 | loss: 0.6280
+2023-12-13 13:50:50 | wn18rr | epoch:0 | step: 57 | loss: 0.6215
+2023-12-13 13:50:51 | wn18rr | epoch:0 | step: 58 | loss: 0.6214
+2023-12-13 13:50:51 | wn18rr | epoch:0 | step: 59 | loss: 0.6263
+2023-12-13 13:50:52 | wn18rr | epoch:0 | step: 60 | loss: 0.6174
+2023-12-13 13:50:53 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:53 | wn18rr |  mrr: 0.3686, hits@1: 0.2213, hits@5: 0.5361, hits@10: 0.6697
+2023-12-13 13:50:53 | wn18rr | resource.struct_rusage(ru_utime=607.068936, ru_stime=53.639155, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9189856, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=4200, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=30899, ru_nivcsw=9466)
+2023-12-13 13:50:53 | wn18rr | Train Time Sec=69.951996
+2023-12-13 13:50:53 | wn18rr | best model | mrr 0.3686
+2023-12-13 13:50:54 | wn18rr | epoch:0 | step: 61 | loss: 0.6112
+2023-12-13 13:50:55 | wn18rr | epoch:0 | step: 62 | loss: 0.6150
+2023-12-13 13:50:55 | wn18rr | epoch:0 | step: 63 | loss: 0.6059
+2023-12-13 13:50:56 | wn18rr | epoch:0 | step: 64 | loss: 0.6249
+2023-12-13 13:50:56 | wn18rr | epoch:0 | step: 65 | loss: 0.6222
+2023-12-13 13:50:58 | wn18rr | valid on valid subgraphs
+2023-12-13 13:50:58 | wn18rr |  mrr: 0.3706, hits@1: 0.2179, hits@5: 0.5440, hits@10: 0.6783
+2023-12-13 13:50:58 | wn18rr | resource.struct_rusage(ru_utime=657.248849, ru_stime=57.854437, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=9942184, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=4384, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=33268, ru_nivcsw=10193)
+2023-12-13 13:50:58 | wn18rr | Train Time Sec=74.304956
+2023-12-13 13:50:58 | wn18rr | best model | mrr 0.3706
+2023-12-13 13:50:58 | wn18rr | epoch:0 | step: 66 | loss: 0.6173
+2023-12-13 13:50:59 | wn18rr | epoch:0 | step: 67 | loss: 0.6166
+2023-12-13 13:51:00 | wn18rr | epoch:0 | step: 68 | loss: 0.6198
+2023-12-13 13:51:00 | wn18rr | epoch:0 | step: 69 | loss: 0.6087
+2023-12-13 13:51:01 | wn18rr | epoch:0 | step: 70 | loss: 0.6317
+2023-12-13 13:51:02 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:02 | wn18rr |  mrr: 0.4015, hits@1: 0.2609, hits@5: 0.5617, hits@10: 0.6820
+2023-12-13 13:51:02 | wn18rr | resource.struct_rusage(ru_utime=706.790461, ru_stime=62.24476, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=10680237, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=4568, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=35567, ru_nivcsw=10871)
+2023-12-13 13:51:02 | wn18rr | Train Time Sec=78.550901
+2023-12-13 13:51:02 | wn18rr | best model | mrr 0.4015
+2023-12-13 13:51:03 | wn18rr | epoch:0 | step: 71 | loss: 0.6047
+2023-12-13 13:51:03 | wn18rr | epoch:0 | step: 72 | loss: 0.6118
+2023-12-13 13:51:04 | wn18rr | epoch:0 | step: 73 | loss: 0.6200
+2023-12-13 13:51:04 | wn18rr | epoch:0 | step: 74 | loss: 0.6051
+2023-12-13 13:51:05 | wn18rr | epoch:0 | step: 75 | loss: 0.5979
+2023-12-13 13:51:06 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:06 | wn18rr |  mrr: 0.4262, hits@1: 0.2880, hits@5: 0.5794, hits@10: 0.6930
+2023-12-13 13:51:06 | wn18rr | resource.struct_rusage(ru_utime=757.214487, ru_stime=66.45563, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=11454499, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=4744, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=37926, ru_nivcsw=11629)
+2023-12-13 13:51:06 | wn18rr | Train Time Sec=82.883656
+2023-12-13 13:51:06 | wn18rr | best model | mrr 0.4262
+2023-12-13 13:51:07 | wn18rr | epoch:0 | step: 76 | loss: 0.6073
+2023-12-13 13:51:08 | wn18rr | epoch:0 | step: 77 | loss: 0.5939
+2023-12-13 13:51:08 | wn18rr | epoch:0 | step: 78 | loss: 0.5960
+2023-12-13 13:51:09 | wn18rr | epoch:0 | step: 79 | loss: 0.6041
+2023-12-13 13:51:09 | wn18rr | epoch:0 | step: 80 | loss: 0.6018
+2023-12-13 13:51:11 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:11 | wn18rr |  mrr: 0.4441, hits@1: 0.3102, hits@5: 0.5943, hits@10: 0.7054
+2023-12-13 13:51:11 | wn18rr | resource.struct_rusage(ru_utime=807.818362, ru_stime=70.641357, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=12205799, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=4928, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=40281, ru_nivcsw=12414)
+2023-12-13 13:51:11 | wn18rr | Train Time Sec=87.241608
+2023-12-13 13:51:11 | wn18rr | best model | mrr 0.4441
+2023-12-13 13:51:11 | wn18rr | epoch:0 | step: 81 | loss: 0.5877
+2023-12-13 13:51:12 | wn18rr | epoch:0 | step: 82 | loss: 0.6033
+2023-12-13 13:51:13 | wn18rr | epoch:0 | step: 83 | loss: 0.5888
+2023-12-13 13:51:13 | wn18rr | epoch:0 | step: 84 | loss: 0.5906
+2023-12-13 13:51:14 | wn18rr | epoch:0 | step: 85 | loss: 0.5917
+2023-12-13 13:51:15 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:15 | wn18rr |  mrr: 0.4463, hits@1: 0.3179, hits@5: 0.5886, hits@10: 0.6938
+2023-12-13 13:51:15 | wn18rr | resource.struct_rusage(ru_utime=858.099864, ru_stime=75.017244, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=12966699, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=5120, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=42728, ru_nivcsw=13144)
+2023-12-13 13:51:15 | wn18rr | Train Time Sec=91.570647
+2023-12-13 13:51:15 | wn18rr | best model | mrr 0.4463
+2023-12-13 13:51:16 | wn18rr | epoch:0 | step: 86 | loss: 0.5891
+2023-12-13 13:51:16 | wn18rr | epoch:0 | step: 87 | loss: 0.5807
+2023-12-13 13:51:17 | wn18rr | epoch:0 | step: 88 | loss: 0.5775
+2023-12-13 13:51:17 | wn18rr | epoch:0 | step: 89 | loss: 0.5968
+2023-12-13 13:51:18 | wn18rr | epoch:0 | step: 90 | loss: 0.5753
+2023-12-13 13:51:19 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:19 | wn18rr |  mrr: 0.4537, hits@1: 0.3240, hits@5: 0.5963, hits@10: 0.7072
+2023-12-13 13:51:19 | wn18rr | resource.struct_rusage(ru_utime=909.895285, ru_stime=79.318493, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=13728105, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=5304, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=45049, ru_nivcsw=13917)
+2023-12-13 13:51:19 | wn18rr | Train Time Sec=96.045593
+2023-12-13 13:51:19 | wn18rr | best model | mrr 0.4537
+2023-12-13 13:51:20 | wn18rr | epoch:0 | step: 91 | loss: 0.5926
+2023-12-13 13:51:21 | wn18rr | epoch:0 | step: 92 | loss: 0.5843
+2023-12-13 13:51:21 | wn18rr | epoch:0 | step: 93 | loss: 0.5962
+2023-12-13 13:51:22 | wn18rr | epoch:0 | step: 94 | loss: 0.5847
+2023-12-13 13:51:22 | wn18rr | epoch:0 | step: 95 | loss: 0.5640
+2023-12-13 13:51:24 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:24 | wn18rr |  mrr: 0.4652, hits@1: 0.3419, hits@5: 0.6013, hits@10: 0.7010
+2023-12-13 13:51:24 | wn18rr | resource.struct_rusage(ru_utime=960.565396, ru_stime=83.887468, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=14483054, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=5480, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=47269, ru_nivcsw=14668)
+2023-12-13 13:51:24 | wn18rr | Train Time Sec=100.404436
+2023-12-13 13:51:24 | wn18rr | best model | mrr 0.4652
+2023-12-13 13:51:24 | wn18rr | epoch:0 | step: 96 | loss: 0.5947
+2023-12-13 13:51:25 | wn18rr | epoch:0 | step: 97 | loss: 0.5703
+2023-12-13 13:51:26 | wn18rr | epoch:0 | step: 98 | loss: 0.5601
+2023-12-13 13:51:26 | wn18rr | epoch:0 | step: 99 | loss: 0.5730
+2023-12-13 13:51:27 | wn18rr | epoch:0 | step: 100 | loss: 0.5778
+2023-12-13 13:51:28 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:28 | wn18rr |  mrr: 0.4901, hits@1: 0.3762, hits@5: 0.6134, hits@10: 0.7077
+2023-12-13 13:51:28 | wn18rr | resource.struct_rusage(ru_utime=1010.346506, ru_stime=88.267614, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=15239640, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=5664, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=49620, ru_nivcsw=15419)
+2023-12-13 13:51:28 | wn18rr | Train Time Sec=104.732181
+2023-12-13 13:51:28 | wn18rr | best model | mrr 0.4901
+2023-12-13 13:51:29 | wn18rr | epoch:0 | step: 101 | loss: 0.5793
+2023-12-13 13:51:29 | wn18rr | epoch:0 | step: 102 | loss: 0.5723
+2023-12-13 13:51:30 | wn18rr | epoch:0 | step: 103 | loss: 0.5629
+2023-12-13 13:51:31 | wn18rr | epoch:0 | step: 104 | loss: 0.5787
+2023-12-13 13:51:31 | wn18rr | epoch:0 | step: 105 | loss: 0.5684
+2023-12-13 13:51:32 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:32 | wn18rr |  mrr: 0.5046, hits@1: 0.3955, hits@5: 0.6164, hits@10: 0.7141
+2023-12-13 13:51:32 | wn18rr | resource.struct_rusage(ru_utime=1060.154044, ru_stime=92.54073, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=16000661, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=5856, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=51983, ru_nivcsw=16167)
+2023-12-13 13:51:32 | wn18rr | Train Time Sec=109.016984
+2023-12-13 13:51:32 | wn18rr | best model | mrr 0.5046
+2023-12-13 13:51:33 | wn18rr | epoch:0 | step: 106 | loss: 0.5780
+2023-12-13 13:51:34 | wn18rr | epoch:0 | step: 107 | loss: 0.5730
+2023-12-13 13:51:34 | wn18rr | epoch:0 | step: 108 | loss: 0.5615
+2023-12-13 13:51:35 | wn18rr | epoch:0 | step: 109 | loss: 0.5765
+2023-12-13 13:51:35 | wn18rr | epoch:0 | step: 110 | loss: 0.5685
+2023-12-13 13:51:37 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:37 | wn18rr |  mrr: 0.5194, hits@1: 0.4151, hits@5: 0.6291, hits@10: 0.7195
+2023-12-13 13:51:37 | wn18rr | resource.struct_rusage(ru_utime=1110.147037, ru_stime=96.84685, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=16749429, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=6032, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=54481, ru_nivcsw=16894)
+2023-12-13 13:51:37 | wn18rr | Train Time Sec=113.315585
+2023-12-13 13:51:37 | wn18rr | best model | mrr 0.5194
+2023-12-13 13:51:37 | wn18rr | epoch:0 | step: 111 | loss: 0.5587
+2023-12-13 13:51:38 | wn18rr | epoch:0 | step: 112 | loss: 0.5522
+2023-12-13 13:51:39 | wn18rr | epoch:0 | step: 113 | loss: 0.5597
+2023-12-13 13:51:39 | wn18rr | epoch:0 | step: 114 | loss: 0.5455
+2023-12-13 13:51:40 | wn18rr | epoch:0 | step: 115 | loss: 0.5477
+2023-12-13 13:51:41 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:41 | wn18rr |  mrr: 0.5257, hits@1: 0.4242, hits@5: 0.6340, hits@10: 0.7215
+2023-12-13 13:51:41 | wn18rr | resource.struct_rusage(ru_utime=1160.110814, ru_stime=100.904286, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=17498806, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=6208, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=56906, ru_nivcsw=17648)
+2023-12-13 13:51:41 | wn18rr | Train Time Sec=117.655542
+2023-12-13 13:51:41 | wn18rr | best model | mrr 0.5257
+2023-12-13 13:51:42 | wn18rr | epoch:0 | step: 116 | loss: 0.5793
+2023-12-13 13:51:42 | wn18rr | epoch:0 | step: 117 | loss: 0.5783
+2023-12-13 13:51:43 | wn18rr | epoch:0 | step: 118 | loss: 0.5376
+2023-12-13 13:51:44 | wn18rr | epoch:0 | step: 119 | loss: 0.5826
+2023-12-13 13:51:44 | wn18rr | epoch:0 | step: 120 | loss: 0.5572
+2023-12-13 13:51:45 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:45 | wn18rr |  mrr: 0.5213, hits@1: 0.4156, hits@5: 0.6338, hits@10: 0.7227
+2023-12-13 13:51:45 | wn18rr | resource.struct_rusage(ru_utime=1211.005677, ru_stime=104.981313, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18242164, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=6400, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=59498, ru_nivcsw=18467)
+2023-12-13 13:51:45 | wn18rr | Train Time Sec=122.014989
+2023-12-13 13:51:45 | wn18rr | best model is at step 115, mrr 0.5257, bad count 1
+2023-12-13 13:51:46 | wn18rr | epoch:0 | step: 121 | loss: 0.5325
+2023-12-13 13:51:47 | wn18rr | epoch:0 | step: 122 | loss: 0.5413
+2023-12-13 13:51:47 | wn18rr | epoch:0 | step: 123 | loss: 0.5510
+2023-12-13 13:51:48 | wn18rr | epoch:0 | step: 124 | loss: 0.5819
+2023-12-13 13:51:48 | wn18rr | epoch:0 | step: 125 | loss: 0.5432
+2023-12-13 13:51:50 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:50 | wn18rr |  mrr: 0.5396, hits@1: 0.4413, hits@5: 0.6435, hits@10: 0.7243
+2023-12-13 13:51:50 | wn18rr | resource.struct_rusage(ru_utime=1261.443071, ru_stime=109.098602, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=18994120, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=6408, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=61837, ru_nivcsw=19216)
+2023-12-13 13:51:50 | wn18rr | Train Time Sec=126.38815
+2023-12-13 13:51:50 | wn18rr | best model | mrr 0.5396
+2023-12-13 13:51:50 | wn18rr | epoch:0 | step: 126 | loss: 0.5651
+2023-12-13 13:51:51 | wn18rr | epoch:0 | step: 127 | loss: 0.5580
+2023-12-13 13:51:52 | wn18rr | epoch:0 | step: 128 | loss: 0.5605
+2023-12-13 13:51:52 | wn18rr | epoch:0 | step: 129 | loss: 0.5333
+2023-12-13 13:51:53 | wn18rr | epoch:0 | step: 130 | loss: 0.5618
+2023-12-13 13:51:54 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:54 | wn18rr |  mrr: 0.5421, hits@1: 0.4445, hits@5: 0.6443, hits@10: 0.7303
+2023-12-13 13:51:54 | wn18rr | resource.struct_rusage(ru_utime=1312.406398, ru_stime=113.620366, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=19763928, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=6584, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=64363, ru_nivcsw=19946)
+2023-12-13 13:51:54 | wn18rr | Train Time Sec=130.781503
+2023-12-13 13:51:54 | wn18rr | best model | mrr 0.5421
+2023-12-13 13:51:55 | wn18rr | epoch:0 | step: 131 | loss: 0.5606
+2023-12-13 13:51:55 | wn18rr | epoch:0 | step: 132 | loss: 0.5502
+2023-12-13 13:51:56 | wn18rr | epoch:0 | step: 133 | loss: 0.5480
+2023-12-13 13:51:57 | wn18rr | epoch:0 | step: 134 | loss: 0.5322
+2023-12-13 13:51:57 | wn18rr | epoch:0 | step: 135 | loss: 0.5564
+2023-12-13 13:51:59 | wn18rr | valid on valid subgraphs
+2023-12-13 13:51:59 | wn18rr |  mrr: 0.5378, hits@1: 0.4375, hits@5: 0.6442, hits@10: 0.7271
+2023-12-13 13:51:59 | wn18rr | resource.struct_rusage(ru_utime=1362.990818, ru_stime=117.73501, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=20496944, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=6776, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=66704, ru_nivcsw=20732)
+2023-12-13 13:51:59 | wn18rr | Train Time Sec=135.151849
+2023-12-13 13:51:59 | wn18rr | best model is at step 130, mrr 0.5421, bad count 1
+2023-12-13 13:51:59 | wn18rr | epoch:0 | step: 136 | loss: 0.5534
+2023-12-13 13:52:00 | wn18rr | epoch:0 | step: 137 | loss: 0.5367
+2023-12-13 13:52:00 | wn18rr | epoch:0 | step: 138 | loss: 0.5353
+2023-12-13 13:52:01 | wn18rr | epoch:0 | step: 139 | loss: 0.5671
+2023-12-13 13:52:02 | wn18rr | epoch:0 | step: 140 | loss: 0.5625
+2023-12-13 13:52:03 | wn18rr | valid on valid subgraphs
+2023-12-13 13:52:03 | wn18rr |  mrr: 0.5446, hits@1: 0.4498, hits@5: 0.6412, hits@10: 0.7353
+2023-12-13 13:52:03 | wn18rr | resource.struct_rusage(ru_utime=1412.876754, ru_stime=121.905211, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=21257868, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=6784, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=69187, ru_nivcsw=21508)
+2023-12-13 13:52:03 | wn18rr | Train Time Sec=139.411791
+2023-12-13 13:52:03 | wn18rr | best model | mrr 0.5446
+2023-12-13 13:52:03 | wn18rr | epoch:0 | step: 141 | loss: 0.5260
+2023-12-13 13:52:04 | wn18rr | epoch:0 | step: 142 | loss: 0.5401
+2023-12-13 13:52:05 | wn18rr | epoch:0 | step: 143 | loss: 0.5361
+2023-12-13 13:52:05 | wn18rr | epoch:0 | step: 144 | loss: 0.5556
+2023-12-13 13:52:06 | wn18rr | epoch:0 | step: 145 | loss: 0.5554
+2023-12-13 13:52:07 | wn18rr | valid on valid subgraphs
+2023-12-13 13:52:07 | wn18rr |  mrr: 0.5498, hits@1: 0.4571, hits@5: 0.6420, hits@10: 0.7252
+2023-12-13 13:52:07 | wn18rr | resource.struct_rusage(ru_utime=1463.620983, ru_stime=126.003177, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=22012127, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=6960, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=71652, ru_nivcsw=22277)
+2023-12-13 13:52:07 | wn18rr | Train Time Sec=143.787082
+2023-12-13 13:52:07 | wn18rr | best model | mrr 0.5498
+2023-12-13 13:52:08 | wn18rr | epoch:0 | step: 146 | loss: 0.5432
+2023-12-13 13:52:08 | wn18rr | epoch:0 | step: 147 | loss: 0.5254
+2023-12-13 13:52:09 | wn18rr | epoch:0 | step: 148 | loss: 0.5520
+2023-12-13 13:52:10 | wn18rr | epoch:0 | step: 149 | loss: 0.5549
+2023-12-13 13:52:10 | wn18rr | epoch:0 | step: 150 | loss: 0.5205
+2023-12-13 13:52:12 | wn18rr | valid on valid subgraphs
+2023-12-13 13:52:12 | wn18rr |  mrr: 0.5575, hits@1: 0.4645, hits@5: 0.6520, hits@10: 0.7340
+2023-12-13 13:52:12 | wn18rr | resource.struct_rusage(ru_utime=1513.984095, ru_stime=130.285816, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=22771115, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=7144, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=74055, ru_nivcsw=23054)
+2023-12-13 13:52:12 | wn18rr | Train Time Sec=148.104507
+2023-12-13 13:52:12 | wn18rr | best model | mrr 0.5575
+2023-12-13 13:52:12 | wn18rr | epoch:0 | step: 151 | loss: 0.5410
+2023-12-13 13:52:13 | wn18rr | epoch:0 | step: 152 | loss: 0.5330
+2023-12-13 13:52:13 | wn18rr | epoch:0 | step: 153 | loss: 0.5295
+2023-12-13 13:52:14 | wn18rr | epoch:0 | step: 154 | loss: 0.5263
+2023-12-13 13:52:15 | wn18rr | epoch:0 | step: 155 | loss: 0.5592
+2023-12-13 13:52:16 | wn18rr | valid on valid subgraphs
+2023-12-13 13:52:16 | wn18rr |  mrr: 0.5557, hits@1: 0.4632, hits@5: 0.6496, hits@10: 0.7317
+2023-12-13 13:52:16 | wn18rr | resource.struct_rusage(ru_utime=1564.45528, ru_stime=134.447598, ru_maxrss=2872544, ru_ixrss=0, ru_idrss=0, ru_isrss=0, ru_minflt=23531502, ru_majflt=64, ru_nswap=0, ru_inblock=0, ru_oublock=7336, ru_msgsnd=0, ru_msgrcv=0, ru_nsignals=0, ru_nvcsw=76461, ru_nivcsw=23813)
+2023-12-13 13:52:16 | wn18rr | Train Time Sec=152.447273
+2023-12-13 13:52:16 | wn18rr | best model is at step 150, mrr 0.5575, bad count 1
+2023-12-13 13:52:16 | wn18rr | epoch:0 | step: 156 | loss: 0.5541
+2023-12-13 13:52:17 | wn18rr | epoch:0 | step: 157 | loss: 0.5326
+2023-12-13 13:52:17 | wn18rr | finish meta-training
+2023-12-13 13:52:17 | wn18rr | save best model
+2023-12-13 13:52:17 | wn18rr | best validation | epoch:0, mrr: 0.5575, hits@1: 0.4645, hits@5: 0.6520, hits@10: 0.7340
+2023-12-13 13:52:20 | wn18rr | test on ind-test-graph, sample 50
+2023-12-13 13:52:20 | wn18rr | mrr: 0.5534, hits@1: 0.4404, hits@5: 0.6804, hits@10: 0.7839
+2023-12-13 13:52:20 | wn18rr | Train Time Sec=156.316954
+2023-12-13 13:52:20 | wn18rr | Total Time Sec=156.733882
