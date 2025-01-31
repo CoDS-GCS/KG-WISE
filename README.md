@@ -3,7 +3,7 @@ There is a growing demand for efficient graph neural networks (GNNs) during infe
 
 <center>
 <figure>
-  <img src="Figures/KGWISE.jpeg" width="400" />
+  <img src="Figures/KGWISE.jpeg" />
   <figcaption>Fig.1: KG-WISE retrieves a task-oriented subgraph based on the user query, loads the decomposed GNN model from the KV store, and performs on-demand inference using optimized sparse tensor operations.</figcaption>
 </figure>
 </center>
