@@ -8,7 +8,7 @@ from RDFHandler import KGNET
 from RDFHandler import Constants
 from GNNaaS.DataTransform.INFERENCE_TSV_TO_PYG import inference_transform_tsv_to_PYG
 from GNNaaS.models.graph_saint_Shadow_KGTOSA import graphShadowSaint
-from GNNaaS.models.graph_saint_KGTOSA import graphSaint
+from GNNaaS.models.RGCN_Train import graphSaint
 from GNNaaS.models.rgcn.rgcn_link_pred import rgcn_lp
 from GNNaaS.models.MorsE.main import morse
 from GNNaaS.models.wise_ssaint import wise_SHsaint

@@ -11,7 +11,7 @@ import Constants
 sys.path.append('..')
 from GNNaaS.DataTransform.TSV_TO_PYG_dataset import transform_tsv_to_PYG
 from GNNaaS.DataTransform.Transform_LP_Dataset import transform_LP_train_valid_test_subsets
-from GNNaaS.models.graph_saint_KGTOSA import graphSaint
+from GNNaaS.models.RGCN_Train import graphSaint
 from GNNaaS.models.rgcn_KGTOSA import rgcn
 # from GNNaaS.models.graph_saint_Shadow_KGTOSA import graphShadowSaint
 # from GNNaaS.models.graph_MorsE import run_morse
@@ -47,8 +47,8 @@ def format_args(task, json_args, path_script):
 # subprocess.run(list_transformation)
 
 # list_training = []
-# list_training.extend(['python','models/models/graph_saint/graph_saint_KGTOSA.py'])
-# # list_training.append('models/models/graph_saint/graph_saint_KGTOSA.py')
+# list_training.extend(['python','models/models/graph_saint/RGCN_Train.py'])
+# # list_training.append('models/models/graph_saint/RGCN_Train.py')
 # for arg in data['training_args'].keys():
 #     format_arg = '--'+str(arg)+'='+str(data['training_args'][arg])
 #     list_training.append(format_arg)
@@ -75,7 +75,7 @@ def uploadModel(model_path):
 
 
 def cmd_run_training_pipeline(path_json=None, path_transformation_py='DataTransform/TSV_TO_PYG_dataset.py',
-                              path_training_py='models/models/graph_saint/graph_saint_KGTOSA.py', json_args=None):
+                              path_training_py='models/models/graph_saint/RGCN_Train.py', json_args=None):
     if json_args is None:
         json_args = load_args(path_json)
     else:
@@ -188,7 +188,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='GNNaaS Pipeline')
     parser.add_argument('--path_json', type=str, default='args.json')
     parser.add_argument('--path_transformation_py', type=str, default='DataTransform/TSV_TO_PYG_dataset.py')
-    parser.add_argument('--path_training_py', type=str, default='models/graph_saint_KGTOSA.py')
+    parser.add_argument('--path_training_py', type=str, default='models/RGCN_Train.py')
     args = parser.parse_args()
     cmd_run_training_pipeline(args.path_json, args.path_transformation_py, args.path_training_py)
 
