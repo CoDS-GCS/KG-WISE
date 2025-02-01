@@ -44,16 +44,22 @@ conda activate KGWISE
 <a href="http://206.12.102.56/CodsData/KGNET/KGBen/DBLP/LP/DBLP2023-010305.zip">DBLP2023-010305_FG_d2h1</a>
 </li>
 
-## Train your Model:
+## Train the Model and Decompose:
 ```python
 # Train KG-WISE and decompose into KV store 
-python rgcn-KGTOSA.py --Dataset <DatasetPath>
+python GNNaaS/models/RGCN_Train.py --Dataset <DatasetPath>
 ```
 ## Perform KG-WISE inference :
 ```python
-# Train KG-WISE  
-python inference.py --Dataset <DatasetPath>
+python GNNaaS/models/wise_ssaint.py --Dataset <DatasetPath>
 ```
+## Perform Baseline Graph-SAINT inference :
+```python  
+python GNNaaS/models/Graph-SAINT.py --Dataset <DatasetPath>
+```
+
+### Note:
+To add your own knowledge graphs, you need to upload them to your RDF Engine and configure the endpoint from Constants.py
 
 
 
