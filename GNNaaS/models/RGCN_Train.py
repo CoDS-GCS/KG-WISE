@@ -15,23 +15,13 @@ import torch
 import torch.nn.functional as F
 from torch.nn import ModuleList, Linear, ParameterDict, Parameter
 from torch_sparse import SparseTensor
-from torch_geometric.utils import to_undirected
 from torch_geometric.data import Data
 from torch_geometric.loader import GraphSAINTRandomWalkSampler,ShaDowKHopSampler
-# from KGTOSA_Samplers import GraphSAINTTaskBaisedRandomWalkSampler,GraphSAINTTaskWeightedRandomWalkSampler
 from torch_geometric.utils.hetero import group_hetero_graph
 from torch_geometric.nn import MessagePassing
 import psutil
-from pathlib import Path
 import pandas as pd
-import random
-import statistics
-from sklearn.neural_network import MLPClassifier
-from sklearn.model_selection import cross_val_score
-import traceback
-from kgwise_utils import store_emb
-# print("sys.path=",sys.path)
-from ogb.nodeproppred import PygNodePropPredDataset
+from GNNStorageManager import decompositionManager
 from evaluater import Evaluator
 from custome_pyg_dataset import PygNodePropPredDataset_hsh
 from resource import *
@@ -750,7 +740,7 @@ def graphSaint(device=0, num_layers=2, hidden_channels=64, dropout=0.5,
             model.load_state_dict(torch.load(trained_model_path))
             """ Saving model embed in emd store"""
             # from kgwise_utils import store_emb
-            store_emb(model=model, model_name=model_name + '_wise', )
+            decompositionManager(model=model, model_name=model_name + '_wise', )
             """ Decoupling weights and embds"""
             model.emb_dict = None
             model_path = os.path.join(output_path, 'trained_models')
@@ -834,7 +824,7 @@ def graphSaint(device=0, num_layers=2, hidden_channels=64, dropout=0.5,
             """ Saving complete model"""
             torch.save(model.state_dict(), os.path.join(KGNET_Config.trained_model_path, model_name) + ".model")
             """ Saving model embed in emd store"""
-            store_emb(model=model,model_name=model_name+'_wise',)
+            decompositionManager(model=model, model_name=model_name + '_wise', )
             """ Decoupling weights and embds"""
             model.emb_dict = None
             torch.save(model.state_dict(), os.path.join(KGNET_Config.trained_model_path, model_name) + "_wise.model")
@@ -854,7 +844,7 @@ if __name__ == '__main__':
     parser.add_argument('--hidden_channels', type=int, default=64)
     parser.add_argument('--dropout', type=float, default=0.5)
     parser.add_argument('--lr', type=float, default=0.005)
-    parser.add_argument('--epochs', type=int, default=1)
+    parser.add_argument('--epochs', type=int, default=10)
     parser.add_argument('--runs', type=int, default=1)
     parser.add_argument('--batch_size', type=int, default=  128) # CHANGED
     parser.add_argument('--walk_length', type=int, default=2)
@@ -865,7 +855,7 @@ if __name__ == '__main__':
     parser.add_argument('--output_path', type=str, default="./")
     parser.add_argument('--include_reverse_edge', type=bool, default=True)
     parser.add_argument('--n_classes', type=int, default=146)
-    parser.add_argument('--emb_size', type=int, default=16)  # CHANGED
+    parser.add_argument('--emb_size', type=int, default=128)  # CHANGED
     parser.add_argument('--modelID', type=str, default="DBLP15M_PV_d1h1_v2.model")
 
     args = parser.parse_args()

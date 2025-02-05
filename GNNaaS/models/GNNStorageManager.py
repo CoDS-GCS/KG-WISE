@@ -22,9 +22,7 @@ from multiprocessing import Manager,parent_process
 
 
 def execute_query_v3(batch, inference_file, kg, graph_uri, shared_list):
-    # batch = ['<' + target + '>' if '<' not in target or '>' not in target else target for target in batch]
 
-    # query = get_d1h1_TargetListquery(graph_uri=graph_uri, target_lst=batch)
     try:
         subgraph_df = kg.KG_sparqlEndpoint.executeSparqlquery(batch)  # kg.KG_sparqlEndpoint.execute_sparql_multithreads([query], inference_file)
     except:
@@ -34,7 +32,6 @@ def execute_query_v3(batch, inference_file, kg, graph_uri, shared_list):
     if len(subgraph_df.columns) != 3 or len(subgraph_df) == 0:
         print(subgraph_df)
         pass
-        # raise Exception('Invalid extracted subgraph. Please check tosa query.')
 
     subgraph_df = subgraph_df.map(lambda x: x.strip('"'))
     shared_list.append(subgraph_df)
@@ -75,9 +72,7 @@ def batch_tosa_v3(targetNodesList, inference_file, graph_uri, kg, BATCH_SIZE=200
 
 
 def execute_query_v2(batch, inference_file,kg, graph_uri='http://wikikg-v2',):
-    # batch = ['<' + target + '>' if '<' not in target or '>' not in target else target for target in batch]
 
-    # query = get_d1h1_TargetListquery(graph_uri=graph_uri,target_lst=batch)
     subgraph_df = kg.KG_sparqlEndpoint.executeSparqlquery(batch)#kg.KG_sparqlEndpoint.execute_sparql_multithreads([query], inference_file)
     if len(subgraph_df.columns) != 3 or len(subgraph_df)==0:
         print(subgraph_df)
@@ -107,101 +102,6 @@ def batch_tosa_v2 (targetNodesList,inference_file,graph_uri,kg,BATCH_SIZE=2000):
                 # pass
     else:
         [execute_query_v2(batch,inference_file,kg,graph_uri) for batch in queries]
-def execute_query_v0(batch, inference_file, graph_uri,kg):
-
-    # formatted_links = batch
-    batch = ['<' + target + '>' if '<' not in target or '>' not in target else target for target in batch]
-
-    query = get_d1h1_TargetListquery(graph_uri=graph_uri,target_lst=batch)
-    subgraph_df = kg.KG_sparqlEndpoint.executeSparqlquery(query)
-    if len(subgraph_df.columns) != 3:
-        print(subgraph_df)
-        raise AssertionError
-    subgraph_df = subgraph_df.applymap(lambda x: x.strip('"'))
-    if os.path.exists(inference_file):
-        subgraph_df.to_csv(inference_file, header=None, index=None, sep='\t', mode='a')
-    else:
-        subgraph_df.to_csv(inference_file, index=None, sep='\t', mode='a')
-
-# def batch_tosa(path_target_csv,inference_file,graph_uri,BATCH_SIZE=2000):
-#     def batch_generator():
-#         ptr = 0
-#         while ptr < len(df_targets):
-#             yield df_targets.iloc[ptr:ptr + BATCH_SIZE, :]
-#             ptr += BATCH_SIZE
-#
-#     df_targets = pd.read_csv(path_target_csv, header=None)
-#
-#     """ Parallel Threading"""
-#     if len(df_targets) > BATCH_SIZE:
-#         with ProcessPoolExecutor() as executor:
-#             futures = [executor.submit(execute_query, batch, inference_file, graph_uri) for batch in batch_generator()]
-#
-#             # Wait for all tasks to complete
-#             for future in tqdm(futures, desc="Downloading Raw Graph", unit="subgraphs"):
-#                 # future.result()
-#                 pass
-#
-#     else:
-#         execute_query(df_targets,inference_file,kg)
-
-def execute_query(batch, inference_file, kg):
-    formatted_links = ','.join(['<' + link + '>' for link in batch[0]])
-    query = """
-    PREFIX dblp2022: <https://dblp.org/rdf/schema#> 
-    PREFIX kgnet: <http://kgnet/> 
-    SELECT DISTINCT ?s ?p ?o
-    FROM <http://dblp.org>  
-    WHERE
-     {{
-        ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> dblp2022:Publication .
-        ?s dblp2022:publishedIn ?dblp_Venue . 
-        ?s dblp2022:title ?Title . 
-        ?s ?p ?o.
-        FILTER(?s IN ({formatted_links}))
-     }}
-    """
-
-    query = """
-        PREFIX dblp2022: <https://dblp.org/rdf/schema#>
-        PREFIX kgnet: <http://kgnet/>
-
-        SELECT DISTINCT ?s ?p ?o
-        from <http://dblp.org>
-        where
-        {{
-        ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> dblp2022:Publication .
-        ?s dblp2022:publishedIn ?dblp_Venue .
-        ?s dblp2022:title ?Title .
-        #?s <https://dblp.org/rdf/schema#yearOfPublication> "2022".
-        ?s <https://dblp.org/rdf/schema#publishedIn> ?conf .
-        filter(?conf in ("AAAI","ACC","Appl. Math. Comput.","Autom.","BMC Bioinform.","Bioinform.","CDC","CVPR","CoRR","Commun. ACM","Discret. Math.","EMBC","EUSIPCO","Eur. J. Oper. Res.","Expert Syst. Appl.","GLOBECOM","HICSS","IACR Cryptol. ePrint Arch.","ICASSP","ICC","ICIP","ICRA","IECON","IEEE Access","IEEE Trans. Autom. Control.","IEEE Trans. Commun.","IEEE Trans. Geosci. Remote. Sens.","IEEE Trans. Ind. Electron.","IEEE Trans. Inf. Theory","IEEE Trans. Signal Process.","IEEE Trans. Veh. Technol.","IGARSS","IJCAI","IJCNN","INTERSPEECH","IROS","ISCAS","ISIT","Inf. Sci.","Lecture Notes in Computer Science","Multim. Tools Appl.","NeuroImage","Neurocomputing","PIMRC","Remote. Sens.","SMC","Sensors","Theor. Comput. Sci.","WCNC","WSC")) .
-        ?s ?p ?o.
-        FILTER(?s IN ({formatted_links}))
-        }}
-
-    """
-    # query = """
-    #     select distinct (?s as ?subject) (?p as ?predicate) (?o as ?object)
-    #     from <http://wikikg-v2>
-    #     where
-    #     {
-    #     ?s ?p ?o.
-    #     }
-    #     limit ?limit
-    #     offset ?offset
-    #  """
-    # query = query.format(formatted_links=formatted_links)
-    # subgraph_df = kg.KG_sparqlEndpoint.executeSparqlquery(query)
-    subgraph_df = kg.KG_sparqlEndpoint.execute_sparql_multithreads([query], inference_file)
-    if len(subgraph_df.columns) != 3:
-        print(subgraph_df)
-        raise AssertionError
-    subgraph_df = subgraph_df.applymap(lambda x: x.strip('"'))
-    if os.path.exists(inference_file):
-        subgraph_df.to_csv(inference_file, header=None, index=None, sep='\t', mode='a')
-    else:
-        subgraph_df.to_csv(inference_file, index=None, sep='\t', mode='a')
 
 """ Functions for Loading Mappings in Generate_inference_subgraph ()"""
 def process_subject_node(node,master_mapping,inference_mapping):
@@ -251,8 +151,7 @@ def getLabelMapping(dataset_name):
     return df_labels.set_index('label idx')['label name'].to_dict()
 
 def fill_missing_rel (relation,dir):
-    # warnings.warn('@@@@@@@ FILLING MISSING TRIPLE {} @@@@@@@'.format(relation), UserWarning)
-    # dir = os.path.join(inference_relations, relation)
+
     os.mkdir(dir)
     edge_data = {0: ["-1"], 1: ["-1"]}
     pd.DataFrame(edge_data).to_csv(os.path.join(dir, 'edge.csv.gz'), header=None, index=None,
@@ -263,7 +162,7 @@ def fill_missing_rel (relation,dir):
                                     compression='gzip')
 
 
-def store_emb(model,model_name,root_path=os.path.join(KGNET_Config.trained_model_path,'emb_store'),chunk_size=128,zip=False):
+def decompositionManager(model, model_name, root_path=os.path.join(KGNET_Config.trained_model_path, 'emb_store'), chunk_size=128, zip=False):
     def zip_directory(directory_to_zip, output_zip_file):
         with zipfile.ZipFile(output_zip_file, 'w', zipfile.ZIP_DEFLATED) as zipf:
             total_dirs = sum(len(dirs) for _, dirs, _ in os.walk(directory_to_zip))
@@ -305,8 +204,6 @@ def store_emb(model,model_name,root_path=os.path.join(KGNET_Config.trained_model
         emb_array = root.create(key, shape=val_np.shape, dtype=val_np.dtype, chunks=(chunk_size, -1)) #chunks=(val_np.shape[0], -1)
         emb_array[:] = val_np  # Assign the embeddings to the Zarr array
 
-        # Update the mapping information
-        # emb_mapping[key] = {'start': 0, 'end': val_np.shape[0]}
         emb_mapping[key] = (ptr,ptr+val_np.shape[0]-1)
         ptr+=val_np.shape[0]#+1
     # Save the mapping information
@@ -329,11 +226,11 @@ def check_if_multiprocessing():
         return current_pid
 
 
-def generate_inference_subgraph(master_ds_name, graph_uri='',targetNodesList = [],labelNode = None,targetNodeType=None,
-                                target_rel_uri='https://dblp.org/rdf/schema#publishedIn',
-                                ds_types = '',
-                                sparqlEndpointURL=KGNET_Config.KGMeta_endpoint_url,
-                                output_file='inference_subG'):
+def subgraphManager(master_ds_name, graph_uri='', targetNodesList = [], labelNode = None, targetNodeType=None,
+                    target_rel_uri='https://dblp.org/rdf/schema#publishedIn',
+                    ds_types = '',
+                    sparqlEndpointURL=KGNET_Config.KGMeta_endpoint_url,
+                    output_file='inference_subG'):
 
 
     global download_end_time
@@ -416,9 +313,7 @@ def generate_inference_subgraph(master_ds_name, graph_uri='',targetNodesList = [
     # common_nodes.remove(f'{target_node}_entidx2name.csv.gz') #TODO for separate processing of target node
     mapping_dict = process_all_nodes(common_nodes, master_mapping, inference_mapping)
     """ ********************** """
-    # global target_masks  # To be used for filtering inference nodes from training nodes during inference
-    # target_masks = [int(x) for x in mapping_dict[target_node]['ent idx_orig'].tolist()]
-    # time_mapLoad_end = (datetime.datetime.now() - time_mapLoad_start).total_seconds()
+
     if not len(targetNodesList) == len(mapping_dict[target_node]): # If the extracted subgraph contains more target nodes than the one in inference
         df = pd.merge(pd.DataFrame({'ent name':targetNodesList}),mapping_dict[target_node],on='ent name',how='left').dropna()
         ####target_masks = [int(x) for x in mapping_dict[target_node]['ent idx_orig'].tolist() if not pd.isna(x) ]
@@ -562,7 +457,6 @@ def generate_inference_subgraph(master_ds_name, graph_uri='',targetNodesList = [
     time_ALL_end = (datetime.datetime.now() - time_ALL_start).total_seconds()
     print(8 * "*", ' DOWNLOAD TIME ', download_end_time, "*" * 8)
     print(8 * "*", ' TRANSFORMATION TIME ', time_infTransform_end, "*" * 8)
-    # print(8 * "*", ' LOAD MAPPINGS TIME ', time_mapLoad_end, "*" * 8)
     print(8 * "*", ' MAPPING TIME ', time_map_end, "*" * 8)
     print(8 * "*", ' FILLING TIME ', time_fill_end, "*" * 8)
     print(8 * "*", ' MOV AND ZIP TIME ', time_move_end, "*" * 8)

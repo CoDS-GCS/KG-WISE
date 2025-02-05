@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0838985d-b910-4798-b738-f5739caaca8c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/GNNaaS/.ipynb_checkpoints/run_pipeline-checkpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/GNNaaS/.ipynb_checkpoints/run_pipeline-checkpoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GNNaaS/Inference_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/GNNaaS/Inference_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GNNaaS/models/graph_saint_KGTOSA.py" beforeDir="false" afterPath="$PROJECT_DIR$/GNNaaS/models/RGCN_Train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GNNaaS/run_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/GNNaaS/run_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GNNaaS/models/GNNStorageManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/GNNaaS/models/GNNStorageManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GNNaaS/models/RGCN_Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/GNNaaS/models/RGCN_Train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GNNaaS/models/wise_ssaint.py" beforeDir="false" afterPath="$PROJECT_DIR$/GNNaaS/models/wise_ssaint.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,24 +19,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2sPTlnPwMzItEz6OhVW2Quxgw4J" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.EXPERIMENTS_wise_ssaint.executor": "Debug",
-    "Python.wise_ssaint (2).executor": "Run",
-    "Python.wise_ssaint.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.EXPERIMENTS_wise_ssaint.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.wise_ssaint (2).executor&quot;: &quot;Run&quot;,
+    &quot;Python.wise_ssaint.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="wise_ssaint" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="KG-WISE" />
@@ -51,7 +52,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GNNaaS/models/wise_ssaint.py" />
-      <option name="PARAMETERS" value="--emb_size 16" />
+      <option name="PARAMETERS" value="--emb_size 16 --dataset_name MAG_D1H1" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -88,17 +89,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/GNNaaS/models/wise_ssaint.py</url>
-          <line>344</line>
+          <line>340</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/GNNaaS/models/wise_ssaint.py</url>
-          <line>1056</line>
+          <line>1052</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/GNNaaS/models/wise_ssaint.py</url>
-          <line>1292</line>
+          <line>1288</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

@@ -12,7 +12,7 @@ from GNNaaS.models.RGCN_Train import graphSaint
 from GNNaaS.models.rgcn.rgcn_link_pred import rgcn_lp
 from GNNaaS.models.MorsE.main import morse
 from GNNaaS.models.wise_ssaint import wise_SHsaint
-from GNNaaS.models.kgwise_utils import generate_inference_subgraph,getLabelMapping
+from GNNaaS.models.GNNStorageManager import subgraphManager,getLabelMapping
 # from GNNaaS.models.graph_saint_KGTOSA_DEMO import graphSaint
 from GNNaaS.DataTransform.Transform_LP_Dataset import transform_LP_train_valid_test_subsets
 from RDFEngineManager.sparqlEndpoint import sparqlEndpoint
@@ -317,9 +317,9 @@ def wise_inference(model_id, named_graph_uri, dataQuery, sparqlEndpointURL, targ
                 targetNodesList = getTargetNodeList(kg_endpoint,targetNodesQuery)
 
             """ Generate KG-TOSA subgraph """
-            inference_dataset,target_masks,target_masks_inf,transformation_results_dic = generate_inference_subgraph(master_ds_name=dataset_name,target_rel_uri=meta_dict['subG']['targetEdge'],ds_types=meta_dict['subG']['graphPrefix'],
-                                                                                          graph_uri=named_graph_uri,targetNodesList=targetNodesList,labelNode=meta_dict['subG']['labelNode'],targetNodeType=meta_dict['subG']['targetNode'],
-                                                                                                                     sparqlEndpointURL=sparqlEndpointURL)
+            inference_dataset,target_masks,target_masks_inf,transformation_results_dic = subgraphManager(master_ds_name=dataset_name, target_rel_uri=meta_dict['subG']['targetEdge'], ds_types=meta_dict['subG']['graphPrefix'],
+                                                                                                         graph_uri=named_graph_uri, targetNodesList=targetNodesList, labelNode=meta_dict['subG']['labelNode'], targetNodeType=meta_dict['subG']['targetNode'],
+                                                                                                         sparqlEndpointURL=sparqlEndpointURL)
             if inference_dataset is None:
                 return transformation_results_dic
 

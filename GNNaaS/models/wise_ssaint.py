@@ -40,22 +40,18 @@ faulthandler.enable()
 import pickle
 import warnings
 import zarr
-from kgwise_utils import generate_inference_subgraph, getLabelMapping
+from GNNStorageManager import subgraphManager, getLabelMapping
 from concurrent.futures import ProcessPoolExecutor, as_completed, ThreadPoolExecutor
 
 torch.multiprocessing.set_sharing_strategy('file_system')
 
 
 def print_memory_usage():
-    # print("max_mem_GB=",psutil.Process().memory_info().rss / (1024 * 1024*1024))
-    # print("get_process_memory=",getrusage(RUSAGE_SELF).ru_maxrss/(1024*1024))
     print('used virtual memory GB:', psutil.virtual_memory().used / (1024.0 ** 3), " percent",
           psutil.virtual_memory().percent)
 
 
 def gen_model_name(dataset_name, GNN_Method):
-    # timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    # return dataset_name+'_'+model_name+'_'+timestamp
     return dataset_name
 
 
@@ -169,27 +165,15 @@ class RGCN(torch.nn.Module):
         else:
             self.emb_dict = {}
 
-            # self.emb_dict = ParameterDict({
-            #     f'{key}': Parameter(torch.Tensor(num_nodes_dict[key], in_channels))
-            #     for key in set(node_types).difference(set(x_types))
-            # })
-
-        # self.emb_dict = ParameterDict({
-        #     f'{key}': Parameter(torch.Tensor(num_nodes_dict[key], in_channels))
-        #     for key in set(node_types).difference(set(x_types))
-        # })
-        """ Comment ^ for better efficiency at inference"""
 
         I, H, O = in_channels, hidden_channels, out_channels  # noqa
 
-        # Create `num_layers` many message passing layers.
         self.convs = ModuleList()
         self.convs.append(RGCNConv(I, H, num_node_types, num_edge_types))
         for _ in range(num_layers - 2):
             self.convs.append(RGCNConv(H, H, num_node_types, num_edge_types))
         self.convs.append(RGCNConv(H, O, self.num_node_types, num_edge_types))
 
-        # self.reset_parameters()
 
     def reset_parameters(self):
         for emb in self.emb_dict.values():
@@ -488,22 +472,17 @@ class RGCN(torch.nn.Module):
     def sampled_inference(self, model, homo_data, x_dict, local2global, subject_node, node_type, target_mask,
                           device='cpu'):
         model.eval()
-        # x_dict[2] = x_dict[2][-100:]
         inference_nodes = local2global[subject_node]  # [-100:]
         inference_nodes = torch.zeros_like(inference_nodes, dtype=torch.bool)
-        # inference_nodes[-len_target:] = True
-        # global target_masks
         inference_nodes[target_mask] = True
         homo_data.inference_mask = torch.zeros(node_type.size(0), dtype=torch.bool)
         homo_data.inference_mask[local2global[subject_node][inference_nodes]] = True
         homo_data.inference_mask
         batch_size = 1024 * 2  # len_target #// 100 # inference_nodes.shape[0]#x_dict[2].shape[0]
-        kwargs = {'batch_size': batch_size, 'num_workers': 0, }
         inference_loader = ShaDowKHopSampler(homo_data, depth=4, num_neighbors=16,
                                              node_idx=homo_data.inference_mask,
                                              batch_size=batch_size,
                                              num_workers=12,
-                                             # **kwargs
                                              )
 
         pbar = tqdm(total=len(inference_loader))
@@ -597,11 +576,7 @@ class RGCN(torch.nn.Module):
             sparse_tensor = torch.sparse_coo_tensor(v, emb_array.view(-1), torch.Size(root_k_shape)).to(torch.float32)
             self.emb_dict[str(k)] = sparse_tensor  # .to_dense()#.to_sparse_csr()
         time_load_end = (datetime.datetime.now() - time_load_start).total_seconds()
-        # df_chunk_stats = pd.DataFrame(dict_chunks).transpose().sort_values(by=0,ascending=False)
-        # df_chunk_stats.loc['Total'] = (df_chunk_stats[0].sum() , df_chunk_stats[1].sum())
-        # df_chunk_stats.loc['Load_time'] = round(time_load_end,2)
-        # print(f'chunk statistics:\n{df_chunk_stats}')
-        # df_chunk_stats.to_csv(os.path.join(KGNET_Config.datasets_output_path,"..","logs",f"{model_name}_chunks.csv"),header=None)
+
 
         warnings.warn('total time for loading  : {}'.format(time_load_end))
 
@@ -715,12 +690,12 @@ def wise_SHsaint(device=0, num_layers=2, hidden_channels=64, dropout=0.5,
         """ TOSA Subgraph Inference"""
         if loadTrainedModel == 1:
             # dir_path = generate_inference_subgraph
-            output = generate_inference_subgraph(master_ds_name=GNN_dataset_name, target_rel_uri=args.target_rel_uri,
-                                                 ds_types=args.ds_types, targetNodesList=args.targetNodesList,
-                                                 graph_uri=args.graph_uri, labelNode=args.labelNode,
-                                                 targetNodeType=args.targetNodeType,
-                                                 sparqlEndpointURL=args.sparqlEndpointURL
-                                                 )
+            output = subgraphManager(master_ds_name=GNN_dataset_name, target_rel_uri=args.target_rel_uri,
+                                     ds_types=args.ds_types, targetNodesList=args.targetNodesList,
+                                     graph_uri=args.graph_uri, labelNode=args.labelNode,
+                                     targetNodeType=args.targetNodeType,
+                                     sparqlEndpointURL=args.sparqlEndpointURL
+                                     )
             # if len(output) == 4:
             dir_path, target_masks, target_masks_inf, _ = output
             del output, _
@@ -1220,56 +1195,6 @@ def wise_SHsaint(device=0, num_layers=2, hidden_channels=64, dropout=0.5,
 def get_args(dataset_name,parser):
 
     # DBLP_Paper_Venue_FM_FTD_d1h1_PRIME_1000_GA_0_ShadowSaint Zarr = DBLP_d1h1_2021_Zarr_e10.model v2=DBLP_FTD_d1h1_Zarr
-
-    #### INFERENCE DATASET PARAMS
-    #""" DBLP """
-    if dataset_name == "DBLP_D1H1":
-        parser.add_argument('--dataset_name', type=str, default="DBLP_D1H1")  # DBLP_Paper_Venue_90-21_d1h1 DBLP_D1H1_v2
-        parser.add_argument('--targetNodesList', type=str, default=os.path.join(KGNET_Config.datasets_output_path,
-                                                                                'targets',
-                                                                                'DBLP_D1H1/DBLP_D1H1_1000.csv'))  # DBLP_Paper_Venue_90-21_d1h1/DBLP_Paper_Venue_90-21_d1h1_200.csv
-        parser.add_argument('--target_rel_uri', type=str,
-                            default='https://dblp.org/rdf/schema#publishedIn')  # https://dblp.org/rdf/schema#publishedIn
-        parser.add_argument('--ds_types', type=str, default='dblp')
-        parser.add_argument('--graph_uri', type=str, default='http://dblp.org')
-        parser.add_argument('--labelNode', type=str, default=None)
-        parser.add_argument('--targetNodeType', type=str,
-                            default='https://dblp.org/rdf/schema#Publication')  # Publication
-        parser.add_argument('--sparqlEndpointURL', type=str, default='http://206.12.98.118:8890/sparql')
-        parser.add_argument('--modelID', type=str, default='DBLP_D1H1_wise.model')
-
-        #""" YAGO """
-    elif dataset_name == "YAGO_PC_D1H1_v2":
-        parser.add_argument('--dataset_name', type=str, default="YAGO_PC_D1H1_v2")#  DBLP_Paper_Venue_FM_FTD_d1h1_2021_2 ## Yago_Top200_d1h1_V2
-        parser.add_argument('--targetNodesList',type=str,default=os.path.join(KGNET_Config.datasets_output_path,
-                            'targets','YAGO_PC_D1H1_v2/YAGO_PC_D1H1_v2_1000.csv'))
-                                                                              #'targets','Yago_Top200_d1h1_V2/Yago_Top200_d1h1_V2_1600.csv'))
-        parser.add_argument('--target_rel_uri',type=str,default='http://kgnet/label/containedInCountry')
-        parser.add_argument('--ds_types', type=str, default='yago')
-        parser.add_argument('--graph_uri', type=str, default='https://yago-knowledge.org')
-        parser.add_argument('--labelNode',type = str, default=None)
-        parser.add_argument('--targetNodeType', type=str, default='http://schema.org/Place')
-        parser.add_argument('--sparqlEndpointURL', type=str, default='http://206.12.97.2:8890/sparql')
-        parser.add_argument('--modelID',type=str, default='YAGO_PC_D1H1_v2_wise.model')
-
-    #""" MAG """
-    elif dataset_name == "MAG_D1H1":
-        parser.add_argument('--dataset_name', type=str, default="MAG_D1H1")#
-        parser.add_argument('--targetNodesList',type=str,default=os.path.join(KGNET_Config.datasets_output_path,
-                            'targets','MAG_D1H1/MAG_D1H1_1000.csv'))
-        parser.add_argument('--target_rel_uri',type=str,default='https://makg.org/has_venue') #https://makg.org/has_venue
-        parser.add_argument('--ds_types', type=str, default='mag')
-        parser.add_argument('--graph_uri', type=str, default='http://mag.org')
-        parser.add_argument('--labelNode',type = str, default=None)
-        parser.add_argument('--targetNodeType', type=str, default='Paper')
-        parser.add_argument('--sparqlEndpointURL', type=str, default='http://206.12.97.2:8890/sparql')
-        parser.add_argument('--modelID',type=str, default='MAG_D1H1_wise.model')
-
-
-    return parser.parse_args()
-
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='OGBN-MAG (GraphShadowSAINT)')
     parser.add_argument('--device', type=int, default=0)
     parser.add_argument('--num_layers', type=int, default=2)
     parser.add_argument('--hidden_channels', type=int, default=64)
@@ -1286,11 +1211,61 @@ if __name__ == '__main__':
     parser.add_argument('--include_reverse_edge', type=bool, default=True)
     parser.add_argument('--n_classes', type=int, default=200)
     parser.add_argument('--emb_size', type=int, default=128)
+    #### INFERENCE DATASET PARAMS
+    #""" DBLP """
+    if dataset_name == "DBLP_D1H1":
+        # parser.add_argument('--dataset_name', type=str, default="DBLP_D1H1")  # DBLP_Paper_Venue_90-21_d1h1 DBLP_D1H1_v2
+        parser.add_argument('--targetNodesList', type=str, default=os.path.join(KGNET_Config.datasets_output_path,
+                                                                                'targets',
+                                                                                'DBLP_D1H1/DBLP_D1H1_1000.csv'))  # DBLP_Paper_Venue_90-21_d1h1/DBLP_Paper_Venue_90-21_d1h1_200.csv
+        parser.add_argument('--target_rel_uri', type=str,
+                            default='https://dblp.org/rdf/schema#publishedIn')  # https://dblp.org/rdf/schema#publishedIn
+        parser.add_argument('--ds_types', type=str, default='dblp')
+        parser.add_argument('--graph_uri', type=str, default='http://dblp.org')
+        parser.add_argument('--labelNode', type=str, default=None)
+        parser.add_argument('--targetNodeType', type=str,
+                            default='https://dblp.org/rdf/schema#Publication')  # Publication
+        parser.add_argument('--sparqlEndpointURL', type=str, default='http://206.12.98.118:8890/sparql')
+        parser.add_argument('--modelID', type=str, default='DBLP_D1H1_wise.model')
+
+        #""" YAGO """
+    elif dataset_name == "YAGO_PC_D1H1_v2":
+        # parser.add_argument('--dataset_name', type=str, default="YAGO_PC_D1H1_v2")#  DBLP_Paper_Venue_FM_FTD_d1h1_2021_2 ## Yago_Top200_d1h1_V2
+        parser.add_argument('--targetNodesList',type=str,default=os.path.join(KGNET_Config.datasets_output_path,
+                            'targets','YAGO_PC_D1H1_v2/YAGO_PC_D1H1_v2_1000.csv'))
+                                                                              #'targets','Yago_Top200_d1h1_V2/Yago_Top200_d1h1_V2_1600.csv'))
+        parser.add_argument('--target_rel_uri',type=str,default='http://kgnet/label/containedInCountry')
+        parser.add_argument('--ds_types', type=str, default='yago')
+        parser.add_argument('--graph_uri', type=str, default='https://yago-knowledge.org')
+        parser.add_argument('--labelNode',type = str, default=None)
+        parser.add_argument('--targetNodeType', type=str, default='http://schema.org/Place')
+        parser.add_argument('--sparqlEndpointURL', type=str, default='http://206.12.97.2:8890/sparql')
+        parser.add_argument('--modelID',type=str, default='YAGO_PC_D1H1_v2_wise.model')
+
+    #""" MAG """
+    elif dataset_name == "MAG_D1H1":
+        # parser.add_argument('--dataset_name', type=str, default="MAG_D1H1")#
+        parser.add_argument('--targetNodesList',type=str,default=os.path.join(KGNET_Config.datasets_output_path,
+                            'targets','MAG_D1H1/MAG_D1H1_1000.csv'))
+        parser.add_argument('--target_rel_uri',type=str,default='https://makg.org/has_venue') #https://makg.org/has_venue
+        parser.add_argument('--ds_types', type=str, default='mag')
+        parser.add_argument('--graph_uri', type=str, default='http://mag.org')
+        parser.add_argument('--labelNode',type = str, default=None)
+        parser.add_argument('--targetNodeType', type=str, default='Paper')
+        parser.add_argument('--sparqlEndpointURL', type=str, default='http://206.12.97.2:8890/sparql')
+        parser.add_argument('--modelID',type=str, default='MAG_D1H1_wise.model')
+
+
+    return parser.parse_args()
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='KG-WISE Inference')
+    parser.add_argument('--dataset_name', type=str, default="YAGO_PC_D1H1_v2")
+    args, _ = parser.parse_known_args()
     global SAMPLED_INFERENCE,RW_SAMPLER
     SAMPLED_INFERENCE = False
     RW_SAMPLER = False
-
-    args = get_args("YAGO_PC_D1H1_v2",parser)#parser.parse_args()
+    args = get_args(args.dataset_name,parser)#parser.parse_args()
     args.targetNodesList = pd.read_csv(args.targetNodesList,header=None).drop_duplicates()[0].to_list() 
 
     # print(args)
