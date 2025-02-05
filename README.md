@@ -47,15 +47,15 @@ conda activate KGWISE
 ## Train the Model and Decompose:
 ```python
 # Train KG-WISE and decompose into KV store 
-python GNNaaS/models/RGCN_Train.py --Dataset <DatasetName>
+python GNNaaS/models/RGCN_Train.py --dataset_name --n_classes <DatasetName>
 ```
 ## Perform KG-WISE inference :
 ```python
-python GNNaaS/models/wise_ssaint.py --Dataset <DatasetName>
+python GNNaaS/models/wise_ssaint.py --dataset_name <DatasetName>
 ```
 ## Perform Baseline Graph-SAINT inference :
 ```python  
-python GNNaaS/models/Graph-SAINT.py --Dataset <DatasetName>
+python GNNaaS/models/Graph-SAINT.py --dataset_name <DatasetName>
 ```
 
 ### Note:
