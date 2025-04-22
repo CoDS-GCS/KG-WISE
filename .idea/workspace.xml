@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0838985d-b910-4798-b738-f5739caaca8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/SparqlMLaasService/LLM_subgraph_sampler_rag.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GNNaaS/Inference_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/GNNaaS/Inference_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GNNaaS/models/GNNStorageManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/GNNaaS/models/GNNStorageManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GNNaaS/models/RGCN_Train.py" beforeDir="false" afterPath="$PROJECT_DIR$/GNNaaS/models/RGCN_Train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GNNaaS/models/wise_ssaint.py" beforeDir="false" afterPath="$PROJECT_DIR$/GNNaaS/models/wise_ssaint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/KGWISE.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Figures/KGWISE.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,11 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Figures" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="wise_ssaint" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="KG-WISE" />
