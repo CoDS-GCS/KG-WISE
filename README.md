@@ -8,6 +8,13 @@ There is a growing demand for efficient graph neural networks (GNNs) during infe
 </figure>
 </center>
 
+## Virtuoso Installation
+Please follow the steps provided [here](https://virtuoso.openlinksw.com/howto/install/0//linux/)  to install and set up Virtuoso.
+
+## Data Ingestion.
+Ingest your Knowledge Graph KG into the Virtuoso engine.  
+To replicate the DBLP NC experiement from the paper, you can use the DBLP KG from [here](https://dblp.org/rdf/)
+
 ## Installation
 * Clone the `KG-WISE` repo 
 * Create `KGWISE` Conda environment (Python 3.8) and install pip requirements.
@@ -15,7 +22,7 @@ There is a growing demand for efficient graph neural networks (GNNs) during infe
 ```commandline
 conda activate KGWISE
 ```
-### Download the ready datasets below
+### Download the ready-to-use datasets below
 <b>Download KGTOSA NC datasets</b>
 <li>
 <a href="http://206.12.102.56/CodsData/KGNET/KGBen/MAG/MAG42M_PV_FG.zip">MAG_42M_PV_FG</a>
