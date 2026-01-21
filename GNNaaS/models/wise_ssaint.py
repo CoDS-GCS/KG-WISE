@@ -1225,7 +1225,7 @@ def get_args(dataset_name,parser):
         parser.add_argument('--labelNode', type=str, default=None)
         parser.add_argument('--targetNodeType', type=str,
                             default='https://dblp.org/rdf/schema#Publication')  # Publication
-        parser.add_argument('--sparqlEndpointURL', type=str, default='http://206.12.98.118:8890/sparql')
+        parser.add_argument('--sparqlEndpointURL', type=str, default='http://xxx.xx.xx.xxx:xxxx/sparql')
         parser.add_argument('--modelID', type=str, default='DBLP_D1H1_wise.model')
 
         #""" YAGO """
@@ -1239,7 +1239,7 @@ def get_args(dataset_name,parser):
         parser.add_argument('--graph_uri', type=str, default='https://yago-knowledge.org')
         parser.add_argument('--labelNode',type = str, default=None)
         parser.add_argument('--targetNodeType', type=str, default='http://schema.org/Place')
-        parser.add_argument('--sparqlEndpointURL', type=str, default='http://206.12.97.2:8890/sparql')
+        parser.add_argument('--sparqlEndpointURL', type=str, default='http://xxx.xx.xx.xxx:xxxx/sparql')
         parser.add_argument('--modelID',type=str, default='YAGO_PC_D1H1_v2_wise.model')
 
     #""" MAG """
@@ -1252,7 +1252,7 @@ def get_args(dataset_name,parser):
         parser.add_argument('--graph_uri', type=str, default='http://mag.org')
         parser.add_argument('--labelNode',type = str, default=None)
         parser.add_argument('--targetNodeType', type=str, default='Paper')
-        parser.add_argument('--sparqlEndpointURL', type=str, default='http://206.12.97.2:8890/sparql')
+        parser.add_argument('--sparqlEndpointURL', type=str, default='http://xxx.xx.xx.xxx:xxxx/sparql')
         parser.add_argument('--modelID',type=str, default='MAG_D1H1_wise.model')
 
 

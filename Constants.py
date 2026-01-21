@@ -83,13 +83,13 @@ class KGNET_Config:
     # datasets_output_path = "/mnt/KGNET/Datasets/"
     # inference_path = datasets_output_path + 'Inference/'
     # trained_model_path = datasets_output_path + 'trained_models/'
-    # GML_API_URL = "http://206.12.102.12:64647/"
+    # GML_API_URL = "http://xxx.xx.xx.xxx:xxxx/"
     # GML_Inference_PORT = "64647"
     # GML_ModelManager_PORT = "64648"
-    # # GML_ModelManager_URL = "http://206.12.100.114"
+    # # GML_ModelManager_URL = "http://xxx.xx.xx.xxx"
     # GML_ModelManager_URL = "http://0.0.0.0"
     # KGMeta_IRI = "http://kgnet/"
-    # KGMeta_endpoint_url = "http://206.12.98.118:8890/sparql/"
+    # KGMeta_endpoint_url = "http://xxx.xx.xx.xxx:xxxx/sparql/"
 
     # datasets_output_path=os.path.join(os.path.dirname(os.path.abspath(__file__)),'Datasets')#"/media/hussein/UbuntuData/GithubRepos/KGNET/Datasets/"
     datasets_output_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),'Datasets/')
@@ -98,16 +98,13 @@ class KGNET_Config:
     trained_model_path = datasets_output_path + 'trained_models/'
     # trained_model_path = os.path.join(datasets_output_path,'trained_models')
     emb_store_path = os.path.join(trained_model_path,'emb_store')
-    GML_API_URL = "http://206.12.102.12:64648/"
-    # GML_API_URL = "http://localhost:64648/"
+    GML_API_URL = "http://localhost:64648/"
     GML_Inference_PORT = "64648"
     GML_ModelManager_PORT = "8443"
     #GML_ModelManager_PORT = "8443"
-    # GML_ModelManager_URL = "http://206.12.100.114"
-    # GML_ModelManager_URL = "http://206.12.102.12"
-    GML_ModelManager_URL = "http://206.12.102.12"
+    GML_ModelManager_URL = "http://xxx.xx.xx.xxx:"
     KGMeta_IRI = "http://kgnet/"
-    KGMeta_endpoint_url = "http://206.12.98.118:8890/sparql/"
+    KGMeta_endpoint_url = "http://xxx.xx.xx.xxx:xxxx/sparql/"
     fileStorageType=FileStorageType.localfile#FileStorageType.remoteFileStore
     def __init__(self):
        ""
@@ -273,10 +270,3 @@ class utils:
 if __name__ == '__main__':
     ""
     # input="graph sainr->dblp->NC->03012024"
-    # encoded_String=utils.getBase64EncodedVal(input)
-    # print("encoded_String=",encoded_String)
-    # decoded_String=utils.decodeBase64(encoded_String)
-    # print("decoded_String=", decoded_String)
-    # print(utils.get_sha256(input))
-    # utils.uploadFileToS3("/home/hussein/Downloads/HMP.pdf",file_type="metadata")
-    # utils.DownloadFileFromS3("mid-4d7c0825f06b2e2fea2866d2ec9e97fca4422649127983dde2a409020b5abadb","/home/hussein/Downloads/4d7c0825f06b2e2fea2866d2ec9e97fca4422649127983dde2a409020b5abadb.model",file_type="model")

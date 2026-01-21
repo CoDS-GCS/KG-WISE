@@ -21,12 +21,34 @@ import zipfile
 from multiprocessing import Manager,parent_process
 
 
+def custom_query(target_lst,graph_uri):
+    query_file = 'query.txt'#gemini_yago4_PC_v3.txt'
+    with open (os.path.join(KGNET_Config.datasets_output_path,'..','SPARQL.txt',query_file),'rb') as file:
+        custom_q = file.read().decode()
+    formatted_links = " ".join(target_lst)
+    custom_q = custom_q.format(formatted_links=formatted_links)
+    query_o_type = """
+    select distinct (?s as ?subject) (?p as ?predicate) (?o as ?object)
+    from <$uri$>
+    where
+    {
+       select  (?o as ?s) ('http://www.w3.org/1999/02/22-rdf-syntax-ns#type' as ?p) (?otype as ?o)
+       where
+       {
+         ?s ?p ?o.
+         ?o a ?otype.
+         values ?s {$VT_Values$}
+       }
+    }"""
+    query_o_type=query_o_type.replace("$VT_Values$"," ".join(target_lst)).replace('$uri$',graph_uri)
+
+    return custom_q,query_o_type
+
 def execute_query_v3(batch, inference_file, kg, graph_uri, shared_list):
 
     try:
         subgraph_df = kg.KG_sparqlEndpoint.executeSparqlquery(batch)  # kg.KG_sparqlEndpoint.execute_sparql_multithreads([query], inference_file)
     except:
-        print('here')
         kg.KG_sparqlEndpoint.executeSparqlquery(
             batch)
     if len(subgraph_df.columns) != 3 or len(subgraph_df) == 0:
@@ -47,7 +69,8 @@ def batch_tosa_v3(targetNodesList, inference_file, graph_uri, kg, BATCH_SIZE=200
     queries = []
     for q in batch_generator():
         target_lst = ['<' + target + '>' for target in q]
-        queries.extend(get_d1h1_TargetListquery(graph_uri=graph_uri, target_lst=target_lst))
+        # queries.extend(get_d1h1_TargetListquery(graph_uri=graph_uri, target_lst=target_lst))
+        queries.extend(custom_query(graph_uri=graph_uri, target_lst=target_lst))
 
     manager = Manager()
     shared_list = manager.list()

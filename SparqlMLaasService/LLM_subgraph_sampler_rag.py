@@ -329,8 +329,10 @@ def LLM_KG_Sampler_examples(example):
          schema:Publication,schema:publicationNote,xsd:string
          schema:Publication,schema:publishedAsPartOf,schema:Publication
          schema:Publication,schema:isVersionOf,schema:Publication"""
-        DBLP2022_KG_Schema_df = pd.read_csv(StringIO(DBLP2022_KG_str_Schema), sep='\,', names=["stype", "rel", "otype"])
+        # DBLP2022_KG_Schema_df = pd.read_csv(StringIO(DBLP2022_KG_str_Schema), sep='\,', names=["stype", "rel", "otype"])
+        DBLP2022_KG_Schema_df = pd.read_csv('logs/sparql_schema.tsv',sep='\t',header=None,names=["stype", "ptype", "otype", "frequency"])
         DBLP2022_KG_Schema_df.sort_values(by=["stype"])
+
 
         dblp_filtred_schema = DBLP2022_KG_str_Schema
         KG = "DBLP"
@@ -354,6 +356,10 @@ def LLM_KG_Sampler_examples(example):
         print("sparql_v0=", sparql_v0)
         final_sparql, final_sparql_p_usage, final_sparql_p_full_response, final_sparql_p = refine_sparql_query(sparql_v0)
         print("final_sparql=", final_sparql)
+        if not os.path.exists('./SPARQL_queries'):
+            os.mkdir('SPARQL_queries')
+        with open('./SPARQL_queries/SPARQL.txt','wb') as f:
+            f.write(final_sparql.encode())
         ######################### DBLP AA LP##############################
         dblp_AA_suggested_features, dblp_AA_suggested_features_usage, dblp_AA_suggested_features_full_response, dblp_AA_suggested_features_p = suggest_features_prompt(
             task="predict the affaliation link of an author (creator) on DBLP KG , a link prediction task")
@@ -679,6 +685,10 @@ def LLM_KG_Sampler_examples(example):
         final_sparql, final_sparql_p_usage, final_sparql_p_full_response, final_sparql_p = refine_sparql_query(
             sparql_v0)
         print("final_sparql=", final_sparql)
+        if not os.path.exists('./SPARQL_queries'):
+            os.mkdir('SPARQL_queries')
+        with open('./SPARQL_queries/SPARQL.txt','wb') as f:
+            f.write(final_sparql.encode())
         ##################### YAGO4 CA Link Prediction #############################
         YAGO4_KG_CA_Schema_df_l1 = yago4_schema_df[
             (yago4_schema_df["stype"] == "schema:Airport") | (yago4_schema_df["otype"] == "schema:Airport")]
@@ -780,6 +790,10 @@ def LLM_KG_Sampler_examples(example):
         final_sparql, final_sparql_p_usage, final_sparql_p_full_response, final_sparql_p = refine_sparql_query(
             sparql_v0)
         print("final_sparql=", final_sparql)
+        if not os.path.exists('./SPARQL_queries'):
+            os.mkdir('SPARQL_queries')
+        with open('./SPARQL_queries/SPARQL.txt','wb') as f:
+            f.write(final_sparql.encode())
 
 
     elif example == "YAGO310":
@@ -849,7 +863,10 @@ def LLM_KG_Sampler_examples(example):
         final_sparql, final_sparql_p_usage, final_sparql_p_full_response, final_sparql_p = refine_sparql_query(
             sparql_v0)
         print("final_sparql=", final_sparql)
-
+        if not os.path.exists('./SPARQL_queries'):
+            os.mkdir('SPARQL_queries')
+        with open('./SPARQL_queries/SPARQL.txt','wb') as f:
+            f.write(final_sparql.encode())
         ############################# YAGO3-10 LivesIN #################################
         yago3_10_KG_Place_Schema_df = yago3_10_schema_df[
             (yago3_10_schema_df["stype"] == "Place") | (yago3_10_schema_df["otype"] == "Place")]

@@ -175,6 +175,6 @@ class gmlInferenceOperator(gmlOperator):
 
 if __name__ == '__main__':
     ""
-    KG_sparqlEndpoint = sparqlEndpoint(endpointUrl='http://206.12.98.118:8890/sparql/')
+    KG_sparqlEndpoint = sparqlEndpoint(endpointUrl='http://xxx.xx.xx.xxx:xxxx/sparql/')
     gml_operator=gmlOperator(KG_sparqlEndpoint=KG_sparqlEndpoint)
     df=gml_operator.getKGNodeEdgeTypes(namedGraphURI="http://www.aifb.uni-karlsruhe.de")

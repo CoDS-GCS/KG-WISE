@@ -8,12 +8,15 @@ There is a growing demand for efficient graph neural networks (GNNs) during infe
 </figure>
 </center>
 
-## Virtuoso Installation
+# Pre-requisites 
+## 1. Virtuoso Installation
 Please follow the steps provided [here](https://virtuoso.openlinksw.com/howto/install/0//linux/)  to install and set up Virtuoso.
 
-## Data Ingestion.
+## 2. Data Ingestion.
 Ingest your Knowledge Graph KG into the Virtuoso engine.  
-To replicate the DBLP NC experiement from the paper, you can use the DBLP KG from [here](https://dblp.org/rdf/)
+To replicate the DBLP NC experiment from the paper, you can use the DBLP KG from [here](https://dblp.org/rdf/)
+
+
 
 ## Installation
 * Clone the `KG-WISE` repo 
@@ -22,6 +25,11 @@ To replicate the DBLP NC experiement from the paper, you can use the DBLP KG fro
 ```commandline
 conda activate KGWISE
 ```
+## Running DBLP Experiement
+
+
+
+
 ### Download the ready-to-use datasets below
 <b>Download KGTOSA NC datasets</b>
 <li>
