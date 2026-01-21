@@ -25,10 +25,14 @@ To replicate the DBLP NC experiment from the paper, you can use the DBLP KG from
 ```commandline
 conda activate KGWISE
 ```
-## Running DBLP Experiement
-
-
-
+## Running DBLP Experiment
+1. Add the endpoint to your RDF Engine and graph uri in `Run_DBLP.sh` 
+2. Execute:
+```commandline
+chmod +x run_extract.sh
+./Run_DBLP.sh
+```
+# OR
 
 ### Download the ready-to-use datasets below
 <b>Download KGTOSA NC datasets</b>
